@@ -1,0 +1,83 @@
+[
+  {
+    "id": "mw_bligh_integrated",
+    "name": "Swabber Drone Weapons",
+    "mount": "Drone",
+    "type": "Weapon",
+    "profiles": [
+      {
+        "name": "Swabber Sword",
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap"
+          }
+        ],
+        "effect": "This is a Swabber Drone Melee Weapon. The Bligh may not use this weapon."
+      },
+      {
+        "name": "Swabber Rifle",
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_reliable",
+            "val": 1
+          }
+        ],
+        "effect": "This is a Swabber Drone Ranged Weapon. The Bligh may not use this weapon."
+      },
+      {
+        "name": "Swabber Cannon",
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "2"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_arcing"
+          },
+          {
+            "id": "tg_knockback",
+            "val": 1
+          }
+        ],
+        "effect": "This is a Swabber Drone Ranged Weapon. The Bligh may not use this weapon."
+      }
+    ],
+    "license_id": ""
+  }
+]

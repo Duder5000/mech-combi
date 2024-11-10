@@ -1,0 +1,388 @@
+[
+    {
+        "id":  "t_prospector",
+        "name":  "Prospector",
+        "description":  "Some people aren’t afraid to get their hands dirty. You are one of these individuals and you aren’t afraid to get your mech’s hands dirty, either. Having equipped it with all sorts of industrial mining equipment, your mech is now able to move great amounts of dirt in a very short amount of time, allowing it and its allies to rapidly redeploy using subterranean routes.",
+        "ranks":  [
+                      {
+                          "name":  "Stake a Claim",
+                          "description":  "Tunnel: When Tunneling, remove the character from the battlefield and then immediately place them in a free and valid space. This is considered moving 1 space and does trigger Reactions. \u003cbr\u003eGain the “Create Entrance” Quick Action which you may use 1/Scene. \u003cbr\u003eWhile completely within an Entrance you and allied characters gain the “Subterranean Reposition” Reaction during your own turns.",
+                          "actions":  [
+                                          {
+                                              "name":  "Create Entrance",
+                                              "activation":  "Quick",
+                                              "detail":  "1/Scene While standing on solid ground you may create a Burst 1 Entrance around yourself as a Quick Action. You may then Tunnel to anywhere up to 5 spaces away where you then create another Burst 1 Entrance. Entrances remain in play until the end of the scene. Terrain and sections of terrain overlapping an Entrance take 20 AP Explosive damage. Additionally, you cannot take Reactions until the end of the current turn."
+                                          },
+                                          {
+                                              "name":  "Subterranean Reposition",
+                                              "activation":  "Reaction",
+                                              "frequency":  "1/round",
+                                              "trigger":  "During your turn, you are completely within an Entrance.",
+                                              "detail":  "You immediately Tunnel, ending the movement completely within a different Entrance created by the same character as the first."
+                                          }
+                                      ]
+                      },
+                      {
+                          "name":  "Gold Fever",
+                          "description":  "Hostile characters within the area when an Entrance is created must succeed on a Hull save or be knocked Prone. \u003cbr\u003eAdditionally, after you use “Create Entrance,” allied characters completely within your initial Entrance may use “Subterranean Reposition” even though it is not their turn."
+                      },
+                      {
+                          "name":  "Mother Lode",
+                          "description":  "“Create Entrance” becomes 1/Round and you may use it an additional time each Scene.  All Entrances you create are connected for the purposes of Tunneling."
+                      }
+                  ],
+        "icon_url":  "https://i.imgur.com/tkXq4rz.png"
+    },
+    {
+        "id":  "t_iconoclast",
+        "name":  "Iconoclast",
+        "description":  "You have acquired an NHP, or has it acquired you? Together you have set out to achieve greatness and push boundaries. The two of you are in it together and you’ll be able to achieve fantastical things. Perhaps you’re unaware of the risks; perhaps you willfully choose to ignore them. The power you can tap into with the help of your companion is, however, undeniable. And with such power, who is to stop the two of you from breaking some taboos?",
+        "ranks":  [
+                      {
+                          "name":  "Transgression",
+                          "description":  "You may choose to equip your mech with an Unstable NHP system.",
+                          "special_equipment":  [
+                                                    "ms_iconoclast"
+                                                ]
+                      },
+                      {
+                          "name":  "Transmutation",
+                          "description":  "After performing any action granted to you by an NHP, excluding handing control of your mech over to the NHP as a protocol, you may immediately perform the TRANSMUTING SPARK free action. Each NHP may only trigger this action 1/round.",
+                          "actions":  [
+                                          {
+                                              "name":  "Transmuting Spark",
+                                              "activation":  "Free",
+                                              "detail":  "Project a LINE 3 lightning arc as a free action. Characters of your choice in the LINE take 2 AP energy damage."
+                                          }
+                                      ]
+                      },
+                      {
+                          "name":  "Transcension",
+                          "description":  "Gain a Transcendence Die, a d3 starting at 3. When you use “Transmuting Spark,” reduce the die by 1. If the die is at 1 when you use “Transmuting Spark,” you may immediately enter a transcendent state and reset the Transcendence Die to 3. This has the following effects until the end of your next turn: \u003cbr\u003e\u003cul\u003e\u003cli\u003eYour Transcendence Die can’t decrease.\u003c/li\u003e\u003cli\u003e“Memetic Spark” gains +4 damage and +5 Range.\u003c/li\u003e\u003cli\u003eUnless flying or climbing, you are forced to permanently Hover exactly 1 Space above any surface at all times.\u003c/li\u003e\u003cli\u003eYou gain Immunity to involuntary movement.\u003c/li\u003e\u003c/ul\u003e\u003cbr\u003eWhenever you cascade and lose control of your mech, you enter a transcendent state for the duration. Cascading NHPs have access to the benefits of this Talent. Your Transcendence Die resets at the end of the Scene."
+                      }
+                  ],
+        "icon_url":  "https://i.imgur.com/R0vZWwL.png"
+    },
+    {
+        "id":  "t_field_analyst",
+        "name":  "Field Analyst",
+        "description":  "You’ve always been perceptive, able to analyze the flow of battle and come up with strategies on the spot. You’re the mastermind behind the scenes, helping your allies out in battle in various ways. From subtle nudges to your comrades when aiming their weapons to devising advanced firing solutions or tailor-made evasive patterns. With your support, any battle your allies find themselves in is sure to end in success.",
+        "ranks":  [
+                      {
+                          "name":  "Tactical Intelligence",
+                          "description":  "Whenever an allied character in line of sight misses with an attack, you know by how much it missed. Additionally, you gain the “Superior Intelligence” Reaction.",
+                          "actions":  [
+                                          {
+                                              "name":  "Superior Intelligence",
+                                              "activation":  "Reaction",
+                                              "frequency":  "2/round",
+                                              "trigger":  "An allied character in Line of Sight has rolled an Attack Roll.",
+                                              "detail":  "You may add 1 to the attack roll. This may cause an attack to hit or to critically hit. Each attack roll can only be affected this way once."
+                                          }
+                                      ]
+                      },
+                      {
+                          "name":  "Information Handling",
+                          "description":  "Gain an Intel Die, a d6 starting at 1. \u003cbr\u003eAt the end of your turn, if you didn’t take any actions that affected a hostile character during that turn other than Scan, your Intel Die increases by 2 to a maximum of 6. \u003cbr\u003eWhenever you use Superior Intelligence, you may increase the attack roll by the value of your Intel Die instead of by 1. Afterward, it is reset to 1. \u003cbr\u003e Your Intel Die resets at the end of each scene."
+                      },
+                      {
+                          "name":  "Active Interference",
+                          "description":  "Whenever a hostile character in line of sight hits with an attack, you know what they rolled. \u003cbr\u003eYou may also use “Superior Intelligence” when a hostile character in Line of Sight has rolled an Attack Roll. Instead of adding to the attack roll, you subtract from it in the same manner. Each attack roll can only be affected this way once."
+                      }
+                  ],
+        "icon_url":  "https://i.imgur.com/YMwpX9P.png"
+    },
+    {
+        "id":  "t_house_guard",
+        "name":  "House Guard",
+        "terse":  "Improve your ability to defend your allies.",
+        "description":  "You fight at the side of your allies, your mech a bulwark that grants them unbreakable resolve and bolsters them up to greater glory.",
+        "ranks":  [
+                      {
+                          "name":  "Front Rank",
+                          "description":  "You count as adjacent when you are within Range 2 for the purposes of your effects on allied characters (from your traits, talents, systems, or weapons) that require adjacency to your mech."
+                      },
+                      {
+                          "name":  "Greater Guardian",
+                          "description":  "Your mech gains the Guardian trait if it doesn’t already have it (adjacent allies can use your mech as hard cover). Guardian now additionally grants soft cover to all adjacent allies from all directions."
+                      },
+                      {
+                          "name":  "Shield of the Legion",
+                          "description":  "1/round, when you reduce damage to an allied character, cancel an attack against them, or cause one to miss, you may deal 2 energy damage to the attacker and knock them Prone."
+                      }
+                  ]
+    },
+    {
+        "id":  "t_pankrati",
+        "name":  "Pankrati",
+        "terse":  "Rush and overpower slower opponents",
+        "description":  "Your fighting is as flashy as the greatest fighters of the Kreoss, and your mech leaps into battle with great aplomb.",
+        "ranks":  [
+                      {
+                          "name":  "Veni",
+                          "description":  "You gain +1 Accuracy to melee attacks against Immobilized or Slowed targets.",
+                          "synergies":  [
+                                            {
+                                                "locations":  [
+                                                                  "weapon"
+                                                              ],
+                                                "detail":  "Your melee attacks against Immobilized or Slowed characters gain +1 Accuracy.",
+                                                "weapon_types":  [
+                                                                     "Melee"
+                                                                 ]
+                                            }
+                                        ]
+                      },
+                      {
+                          "name":  "Vidi",
+                          "description":  "1/scene, you can make a Valiant Charge as a free action on your turn, moving up to twice your Speed and ignoring terrain penalties. You must move in a straight line and end your charge adjacent to a hostile character, and you cannot start your charge adjacent to any hostile characters. When you end your charge, any adjacent hostile characters are Slowed until the end of their next turn.",
+                          "actions":  [
+                                          {
+                                              "name":  "Valiant Charge",
+                                              "activation":  "Free",
+                                              "frequency":  "1/scene",
+                                              "detail":  "You charge, moving up to twice your Speed and ignoring terrain penalties. You must move in a straight line and end your charge adjacent to a hostile character, and you cannot start your charge adjacent to any hostile characters. When you end your charge, any adjacent hostile characters are Slowed until the end of their next turn."
+                                          }
+                                      ]
+                      },
+                      {
+                          "name":  "Vici",
+                          "description":  "If you start your Valiant Charge adjacent to any allied characters, they may immediately Boost as a reaction after your charge resolves."
+                      }
+                  ]
+    },
+    {
+        "id":  "t_spaceborn",
+        "name":  "Spaceborn",
+        "terse":  "Improve your mobility and gain an inbuilt EVA suite",
+        "description":  "You’re adept at planting your feet wherever you find them – even on nothing at all. In places where people born downwell have a hard time keeping their lunch down, you thrive. Which way is up? It’s up to you",
+        "ranks":  [
+                      {
+                          "name":  "Home in the Void",
+                          "description":  "All of your mechs that you build come with built-in EVA capabilities, meaning you suffer no penalties when operating underwater or in zero-g environments. As a quick action, you can shunt power into this component to fly 3 spaces and take Heat equal to your mech’s Size + 1, although you must land at the end of this movement or fall.",
+                          "integrated":  [
+                                             "ms_spaceborn_1"
+                                         ]
+                      },
+                      {
+                          "name":  "Sea Legs",
+                          "description":  "1/round, when your mech is involuntarily moved by another character’s attack or by failing a save forced by another character, you can choose the direction you move. Additionally, when your mech clears Prone, you may move 2 spaces in any direction as a free action. This movement ignores engagement and doesn’t provoke reactions"
+                      },
+                      {
+                          "name":  "Scrapper",
+                          "description":  "1/round, when your mech hits a character with a melee attack, it can immediately give that character +1 Difficulty on all checks or saves to avoid Knockback, Prone, Slowed or Immobilized until the end of its next turn, including any effects that are part of the triggering attack.",
+                          "synergies":  [
+                                            {
+                                                "locations":  [
+                                                                  "weapon"
+                                                              ],
+                                                "weapon_types":  [
+                                                                     "Melee"
+                                                                 ],
+                                                "weapon_sizes":  [
+                                                                     "any"
+                                                                 ],
+                                                "detail":  "1/round, when your mech hits a character with a melee attack, it can immediately give that character +1 Difficulty on all checks or saves to avoid Knockback, Prone, Slowed or Immobilized until the end of its next turn, including any effects that are part of the triggering attack."
+                                            }
+                                        ]
+                      }
+                  ]
+    },
+    {
+        "id":  "t_black_thumb",
+        "name":  "Black Thumb",
+        "terse":  "Ride your mech to repair it during combat",
+        "description":  "You’re used to station engineering – the kind that regularly requires crawling through nightmarishly tight vents, squeezing past boiling-hot steam pipes, and tapping on thin panes of sheet metal that lie between you and certain death. After that, a little combat engineering is nothing.",
+        "ranks":  [
+                      {
+                          "name":  "Flesh to Metal",
+                          "description":  "You treat DISMOUNT as a quick action instead of a full action. When you DISMOUNT, your pilot gains a personal shield. The next time your pilot would take damage, reduce that damage to 0, then the shield disperses. Otherwise, it disperses at the end of the scene. You can only have one personal shield at once, and any shields created replace the last one.",
+                          "actions":  [
+                                          {
+                                              "name":  "Black Thumb Dismount",
+                                              "activation":  "Quick",
+                                              "detail":  "Dismount as per the normal Dismount action. When you DISMOUNT, your pilot gains a personal shield. The next time your pilot would take damage, reduce that damage to 0, then the shield disperses. Otherwise, it disperses at the end of the scene. You can only have one personal shield at once, and any shields created replace the last one.",
+                                              "synergy_locations":  [
+                                                                        "dismount"
+                                                                    ]
+                                          }
+                                      ]
+                      },
+                      {
+                          "name":  "Rodeo",
+                          "description":  "\u003cp\u003eAs a protocol, you give up the controls, pop the hatch on your mech and partly climb out, starting a BLACK THUMB RODEO and gaining a personal shield (as above). While in rodeo, your pilot is immune to involuntary movement, occupies your mech’s space and moves when it moves. This does not count as DISMOUNT and the mech can’t be controlled from outside, so it will idle unless it is capable of acting independently (e.g., if it has an NHP that has been given control, which you can do as part of this protocol). \u003cbr\u003eWhile in rodeo, your pilot becomes a valid target and can take damage normally. If you lose your personal shield for any reason, you are immediately forced back inside your mech, ending the effect, and you cannot start a rodeo again on your following turn. You can also end a rodeo as a quick action on any of your turns. \u003cbr\u003eWhile in rodeo, your pilot can only take the \u003cb\u003eExtinguish\u003c/b\u003e, \u003cb\u003eField Repair\u003c/b\u003e, or \u003cb\u003eRig Vents\u003c/b\u003e actions granted by Black Thumb.",
+                          "actions":  [
+                                          {
+                                              "name":  "Black Thumb Rodeo",
+                                              "activation":  "Protocol",
+                                              "detail":  "Gain a \u003cb\u003epersonal shield\u003c/b\u003e (as from Flesh to Metal). While in rodeo, your pilot is immune to involuntary movement, occupies your mech’s space and moves when it moves. This does not count as DISMOUNT and the mech can’t be controlled from outside, so it will idle unless it is capable of acting independently (e.g., if it has an NHP that has been given control, which you can do as part of this protocol).\u003cbr\u003eWhile in rodeo, your pilot becomes a valid target and can take damage normally. If you lose your personal shield for any reason, you are immediately forced back inside your mech, ending the effect, and you cannot start a rodeo again on your following turn. You can also end a rodeo as a quick action on any of your turns.\u003cbr\u003eWhile in rodeo, your pilot can only take the \u003cb\u003eExtinguish\u003c/b\u003e, \u003cb\u003eField Repair\u003c/b\u003e, or \u003cb\u003eRig Vents\u003c/b\u003e actions granted by Black Thumb."
+                                          },
+                                          {
+                                              "name":  "End Black Thumb Rodeo",
+                                              "activation":  "Quick",
+                                              "detail":  "End your current Black Thumb Rodeo."
+                                          },
+                                          {
+                                              "name":  "BT: Extinguish",
+                                              "activation":  "Full",
+                                              "detail":  "You immediately clear all Burn affecting your mech, and it gains Resistance to Burn until the start of your next turn. Conditions that were self inflicted cannot be cleared with this action."
+                                          },
+                                          {
+                                              "name":  "BT: Field Repair",
+                                              "activation":  "Full",
+                                              "detail":  "Your mech gains Overshield 2 and clears either Slowed or Immobilized. Conditions that were self inflicted cannot be cleared with this action."
+                                          },
+                                          {
+                                              "name":  "BT: Rig Vents",
+                                              "activation":  "Full",
+                                              "detail":  "Your mech clears 2 Heat and clears either Impaired or Jammed. Conditions that were self inflicted cannot be cleared with this action."
+                                          }
+                                      ]
+                      },
+                      {
+                          "name":  "Rodeo Master",
+                          "description":  "Your Black Thumb actions can be used on adjacent allied mechs."
+                      }
+                  ]
+    },
+    {
+        "id":  "t_demolitionist",
+        "name":  "Demolitionist",
+        "terse":  "Improve your grenades and mines to fly further and hit harder",
+        "description":  "Explosives and warfare go together like alcohol and bad decisions. The power of a bomb in the palm of your hand is a great equalizer, and a well-placed satchel charge or two has brought even the mightiest of fortifications tumbling down. Forget bullets with names etched on them, the packages you deliver go out addressed “To Whom It May Concern,” and you’ve got plenty to go around.",
+        "ranks":  [
+                      {
+                          "name":  "Frag and Clear",
+                          "description":  "When you use a Grenade, you may choose one character in the affected area to ignore its effects. Additionally, at the end of each scene, you restore 1 charge to each Limited system with the Mine tag for each undetonated Mine you deployed from that system."
+                      },
+                      {
+                          "name":  "Quarterback",
+                          "description":  "Your Grenades gain +3 Range, and you can plant Mines up to Range 3 (or add +3 Range to them if they have one). Additionally, you do not require line of sight for Grenades and Mines as long as it’s possible to trace a path to the target."
+                      },
+                      {
+                          "name":  "Fire in the Hole",
+                          "description":  "\u003cp\u003eYour explosive charges have been enhanced with customized payloads. 1/round, you may choose one of the following:\u003c/p\u003e \u003cul\u003e \u003cli\u003eWhen you throw a Grenade, up to three characters within Range 3 of the targeted space take 2 explosive damage and are knocked back 1 space in a direction of your choice by explosive shrapnel.\u003c/li\u003e \u003cli\u003eWhen a character fails a save against one of your Mines, they take +1d6 explosive bonus damage. If the mine deals no damage normally when detonated, whether it forces a save or not, one character in the affected area takes 1d6 explosive damage instead.\u003c/li\u003e \u003c/ul\u003e"
+                      }
+                  ]
+    },
+    {
+        "id":  "t_sysop",
+        "name":  "Sysop",
+        "terse":  "Improve your Bolster to shield your allies from systemic attacks",
+        "description":  "Modern systemic warfare is a filthy mess of code-worms, logic bombs, and adaptive viruses, to say nothing of all the physical detritus that litters the battlefield, and you’re the one responsible for keeping things clean. System operator or system optimizer, formatting software barriers or tuning servos, your command of diagnostic programs and deep-level hardware overrides gives you all the tools you need to push your squad’s limits beyond manufacturer spec with orderly, surgical precision.",
+        "ranks":  [
+                      {
+                          "name":  "Inoculation",
+                          "description":  "When you Bolster an allied character, the additional Accuracy they gain lasts until their next skill check or save.",
+                          "synergies":  [
+                                            {
+                                                "locations":  [
+                                                                  "bolster"
+                                                              ],
+                                                "detail":  "When you Bolster an allied character, the additional Accuracy they gain lasts until their next skill check or save."
+                                            }
+                                        ]
+                      },
+                      {
+                          "name":  "Firewall",
+                          "description":  "When you Bolster an allied character, tech attacks against them receive +1 Difficulty until the end of their next turn.",
+                          "synergies":  [
+                                            {
+                                                "locations":  [
+                                                                  "bolster"
+                                                              ],
+                                                "detail":  "When you Bolster an allied character, tech attacks against them receive +1 Difficulty until the end of their next turn."
+                                            }
+                                        ]
+                      },
+                      {
+                          "name":  "Aggressive Countermeasures",
+                          "description":  "1/round, when you Bolster an ally, you induce a special cycle into their reactor. They reduce the next amount of heat they would take from a hostile character to 0, and that character takes 2 heat and becomes Impaired until the end of their next turn. This effect does not stack, and lasts until triggered.",
+                          "synergies":  [
+                                            {
+                                                "locations":  [
+                                                                  "bolster"
+                                                              ],
+                                                "detail":  " 1/round, when you Bolster an allied character, you induce a special cycle in their reactor. They reduce the next amount of heat they would take from a hostile character to 0, and that character takes 2 heat and becomes Impaired until the end of their next turn. This effect does not stack, and lasts until triggered."
+                                            }
+                                        ]
+                      }
+                  ]
+    },
+    {
+        "id":  "mf_orator",
+        "name":  "Orator",
+        "icon":  "ORATOR",
+        "terse":  "The power of your words is undeniable, and can incapacitate your opponents more readily than any weapon could.",
+        "description":  "Only the fool sees war as a means to and end; you know the integrity of any give human is far easier to penetrate than a chassis\u0027s exterior hull plating. So let fools be fools, and speak your truth. Tell them the gods they worship die a quiet death; tell them the manna they covet invites despondency, and the voices they follow lead nowhere. They will hear you – this is undeniable – and in doing so will even begin to question the motives of the hands they use to hold and the feet they use to walk. Your power is that of the orator, and in years to come your histories will paint war a bygone remembrance.",
+        "ranks":  [
+                      {
+                          "name":  "Convincing Rhetoric",
+                          "description":  "Gain the \u003cb\u003eConvincing Rhetoric\u003c/b\u003e reaction.",
+                          "actions":  [
+                                          {
+                                              "name":  "Convincing Rhetoric",
+                                              "activation":  "Reaction",
+                                              "frequency":  "1/round",
+                                              "trigger":  "You or an allied character takes the Scan Quick Tech action against a hostile character.",
+                                              "detail":  "You open an isolated comms channel with your target and they become Impaired. This lasts until they succeed on a Systems check at the end of their turn. They cannot clear Impaired any other way. Using this reaction again on a new character ends the Impaired condition early."
+                                          }
+                                      ]
+                      },
+                      {
+                          "name":  "Voice of Reason",
+                          "description":  "\u003cdiv\u003eYou start combat with 1 Orator die - a d6 - representing your power of speech. At the end of your turn when you do not attack or force any saves from hostile characters that turn, you gain +1 Orator die up to a maximum of 3 Orator Die. They last until expended or the current scene ends.\u003c/div\u003e \u003cdiv\u003e1/round as a free action you can expend Orator Dice for one of the following effects as long as you can communicate with your target\u003c/div\u003e \u003cul\u003e \u003cli\u003e\u003cstrong\u003eEncourage (1 Die):\u003c/strong\u003e An ally in line of sight may make a systems check against any non-self inflicted conditions affecting them, using the Orator Die at accuracy, ending that condition on a successful check.\u003c/li\u003e \u003cli\u003e\u003cstrong\u003eInvestigate (2 Dice):\u003c/strong\u003e Choose a hostile character in line of sight. The next time you or an allied character makes an attack against them it is rolled twice, taking the highest result as final.\u003c/li\u003e \u003cli\u003e\u003cstrong\u003eCast Doubt (2 Dice):\u003c/strong\u003e Choose a hostile character in line of sight. They cannot benefit from or be targeted by their allies\u0027 systems or traits until the end of their next turn.\u003c/li\u003e \u003c/ul\u003e",
+                          "counters":  [
+                                           {
+                                               "id":  "ctr_voice_of_reason",
+                                               "name":  "Orator Die",
+                                               "default_value":  1,
+                                               "min":  1,
+                                               "max":  3
+                                           }
+                                       ]
+                      },
+                      {
+                          "name":  "The March of the Ten Thousand",
+                          "description":  "\u003cp\u003eStart combat with +1 additional Orator Dice. Additionally, gain an additional option for Voice of Reason\u003c/p\u003e \u003cul\u003e \u003cli\u003e\u003cstrong\u003eDemoralize (3 Dice):\u003c/strong\u003e Choose a hostile character in line of sight. They cannot move, attack, force saves or take tech actions until the end of their next turn. They then gain Immunity to this effect until the end of the scene.\u003c/li\u003e"
+                      }
+                  ]
+    },
+    {
+        "id":  "t_empath",
+        "name":  "Empath",
+        "terse":  "Gain abilities that grant your allies guaranteed dice results",
+        "description":  "\u003cp\u003e\u003ci\u003eYour time on Hercynia has always been marked by a kind of … searching. A connection to the planet, to something alive there. You can perceive it best at night, when it’s quiet: your name, or a whisper that speaks something deeper and more true, spoken in the voice of another. You don’t feel any fear when you hear it. You feel complete. It takes some time down the well, but one morning you awake resolute.\u003c/p\u003e\u003cp\u003eTime to find the distant speaker.\u003c/i\u003e\u003c/p\u003e\u003cp\u003eWhether your character was born offworld and came to Hercynia knowing nothing of the Egregorians, Witness, or any of the planet’s history, or you were born in Evergreen or one of the cities of the HUC, your character can be an empath. An empath is someone who can not only register when Witness is being shared, but begin to understand it and, with some training, even add their own subjectivity to it.\u003c/p\u003e\u003cp\u003eMere exposure to Hercynia is enough for a character to become an empath. Nobody is “born” an empath – it is a learned process, not an inherited one. Although, like all skills, some people find it easier than others, anyone can potentially learn to understand Witness. Normally, human empaths bond with Egregorians – there are many examples of such in the United Cities. Rarely, empaths can form bonds with other humans – a process that is as rare and wondrous to Egregorians as it is to the humans undergoing it, and one that also suggests that a human extension of Witness may latent and possible with exploration.\u003c/p\u003e",
+        "ranks":  [
+                      {
+                          "name":  "Sympathetic Precognition",
+                          "description":  "Your ability to sense the subjectivities of others grants you an uncanny ability to predict your ally’s actions, guiding them with your influence.",
+                          "actions":  [
+                                          {
+                                              "name":  "Sympathetic Precognition",
+                                              "activation":  "Reaction",
+                                              "frequency":  "1/scene",
+                                              "trigger":  "An allied character in line of sight makes a skill check, attack, or save.",
+                                              "detail":  "That character may choose not to roll, instead treating their check, attack, or save as if they had rolled a 10 on the d20."
+                                          }
+                                      ]
+                      },
+                      {
+                          "name":  "Bend to Will",
+                          "description":  "1/scene when an allied character in line of sight makes a structure or overheating check, they can roll twice and choose either result."
+                      },
+                      {
+                          "name":  "Shared Subjectivity",
+                          "description":  "1/scene as a quick action, you may tap deep reserves of willpower to grant extraordinary awareness to an allied character in line of sight. Your mech immediately becomes STUNNED until the start of your next turn and your perception almost completely merges with that of the other character. Until the end of their next turn, any time that character makes an attack, check, or saving throw, they can choose to roll as normal or instead treat that attack, check, or save as if they had rolled a 10 on the d20. They must decide before rolling.",
+                          "actions":  [
+                                          {
+                                              "name":  "Shared Subjectivity",
+                                              "activation":  "Quick",
+                                              "frequency":  "1/scene",
+                                              "detail":  "Your mech immediately becomes STUNNED until the start of your next turn and your perception almost completely merges with that of the other character. Until the end of their next turn, any time that character makes an attack, check, or saving throw, they can choose to roll as normal or instead treat that attack, check, or save as if they had rolled a 10 on the d20. They must decide before rolling."
+                                          }
+                                      ]
+                      }
+                  ]
+    }
+]

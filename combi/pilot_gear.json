@@ -1,0 +1,594 @@
+[
+    {
+        "id":  "ms_madrigal_precision_rifle",
+        "name":  "Madrigal Precision Rifle",
+        "type":  "Weapon",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_accurate"
+                     },
+                     {
+                         "id":  "tg_ordnance"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_pilot_weapon"
+                     }
+                 ],
+        "range":  [
+                      {
+                          "type":  "Range",
+                          "val":  15
+                      }
+                  ],
+        "damage":  [
+                       {
+                           "type":  "Kinetic",
+                           "val":  8
+                       }
+                   ]
+    },
+    {
+        "id":  "ms_madrigal_shoulder_launcher",
+        "name":  "Madrigal Shoulder Launcher",
+        "type":  "Weapon",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_arcing"
+                     },
+                     {
+                         "id":  "tg_loading"
+                     },
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_sidearm"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_pilot_weapon"
+                     }
+                 ],
+        "range":  [
+                      {
+                          "type":  "Range",
+                          "val":  10
+                      },
+                      {
+                          "type":  "Blast",
+                          "val":  1
+                      }
+                  ],
+        "damage":  [
+                       {
+                           "type":  "Explosive",
+                           "val":  5
+                       }
+                   ]
+    },
+    {
+        "id":  "ms_madrigal_boarding_shotgun",
+        "name":  "Madrigal Boarding Shotgun",
+        "type":  "Weapon",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_ap"
+                     },
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_sidearm"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_pilot_weapon"
+                     }
+                 ],
+        "range":  [
+                      {
+                          "type":  "Range",
+                          "val":  3
+                      }
+                  ],
+        "damage":  [
+                       {
+                           "type":  "Kinetic",
+                           "val":  5
+                       }
+                   ]
+    },
+    {
+        "id":  "ms_madrigal_power_crusher",
+        "name":  "Madrigal Power Crusher",
+        "type":  "Weapon",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e\u003cp\u003e\u003cb\u003eOn Hit\u003c/b\u003e: Target becomes Immobilized and Impaired until the end of its next turn.\u003c/p\u003e\u003cp\u003eThis weapon automatically hits Terrain and deals 10 AP Kinetic damage.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_sidearm"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_pilot_weapon"
+                     }
+                 ],
+        "range":  [
+                      {
+                          "type":  "Threat",
+                          "val":  1
+                      }
+                  ],
+        "damage":  [
+                       {
+                           "type":  "Kinetic",
+                           "val":  6
+                       }
+                   ]
+    },
+    {
+        "id":  "ms_madrigal_railgun",
+        "name":  "Madrigal Railgun",
+        "type":  "Weapon",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_limited",
+                         "val":  4
+                     },
+                     {
+                         "id":  "tg_sidearm"
+                     },
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_pilot_weapon"
+                     }
+                 ],
+        "range":  [
+                      {
+                          "type":  "Line",
+                          "val":  8
+                      }
+                  ],
+        "damage":  [
+                       {
+                           "type":  "Kinetic",
+                           "val":  4
+                       }
+                   ]
+    },
+    {
+        "id":  "ms_madrigal_disruptor_grenades",
+        "name":  "Madrigal Disruptor Grenade",
+        "type":  "Gear",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e\u003cp\u003eIf your pilot is on foot, you gain the Disruptor Grenade quick action.\u003c/p\u003e",
+        "actions":  [
+                        {
+                            "name":  "Disruptor Grenade",
+                            "activation":  "Quick",
+                            "detail":  "Expend a charge to throw a disruptor grenade within Range 5. Characters within Blast 1 become Slowed and Impaired until the end of their next turn.",
+                            "pilot":  true
+                        }
+                    ],
+        "tags":  [
+                     {
+                         "id":  "tg_limited",
+                         "val":  3
+                     },
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_madrigal_jump_system",
+        "name":  "Madrigal Jump System",
+        "type":  "Gear",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e\u003cp\u003eIf your pilot is on foot you may Fly when you Boost. You must end this movement on solid ground or begin falling.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_madrigal_thermal_visor",
+        "name":  "Madrigal Thermal Visor",
+        "type":  "Gear",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e\u003cp\u003eIf your pilot is on foot your attacks ignore Cover.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_madrigal_active_camo",
+        "name":  "Madrigal Active Camo",
+        "type":  "Gear",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e\u003cp\u003eIf your pilot is on foot, ranged attacks originating from beyond Range 3 treat you as having Hard Cover.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_madrigal_personal_shield",
+        "name":  "Madrigal Personal Shield",
+        "type":  "Gear",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e\u003cp\u003eIf your pilot is on foot, you gain the Shielded reaction.\u003c/p\u003e",
+        "actions":  [
+                        {
+                            "name":  "Shielded",
+                            "activation":  "Reaction",
+                            "frequency":  "1/round",
+                            "trigger":  "You take damage.",
+                            "detail":  "You may expend a charge to gain Resistance to that damage.",
+                            "pilot":  true
+                        }
+                    ],
+        "tags":  [
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_limited",
+                         "val":  2
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_madrigal_shock_field",
+        "name":  "Madrigal Shock Field",
+        "type":  "Gear",
+        "effect":  "\u003cp\u003e\u003cb\u003eRequirement\u003c/b\u003e: Weapons and Gear with “Madrigal” in the name may only be equipped if the Pilot is wearing the “Madrigal Boarding Carapace”.\u003c/p\u003e\u003cp\u003eIf your pilot is on foot, you gain the Shock Field quick action.\u003c/p\u003e",
+        "actions":  [
+                        {
+                            "name":  "Shock Field",
+                            "activation":  "Quick",
+                            "detail":  "You may deal 3 Energy damage to all characters adjacent to you and end all Grapples affecting you.",
+                            "pilot":  true
+                        }
+                    ],
+        "tags":  [
+                     {
+                         "id":  "tg_unique"
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_madrigal_boarding_carapace_armor",
+        "name":  "Madrigal Boarding Carapace",
+        "type":  "Armor",
+        "effect":  "\u003cp\u003eIf a pilot takes the Madrigal Boarding Carapace they can’t take any pilot weapons or Gear that don’t have “Madrigal” in the name. Madrigal weapons and Gear may only be equipped by pilots wearing the Madrigal Boarding Carapace.\u003c/p\u003e\u003cp\u003eWhile wearing the carapace, you may only Dismount or Eject before your mech has acted for the turn (excluding protocols).\u003c/p\u003e\u003cp\u003eIf you aren’t in your mech and it is being controlled by another person or an AI, it may only perform a single quick action and standard movement on each of its turns. It may perform protocols and reactions as normal. When your mech Braces during this time it also loses its remaining quick action. These effects last until you retake control as a protocol.\u003c/p\u003e\u003cp\u003eThe Madrigal Boarding Carapace counts as one of the two Exotic Gear systems you may have installed at a time, but Madrigal weapons and Gear do not.\u003c/p\u003e",
+        "description":  "The Madrigal line of personal protection hardsuits, manufactured by Cyprian Industries, represents some of the best void-capable combat suits available. Designed for carrying out and defending against boarding actions, the Madrigal system is modular and can be adjusted to tackle varied tactical situations. While inferior to heavier, dedicated boarding hardsuits and mechs such as the IPS-N Caliban and the Harrison Armory Kutuzov, the Madrigal yet boasts an impressive degree of personal protection without sacrificing mobility or agility. Compact enough to be worn in a mech’s cockpit, the Madrigal is slowly but steadily encroaching on the pilot hardsuits market. Its superior protection, armaments, and auxiliary systems make it an attractive choice for lancers everywhere.",
+        "tags":  [
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_personal_armor"
+                     }
+                 ],
+        "bonuses":  [
+                        {
+                            "id":  "pilot_hp",
+                            "val":  3
+                        },
+                        {
+                            "id":  "pilot_armor",
+                            "val":  3
+                        },
+                        {
+                            "id":  "pilot_evasion",
+                            "val":  "7 + {grit}",
+                            "replace":  true
+                        },
+                        {
+                            "id":  "pilot_edef",
+                            "val":  "7 + {grit}",
+                            "replace":  true
+                        },
+                        {
+                            "id":  "pilot_speed",
+                            "val":  4,
+                            "replace":  true
+                        }
+                    ]
+    },
+    {
+        "id":  "pg_Psionic_Piston",
+        "name":  "Psionic Piston",
+        "type":  "Gear",
+        "effect":  "\u003c/i\u003e\u003c/p\u003e\u003cp\u003e1/mission, when you make eye contact with a character in arm’s reach you may telepathically converse and share your consciousness with them in complete clarity, conveying your rational and emotional subjectivity. This device effectively becomes a bridge between minds without the assistance of conventional comms-based neural laces. This effect persists as long as any characters linked remain close to each other.\u003c/p\u003e\u003cp\u003eWhen you use this device, roll a d20. If you roll 5 or lower, gain a personality quirk for the remainder of the mission, determined by you and your GM, as memories of the tool’s previous user flood your mind.\u003c/p\u003e",
+        "description":  "\u003ci\u003e\u003cp\u003e“Carry me, please carry me – your soul and mind, oh so delightfully fine. Twice I’ve filled your bowl so we shall dine. Carry me, please carry me – my soul and mind.” [LISTEN]. Walk the path with me and see our footsteps blend. [WALK]. The creases in your grandmother’s hand – so folded and neat, pressed and firm. [CLINCH]. Oh so she plowed those lands, diligent and stern. [SWING]. Woman with graceful purpose, look what we’ve done. [PEER]. Scarlet soil, sowed in crimson hues. [RELEASE].”\u003c/p\u003e\u003cp\u003e– a song and suggestion from one mind to another\u003c/i\u003e\u003c/p\u003e\u003cp\u003eThe psionic piston is a vibrant octagonal jewel worn just above the glabella and embedded in the wearer’s frontal lobe. A tool for oversight and understanding created by a consortium of long-buried minds with silent intent. Few pistons exist today. Fewer still continue to bridge minds. Those that do, do so without witness. Instruments with no mother nor father any longer they seek partnership with the willing and ambitious. Do them a favor and carve on yourself a pocket for their presence.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_exo_anti_armor_signature_weapon",
+        "name":  "Anti-Armor Signature Weapon",
+        "type":  "Weapon",
+        "effect":  "If a pilot takes an Anti-Armor Signature Weapon on a mission, they can’t take any other pilot weapons.",
+        "tags":  [
+                     {
+                         "id":  "tg_ap"
+                     },
+                     {
+                         "id":  "tg_limited",
+                         "val":  2
+                     },
+                     {
+                         "id":  "tg_loading"
+                     },
+                     {
+                         "id":  "tg_ordnance"
+                     },
+                     {
+                         "id":  "tg_reliable",
+                         "val":  2
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_pilot_weapon"
+                     }
+                 ],
+        "range":  [
+                      {
+                          "type":  "Range",
+                          "val":  15
+                      }
+                  ],
+        "damage":  [
+                       {
+                           "type":  "Variable",
+                           "val":  5
+                       }
+                   ]
+    },
+    {
+        "id":  "ms_exo_bahadurs_reserve",
+        "name":  "Bahadur\u0027s Reserve",
+        "type":  "Gear",
+        "effect":  "Expend a charge for the following effect:\u003cul\u003e\u003cli\u003e\u003cb\u003eMolotov Cocktail\u003c/b\u003e (Grenade, Range 5, Blast 1): Affected characters must pass an Agility save or take 2 Burn.\u003c/li\u003e\u003c/ul\u003e",
+        "description":  "A remarkably potent spirit distilled by Mir Bahadur, this moonshine is served to discerning customers and traded for favors within Evergreen\u0027s informal barter networks. It goes down surprisingly smooth with notes of vanilla and spices and is responsible for a truly impressive number of hangovers and bad decisions. While piloting under the influence is highly inadvisable, a bottle of good alcohol can be a boon to morale as well as a valuable trade commodity. Bahadur’s homebrew can even serve as a disinfectant or crude (if effective) anesthetic, and it is high enough proof to run a biofuel generator or even be repurposed into a makeshift incendiary device in a pinch.",
+        "actions":  [
+                        {
+                            "name":  "Molotov Cocktail",
+                            "activation":  "Quick",
+                            "range":  [
+                                          {
+                                              "type":  "Range",
+                                              "val":  5
+                                          },
+                                          {
+                                              "type":  "Blast",
+                                              "val":  1
+                                          }
+                                      ],
+                            "damage":  [
+                                           {
+                                               "type":  "Burn",
+                                               "val":  2
+                                           }
+                                       ],
+                            "detail":  "Throw a molotov within Range 5. Affected characters within a Blast 1 must pass an Agility save or take 2 Burn.",
+                            "pilot":  true
+                        }
+                    ],
+        "tags":  [
+                     {
+                         "id":  "tg_limited",
+                         "val":  1
+                     },
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_exo_hercynian_rations",
+        "name":  "Hercynian Rations",
+        "type":  "Gear",
+        "description":  "HUC rations rely heavily on fish, either smoked or tinned in spiced oil; dried mushrooms which can be reconstituted with water; sealed packs of flatbread or crackers; pickled macroalgae; dried fruits; rice; oats; and tea and freeze-dried coffee. In some ways, these rations are familiar to anyone who\u0027s ever subsisted on military fare. In others, they\u0027re a reminder of just how far from home you are.",
+        "tags":  [
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_exo_locus",
+        "name":  "Locus",
+        "type":  "Gear",
+        "description":  "\u003cp\u003eFor those humans attempting to cultivate an affinity for Witness, the learning process can be frustrating at times. Over the centuries, a variety of tools and techniques have been developed to assist with this. One of these techniques involves the consumption of a native species of psychedelic fungus, either dried or brewed as tea. This substance, commonly called locus, induces feelings of opennness, euphoria, enhanced empathy, and altered sensory perceptions including mild hallucinations and synaesthesia. Locus is not habit-forming nor does it have any harmful long-term effects, though some users experience headaches and fatigue after use. That said, overdosing can lead to bouts of “empathic overload”, dissociation, and more severe hallucinatory episodes.\u003c/p\u003e\u003cp\u003eIn humans, ingestion of locus induces a state of enhanced affinity for Witness, though it does not necessarily grant a deeper understanding of its use. The effects last from three to six hours depending on the strength of the dose, the user’s metabolism, and other factors. Locus also has a variety of other therapeutic uses.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_exotic"
+                     },
+                     {
+                         "id":  "tg_gear"
+                     }
+                 ]
+    },
+    {
+        "id":  "ms_exo_light_carapace_armor",
+        "name":  "Light Carapace Hardsuit",
+        "type":  "Armor",
+        "effect":  "The multiple ablative layers of treated chitin make carapace hardsuits especially effective at dispersing the effects of energy weapons, and as a result all such armor has Resistance to energy damage.",
+        "description":  "\u003cp\u003eWhile Hercynian society is far from primitive, the HUC lacks the advanced industrial manufacturing base required to easily fabricate the large quantities of composite materials needed for modern armor. As a result, the personal combat armor worn by rangers and other combatants is typically made from interlocking and overlapping layers of molted Egregorian carapace, donated by willing volunteers. Distinctly insectile in appearance, treatment allows the carapace to be molded into a variety of shapes and styles suitable for numerous occupational specialties ranging from long-range reconnaissance to heavy assault. While many examples of carapace armor are unpowered, ranger pilots and special forces units use carapace hardsuits created by marrying the plates to various strength-amplification exoskeletons and fitting them with upgraded power sources, interface systems, and environmental seals.\u003c/p\u003e\u003cp\u003eAcquiring a carapace hardsuit isn\u0027t a simple matter. Such suits don’t tend to be available for sale in currency or barter, instead being either handed down from pilot to pilot or custom-made according to a number of formal traditions. These traditions include seeking permission from a willing Egregorian donor to use their carapace and the personal participation of the wearer in the crafting, a process that can take weeks depending on the complexity of the suit. Should a PC manage to obtain one of these hardsuits, you may represent it with the following stats.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_personal_armor"
+                     }
+                 ],
+        "bonuses":  [
+                        {
+                            "id":  "pilot_hp",
+                            "val":  2
+                        },
+                        {
+                            "id":  "pilot_evasion",
+                            "val":  10,
+                            "replace":  true
+                        },
+                        {
+                            "id":  "pilot_edef",
+                            "val":  10,
+                            "replace":  true
+                        },
+                        {
+                            "id":  "pilot_speed",
+                            "val":  4,
+                            "replace":  true
+                        }
+                    ]
+    },
+    {
+        "id":  "ms_exo_assault_carapace_armor",
+        "name":  "Assault Carapace Hardsuit",
+        "type":  "Armor",
+        "effect":  "The multiple ablative layers of treated chitin make carapace hardsuits especially effective at dispersing the effects of energy weapons, and as a result all such armor has Resistance to energy damage.",
+        "description":  "\u003cp\u003eWhile Hercynian society is far from primitive, the HUC lacks the advanced industrial manufacturing base required to easily fabricate the large quantities of composite materials needed for modern armor. As a result, the personal combat armor worn by rangers and other combatants is typically made from interlocking and overlapping layers of molted Egregorian carapace, donated by willing volunteers. Distinctly insectile in appearance, treatment allows the carapace to be molded into a variety of shapes and styles suitable for numerous occupational specialties ranging from long-range reconnaissance to heavy assault. While many examples of carapace armor are unpowered, ranger pilots and special forces units use carapace hardsuits created by marrying the plates to various strength-amplification exoskeletons and fitting them with upgraded power sources, interface systems, and environmental seals.\u003c/p\u003e\u003cp\u003eAcquiring a carapace hardsuit isn\u0027t a simple matter. Such suits don’t tend to be available for sale in currency or barter, instead being either handed down from pilot to pilot or custom-made according to a number of formal traditions. These traditions include seeking permission from a willing Egregorian donor to use their carapace and the personal participation of the wearer in the crafting, a process that can take weeks depending on the complexity of the suit. Should a PC manage to obtain one of these hardsuits, you may represent it with the following stats.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_personal_armor"
+                     }
+                 ],
+        "bonuses":  [
+                        {
+                            "id":  "pilot_hp",
+                            "val":  2
+                        },
+                        {
+                            "id":  "pilot_armor",
+                            "val":  1
+                        },
+                        {
+                            "id":  "pilot_evasion",
+                            "val":  8,
+                            "replace":  true
+                        },
+                        {
+                            "id":  "pilot_edef",
+                            "val":  8,
+                            "replace":  true
+                        },
+                        {
+                            "id":  "pilot_speed",
+                            "val":  4,
+                            "replace":  true
+                        }
+                    ]
+    },
+    {
+        "id":  "ms_exo_heavy_carapace_armor",
+        "name":  "Heavy Carapace Hardsuit",
+        "type":  "Armor",
+        "effect":  "The multiple ablative layers of treated chitin make carapace hardsuits especially effective at dispersing the effects of energy weapons, and as a result all such armor has Resistance to energy damage.",
+        "description":  "\u003cp\u003eWhile Hercynian society is far from primitive, the HUC lacks the advanced industrial manufacturing base required to easily fabricate the large quantities of composite materials needed for modern armor. As a result, the personal combat armor worn by rangers and other combatants is typically made from interlocking and overlapping layers of molted Egregorian carapace, donated by willing volunteers. Distinctly insectile in appearance, treatment allows the carapace to be molded into a variety of shapes and styles suitable for numerous occupational specialties ranging from long-range reconnaissance to heavy assault. While many examples of carapace armor are unpowered, ranger pilots and special forces units use carapace hardsuits created by marrying the plates to various strength-amplification exoskeletons and fitting them with upgraded power sources, interface systems, and environmental seals.\u003c/p\u003e\u003cp\u003eAcquiring a carapace hardsuit isn\u0027t a simple matter. Such suits don’t tend to be available for sale in currency or barter, instead being either handed down from pilot to pilot or custom-made according to a number of formal traditions. These traditions include seeking permission from a willing Egregorian donor to use their carapace and the personal participation of the wearer in the crafting, a process that can take weeks depending on the complexity of the suit. Should a PC manage to obtain one of these hardsuits, you may represent it with the following stats.\u003c/p\u003e",
+        "tags":  [
+                     {
+                         "id":  "tg_personal_armor"
+                     }
+                 ],
+        "bonuses":  [
+                        {
+                            "id":  "pilot_hp",
+                            "val":  2
+                        },
+                        {
+                            "id":  "pilot_armor",
+                            "val":  2
+                        },
+                        {
+                            "id":  "pilot_evasion",
+                            "val":  6,
+                            "replace":  true
+                        },
+                        {
+                            "id":  "pilot_edef",
+                            "val":  6,
+                            "replace":  true
+                        },
+                        {
+                            "id":  "pilot_speed",
+                            "val":  3,
+                            "replace":  true
+                        }
+                    ]
+    }
+]

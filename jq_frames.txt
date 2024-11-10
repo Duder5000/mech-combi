@@ -1,0 +1,9 @@
+### 2. Using `jq` (a Command-line JSON Processor)
+`jq` provides an efficient way to combine JSON files, especially for larger datasets or repetitive tasks.
+
+- **Command**: Use the following `jq` command to combine multiple JSON files into one array:
+  ```bash
+  jq -s 'add' file1.json file2.json > combined.json
+  ```
+  - **Explanation**: The `-s` flag (short for `--slurp`) reads each file as a separate element of an array, and `add` concatenates the arrays into one.
+  - **Output**: The result will be saved as `combined.json`, containing all JSON objects from `file1.json` and `file2.json` within a single array.

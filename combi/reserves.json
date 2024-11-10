@@ -1,0 +1,673 @@
+[
+    {
+        "id":  "reserve_military_grade_jetpack",
+        "name":  "Military-Grade Jetpack",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Can be attached to any hardsuit, allowing the wearer to fly when they move or BOOST."
+    },
+    {
+        "id":  "reserve_incendiary_ammo_pilot_scale",
+        "name":  "Incendiary Ammo (Pilot-Scale)",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Changes a pilot-scale weapon’s damage type to BURN.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "pilot_weapon"
+                                            ],
+                              "detail":  "Changes a pilot-scale weapon’s damage type to BURN."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_pneumatic_enhancer",
+        "name":  "Pneumatic Enhancer",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Your pilot-scale HEAVY A/C weapons gain the following: On hit: target is knocked PRONE.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "pilot_weapon"
+                                            ],
+                              "detail":  "Your pilot-scale HEAVY A/C weapons gain the following: On hit: target is knocked PRONE."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_sniper_scope",
+        "name":  "Sniper Scope",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Your pilot-scale signature weapons gain +5 RANGE.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "pilot_weapon"
+                                            ],
+                              "detail":  "Your pilot-scale signature weapons gain +5 RANGE."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_devastator_grenades",
+        "name":  "Devastator Grenades",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Your Frag Grenades deal +2 damage."
+    },
+    {
+        "id":  "reserve_junker_exo_rig",
+        "name":  "Junker Exo-Rig",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "You gain +1 ACCURACY to JOCKEY."
+    },
+    {
+        "id":  "reserve_crash_cushions",
+        "name":  "Crash Cushions",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: When you become STUNNED, you may activate this to not become STUNNED."
+    },
+    {
+        "id":  "reserve_personal_cloak",
+        "name":  "Personal Cloak",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: As a protocol, you become INVISIBLE until the start of your next turn.",
+        "actions":  [
+                        {
+                            "name":  "Personal Cloak",
+                            "activation":  "Protocol",
+                            "detail":  "Become INVISIBLE until the start of your next turn.",
+                            "frequency":  "1/mission"
+                        }
+                    ]
+    },
+    {
+        "id":  "reserve_precision_targeting_software",
+        "name":  "Precision Targeting Software",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: After hitting with an attack, you may activate this to make the attack critical.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "weapon"
+                                            ],
+                              "weapon_types":  [
+                                                   "any"
+                                               ],
+                              "detail":  "1/mission: After hitting with an attack, you may activate this to make the attack critical."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_frostfang_servos",
+        "name":  "Frostfang Servos",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: BOOST as a free action.",
+        "actions":  [
+                        {
+                            "name":  "Frostfang Servos",
+                            "activation":  "Free",
+                            "detail":  "BOOST as a free action.",
+                            "frequency":  "1/mission"
+                        }
+                    ],
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "boost"
+                                            ],
+                              "detail":  "1/mission: BOOST as a free action."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_gyro_stabilizers",
+        "name":  "Gyro Stabilizers",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: As a protocol, treat all of your weapons as if they aren’t ORDNANCE for the rest of the turn.",
+        "actions":  [
+                        {
+                            "name":  "Gyro Stabilizers",
+                            "activation":  "Protocol",
+                            "detail":  "Treat all of your weapons as if they aren’t ORDNANCE for the rest of the turn.",
+                            "frequency":  "1/mission"
+                        }
+                    ],
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "weapon"
+                                            ],
+                              "detail":  "1/mission: As a protocol, treat all of your weapons as if they aren’t ORDNANCE for the rest of the turn."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_high_speed_loader",
+        "name":  "High-Speed Loader",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: Reload all weapons as a free action.",
+        "actions":  [
+                        {
+                            "name":  "High-Speed Loader",
+                            "activation":  "Free",
+                            "detail":  "Reload all weapons as a free action.",
+                            "frequency":  "1/mission"
+                        }
+                    ]
+    },
+    {
+        "id":  "reserve_system_flayer",
+        "name":  "System Flayer",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: After hitting with INVADE, you may activate this to deal +4 Heat.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "tech_attack"
+                                            ],
+                              "detail":  "1/mission: After hitting with INVADE, you may activate this to deal +4 Heat."
+                          }
+                      ]
+    },
+    {
+        "id":  "emergency_coolant_reservoir",
+        "name":  "Emergency Coolant Reservoir",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: Clear EXPOSED as a free action.",
+        "actions":  [
+                        {
+                            "name":  "Emergency Coolant Reservoir",
+                            "activation":  "Free",
+                            "detail":  "Clear EXPOSED as a free action.",
+                            "frequency":  "1/mission"
+                        }
+                    ]
+    },
+    {
+        "id":  "reserve_ic_blinkpack",
+        "name":  "IC Blinkpack",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: As a protocol, you may teleport whenever you move for the rest of your turn.",
+        "actions":  [
+                        {
+                            "name":  "IC Blinkpack",
+                            "activation":  "Protocol",
+                            "detail":  "As a protocol, you may teleport whenever you move for the rest of your turn.",
+                            "frequency":  "1/mission"
+                        }
+                    ],
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "move"
+                                            ],
+                              "detail":  "1/mission: As a protocol, you may teleport whenever you move for the rest of your turn."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_explosive_knuckles",
+        "name":  "Explosive Knuckles",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: After hitting with a RAM, you may activate this to deal 6 explosive damage.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "ram"
+                                            ],
+                              "detail":  "1/mission: After hitting with a RAM, you may activate this to deal 6 explosive damage."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_ultra_high_penetrator_rounds",
+        "name":  "Ultra-High Penetrator Rounds",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: After hitting with a ranged attack, you may activate this to declare that the attack’s damage can’t be reduced.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "weapon"
+                                            ],
+                              "weapon_types":  [
+                                                   "any"
+                                               ],
+                              "detail":  "1/mission: After hitting with a ranged attack, you may activate this to declare that the attack’s damage can’t be reduced."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_run_off_energy_converter",
+        "name":  "Run-Off Energy Converter",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: When you use your CORE POWER, you may activate this to generate a BURST 4 aura of lightning. Hostile characters in the area take 4 energy damage.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "core_power"
+                                            ],
+                              "detail":  "1/mission: When you use your CORE POWER, you may activate this to generate a BURST 4 aura of lightning. Hostile characters in the area take 4 energy damage."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_system_backup",
+        "name":  "System Backup",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: When forced to perform a save or check you may activate this to automatically succeed.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "skill_check"
+                                            ],
+                              "detail":  "1/mission: When forced to perform a save or check you may activate this to automatically succeed."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_field_marshal_comp_con",
+        "name":  "“Field Marshal” Comp/Con",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: As a quick action, up to two allied characters within SENSORS may each immediately perform a single quick action as a reaction.",
+        "actions":  [
+                        {
+                            "name":  "“Field Marshal” Comp/Con",
+                            "activation":  "Quick",
+                            "detail":  "As a quick action, up to two allied characters within SENSORS may each immediately perform a single quick action as a reaction.",
+                            "frequency":  "1/mission"
+                        }
+                    ]
+    },
+    {
+        "id":  "reserve_retractable_slab_shields",
+        "name":  "Retractable Slab Shields",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: As a protocol, you become IMMOBILIZED until the start of your next turn and gain RESISTANCE to all damage for the same duration.",
+        "actions":  [
+                        {
+                            "name":  "Retractable Slab Shields",
+                            "activation":  "Protocol",
+                            "detail":  "As a protocol, you become IMMOBILIZED until the start of your next turn and gain RESISTANCE to all damage for the same duration.",
+                            "frequency":  "1/mission"
+                        }
+                    ]
+    },
+    {
+        "id":  "reserve_automated_reflex_suite",
+        "name":  "Automated Reflex Suite",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: When you are hit by an attack, you may make the attack a miss as a reaction.",
+        "actions":  [
+                        {
+                            "name":  "Automated Reflex Suite",
+                            "activation":  "Reaction",
+                            "trigger":  "You are hit by an attack.",
+                            "detail":  "The attack automatically misses.",
+                            "frequency":  "1/mission"
+                        }
+                    ]
+    },
+    {
+        "id":  "reserve_bubble_active_personal_shield",
+        "name":  "“Bubble” Active Personal Shield",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: As a protocol, gain 4+GRIT OVERSHIELD.",
+        "actions":  [
+                        {
+                            "name":  "“Bubble” Active Personal Shield",
+                            "activation":  "Protocol",
+                            "detail":  "As a protocol, gain 4+GRIT OVERSHIELD.",
+                            "frequency":  "1/mission"
+                        }
+                    ],
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "overshield"
+                                            ],
+                              "detail":  "1/mission: As a protocol, gain 4+GRIT OVERSHIELD."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_thermal_optics",
+        "name":  "Thermal Optics",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: As a protocol, you may activate this to ignore cover until the end of your turn.",
+        "actions":  [
+                        {
+                            "name":  "Thermal Optics",
+                            "activation":  "Protocol",
+                            "detail":  "As a protocol, you may activate this to ignore cover until the end of your turn.",
+                            "frequency":  "1/mission"
+                        }
+                    ],
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "weapon"
+                                            ],
+                              "weapon_types":  [
+                                                   "any"
+                                               ],
+                              "detail":  "As a protocol, you may activate this to ignore cover until the end of your turn."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_strain_resistant_actuator",
+        "name":  "Strain-Resistant Actuator",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: When you BRACE, you may activate this to suffer no detrimental effects from doing so.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "brace"
+                                            ],
+                              "detail":  "1/mission: When you BRACE, you may activate this to suffer no detrimental effects from doing so."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_hyper_spec_fuel_canister",
+        "name":  "Hyper-Spec Fuel Canister",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/mission: As a protocol, you may activate this to gain +1 ACCURACY on all attacks, saves, and checks until the start of your next turn.",
+        "actions":  [
+                        {
+                            "name":  "Hyper-Spec Fuel Canister",
+                            "activation":  "Protocol",
+                            "detail":  "As a protocol, you may activate this to gain +1 ACCURACY on all attacks, saves, and checks until the start of your next turn.",
+                            "frequency":  "1/mission"
+                        }
+                    ],
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "skill_check"
+                                            ],
+                              "detail":  "1/mission: When forced to perform a save or check you may activate this to automatically succeed."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_up_armoring",
+        "name":  "Up-Armoring",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "It’s a simple and straightforward battlefield modification to affix additional plating to a chassis’ exterior. Your mech gains +1 Armor for the duration of the next mission (to a maximum of 4), and you start the next combat with +5 Overshield.",
+        "bonuses":  [
+                        {
+                            "id":  "armor",
+                            "val":  1
+                        }
+                    ]
+    },
+    {
+        "id":  "reserve_hot_load_ammunition",
+        "name":  "Hot-Load Ammunition",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Adding this much additional power to a weapon’s ammunition is generally not sanctioned, but it is effective. You can spend this reserve to empower your weapons. The next successful ranged or melee attack you make can’t have its damage reduced in any way, and the target must pass a Hull save or be knocked Prone. This effect ends when you hit with a ranged or melee attack roll, or at the end of the scene."
+    },
+    {
+        "id":  "reserve_recon_drone",
+        "name":  "Recon Drone",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "With the intense signal jamming blanketing the city, these high-ceiling, long-loiter drones provide some of the best intel a pilot is likely to get. At the start of each combat, choose a single hostile character within Range 50 and Scan them. This does not require line of sight."
+    },
+    {
+        "id":  "reserve_sniper_team",
+        "name":  "Sniper Team",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "LSA ground forces and Union marines are getting a crash-course in joint operations on this mission, and nothing builds teamwork like target shooting. You can spend this reserve at the start of any combat to call upon a nearby sniper team to provide you with fire support. For the rest of the scene, each time you take the Lock On Quick Tech action, your target takes 2 AP kinetic damage."
+    },
+    {
+        "id":  "reserve_lookingglass",
+        "name":  "LOOKINGGLASS Overlay",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "This head-mounted sensor add-on is capable of defeating even advanced thermal/optic/systemic camouflage systems, though it can only operate at that level of intensity for a short duration before burning out. You can spend this reserve during any combat to activate the sensors. For the rest of the scene you ignore soft cover and ignore Invisible for characters within Range 3. Hostile characters within Range 3 can’t become Hidden, though they remain Hidden if they were already."
+    },
+    {
+        "id":  "reserve_leg_enhancements",
+        "name":  "Leg Enhancements",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "Mechs are already built to navigate uneven terrain, but joint and servo reinforcements can make a good thing even better. Your mech ignores difficult terrain for the duration of the upcoming mission. Additionally, once during the mission you can spend this reserve to ignore Slowed or Immobilized received from a hostile source, negating the condition as it happens."
+    },
+    {
+        "id":  "reserve_high_mobility_pack",
+        "name":  "High-Mobility Pack",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "The LSA uses these externally mounted flight units for rapid assault and air-drop operations, and the schematics are easy enough to modify and print to GMS standard. You can spend this reserve at the start of any combat to count any and all of your movement as flying for the rest of that scene. Additionally, you may deploy yourself anywhere on the map after all other characters (PCs and NPCs) have deployed."
+    },
+    {
+        "id":  "reserve_golden_ticket",
+        "name":  "Golden Ticket",
+        "type":  "Resource",
+        "label":  "Resource",
+        "description":  "1st Lt. Kim is only authorized to distribute so many limited-access licenses, but a little off-the-books code-cloning by Rio can help stretch those licenses a bit further. You gain a piece of Exotic Gear from Operation Solstice Rain."
+    },
+    {
+        "id":  "reserve_personal_touch",
+        "name":  "Personal Touch",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "It looks like Vonna’s taken a shine to you, or at the very least taken a shine to your chassis. Your mech gains a free Custom Paint Job for the duration of the next mission, and you can also spend this reserve to gain +1 Accuracy on all mech skill checks and saves during a combat of your choice."
+    },
+    {
+        "id":  "reserve_return_to_sender",
+        "name":  "Return to Sender",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "Using a captured artillery shell as a chassis-deployed improvised explosive device is incredibly unwise, but it’s probably not the worst decision a pilot’s ever made. Your mech is equipped with a powerful, single-use explosive. 1/mission, you can create a Blast 2 explosion within Range 3 as a quick action. Affected characters must pass an Agility save or take 3d6 explosive damage, or half damage on a success. Objects, cover, and terrain within the area automatically take 30 AP explosive damage. Only one PC can have this reserve at a time; anyone rolling this result again picks another reserve of their choice from this list."
+    },
+    {
+        "id":  "reserve_esus_eyes_occular_apparatus",
+        "name":  "Esu\u0027s Eyes Ocular Apparatus",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "At the start of combat you may choose to activate this gear, allowing you to ignore hostile characters’ Hidden and Invisible statuses for the duration of the combat. Upon use, this piece of gear is destroyed."
+    },
+    {
+        "id":  "reserve_compulsory_scope_upgrade",
+        "name":  "Compulsory Scope Upgrade",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "At the start of combat you may choose to activate this gear. Any time you miss on a ranged attack, you gain +1 Accuracy on your next ranged attack roll made in the same turn. Upon use, this piece of gear is destroyed.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "weapon"
+                                            ],
+                              "weapon_types":  [
+                                                   "Rifle",
+                                                   "Cannon",
+                                                   "Launcher",
+                                                   "CQB",
+                                                   "Nexus"
+                                               ],
+                              "weapon_sizes":  [
+                                                   "any"
+                                               ],
+                              "detail":  "Any time you miss on a ranged attack, you gain +1 Accuracy on your next ranged attack roll made in the same turn."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_aganju_tower",
+        "name":  "Aganju Tower",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "After being hit by a ranged or melee attack you may choose to reduce the damage to 0. Upon use, this piece of gear is destroyed."
+    },
+    {
+        "id":  "reserve_oba_liquidmetal_cloak",
+        "name":  "Oba Liquidmetal Cloak",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "This mech-scale cloak gives your mech +2 Evasion until this gear is destroyed. Upon taking structure damage, this piece of gear is destroyed.",
+        "bonuses":  [
+                        {
+                            "id":  "evasion",
+                            "val":  2
+                        }
+                    ]
+    },
+    {
+        "id":  "reserve_the_backpack",
+        "name":  "The Backpack",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "At the beginning of the combat, you may deploy up to four backpack drones in free spaces adjacent to you.",
+        "deployables":  [
+                            {
+                                "name":  "Backpack Drone",
+                                "type":  "Drone",
+                                "size":  0.5,
+                                "hp":  1,
+                                "edef":  10,
+                                "evasion":  10,
+                                "detail":  "You gain one additional turn that can only be used to operate one of these drones. They can only move up to 5 spaces per turn and, as a full action, can restore half a mech’s HP or clear half of its heat when adjacent. After a backpack drone uses its full action, it is immediately destroyed, and once all backpack drones are destroyed or the mission ends, this piece of gear destroyed.",
+                                "actions":  [
+                                                {
+                                                    "name":  "Backpack Drone Repair",
+                                                    "activation":  "Full",
+                                                    "frequency":  "1/round",
+                                                    "detail":  "Choose a mech adjacent to the Backpack Drone. Restore half that mech’s HP or clear half of its heat. After a backpack drone uses this full action, it is immediately destroyed."
+                                                }
+                                            ]
+                            }
+                        ]
+    },
+    {
+        "id":  "reserve_oguns_powerarm",
+        "name":  "Ogun’s Powerarm",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "1/round, when you Ram or Grapple, you deal +1d6 kinetic damage on hit and Improvised Attacks deal an additional +1d6 damage. Upon taking structure damage, this piece of gear is destroyed.",
+        "synergies":  [
+                          {
+                              "locations":  [
+                                                "grapple",
+                                                "ram",
+                                                "improvised_attack"
+                                            ],
+                              "detail":  "1/round, when you Ram or Grapple, you deal +1d6 kinetic damage on hit and Improvised Attacks deal an additional +1d6 damage."
+                          }
+                      ]
+    },
+    {
+        "id":  "reserve_souled_out_class_vi_anti_materiel_rifle",
+        "name":  "Souled Out Class-VI Anti-Materiel Rifle",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "As a full action before you do anything other than protocols on your turn, you may make a ranged attack with this weapon at a character within line of sight and Range 20. On hit, they take 3d6 kinetic damage. After firing this weapon, roll a d20: on 10 or less, take 1d3 explosive damage as the rifle blows up and is destroyed.",
+        "actions":  [
+                        {
+                            "name":  "Souled Out Class-VI Anti-Materiel Rifle",
+                            "activation":  "Full",
+                            "detail":  "As a full action before you do anything other than protocols on your turn, you may make a ranged attack with this weapon at a character within line of sight and Range 20. On hit, they take 3d6 kinetic damage. After firing this weapon, roll a d20: on 10 or less, take 1d3 explosive damage as the rifle blows up and is destroyed."
+                        }
+                    ]
+    },
+    {
+        "id":  "reserve_ammo_crate",
+        "name":  "Ammo Crate",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Once, while resting, spend this reserve to restore 1 charge for your entire party’s LIMITED systems and weapons."
+    },
+    {
+        "id":  "reserve_shielding",
+        "name":  "Shielding",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "Get a mech tune-up from the folks at the Governor’s Farm. Spend this reserve to start the next combat only with OVERSHIELD 5."
+    },
+    {
+        "id":  "reserve_weathering",
+        "name":  "Weathering",
+        "type":  "Mech",
+        "label":  "Resource",
+        "description":  "Spend this reserve to grant your mech IMMUNITY to difficult terrain and SLOWED for the next mission."
+    },
+    {
+        "id":  "reserves_scouting_encounter",
+        "name":  "Scouting (Encounter)",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Spend this reserve to look at one encounter and learn all information about the NPCs and sitrep involved before it starts. You must spend this at the start of combat."
+    },
+    {
+        "id":  "reserve_high_caliber_ammo",
+        "name":  "High Caliber Ammo",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Spend this reserve at the start of any combat scene to give all your weapons AP until the end of the scene."
+    },
+    {
+        "id":  "reserve_stash_of_private_moonshine",
+        "name":  "Stash Of Private Moonshine",
+        "type":  "Resource",
+        "label":  "Resource",
+        "description":  "Trade with someone in the colony for favors owed. Gain +1 ACCURACY on all non-combat skill checks as long as that person can help you. This effect ends at the end of the following downtime."
+    },
+    {
+        "id":  "reserve_colony_drop",
+        "name":  "Colony Drop",
+        "type":  "Tactical",
+        "label":  "Resource",
+        "description":  "Spend this reserve to have you and your allies drop from a Landmark cargo drop ship, allowing you all to deploy anywhere on the map in the next encounter."
+    },
+    {
+        "id":  "reserve_governors_farm_advanced_access",
+        "name":  "Governor’s Farm Advanced Access",
+        "type":  "Resource",
+        "label":  "Resource",
+        "description":  "Permanently gain +1 ACCURACY on all non-combat skill checks to gather information, write new programs, or hack as long as you take those actions at the Governor’s Farm."
+    },
+    {
+        "id":  "reserve_fieldings_workshop_access",
+        "name":  "Fielding’s Workshop Access",
+        "type":  "Resource",
+        "label":  "Resource",
+        "description":  "Permanently gain +1 ACCURACY and fill in an extra segment whenever you make progress on clocks to invent, create, or repair items or gear as long as you do it at Fielding’s Workshop."
+    },
+    {
+        "id":  "reserve_patience_hookup",
+        "name":  "Patience Hookup",
+        "type":  "Resource",
+        "label":  "Resource",
+        "description":  "You have a direct line to Patience. Spend this reserve to gain +1 ACCURACY on all skill checks and saves for a scene (even in combat) as Patience helps you out."
+    }
+]

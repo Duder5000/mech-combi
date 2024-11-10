@@ -1,0 +1,230 @@
+[
+  {
+    "id": "mf_oleander",
+    "variant": "Death’s Head",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "Oleander",
+    "mechtype": [
+      "Artillery"
+    ],
+    "y_pos": 23,
+    "description": "The Oleander is not readily available for open licensing. It is an active-field test prototype frame / hybridized chassis, halfway between the Lux Iconic and Bella Ciao line. Cutting edge and difficult to control, the Oleander is meant to become SSC’s next-generation product. Lancers in the position to pilot these advanced frames are few and far between, hand-chosen by SSC administrators. While initial experience reports are promising, much work is yet to be done before the Noctis-Plus line will bear fruit for the company.",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 2,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Killshot",
+        "description": "1/round as a Quick Action the Oleander may gain +5 on its next ranged attack roll before the end of the turn."
+      },
+      {
+        "name": "Chassis Integration",
+        "description": "The Oleander ignores the Ordnance tag."
+      },
+      {
+        "name": "Precision Instrument",
+        "description": "The Oleander’s Heavy ranged weapon can’t be fired more than 1/turn."
+      }
+    ],
+    "core_system": {
+      "name": "Modular Armament Assembly",
+      "description": "The M.A.A is SSC’s latest foray into advanced theoretical weapons manufacturing and design. Much like the Oleander it is installed in, it is an active-field test system that is currently too power-hungry to be deployed perpetually by the chassis housing it. Licensed pilots are encouraged to experiment and cycle through the provided configurations to provide diverse in-the-field data compilations to the SSC proprietors.",
+      "active_name": "ALL SYSTEMS GO! FIRE!",
+      "active_effect": "Until the end of the turn your Heavy ranged weapon has all effects of Perfected Assembly applied to it. This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "passive_name": "Perfected Assembly",
+      "passive_effect": "Your Heavy ranged weapon gains one of the following effects. You may choose a different effect when you Rest: <br><b>Auxiliary-Rails</b><br>Knockback 2 and “On Crit: Target is knocked Prone.” <br><b>Clairvoyant-Targeting</b><br>Seeking. <br> <b>Absolute-0-Module</b> <br>1/turn, after the attack is resolved you clear 2 Heat.<br><b>Recoil-Stabilizers</b> <br>Critical Hits apply on attack rolls of 18 or higher instead of 20. <br><b>Penetrator-Subroutines</b> <br>“On Crit: This attack’s damage can’t be reduced in any way.”",
+      "use": "Encounter"
+    },
+    "image_url": "https://i.imgur.com/XlWjFSD.png"
+  },
+  {
+    "id": "mf_bligh",
+    "license_id": "mf_kidd",
+    "variant": "KIDD",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "Bligh",
+    "mechtype": [
+      "Support",
+      "Striker"
+    ],
+    "y_pos": 36,
+    "description": "The Bligh didn’t originally start its life as a mechanized chassis but as an autonomous drone control and print platform installed on ships to control the swarms of SWABBER Drones working the decks. It is only in recent times, with the advent of the Kidd that these independent support systems were married on a mobile frame to give them mobility and be deployed in the field.",
+    "mounts": [
+      "Main"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Shepherd Field",
+        "description": "Drones, Deployables and Objects adjacent to the Bligh have Resistance to all damage."
+      },
+      {
+        "name": "No Quarter",
+        "description": "During its turn, when the Bligh performs a Tech Action that targets an allied character or deploys a non-Drone Deployable it may choose up to two Swabber Drones in sensors. They immediately attack with one of their equipped weapons. The Drones count as the attacker for all intents and purposes but add your Grit to the attack roll. Each Swabber Drone may only attack 1/round."
+      }
+    ],
+    "core_system": {
+      "name": "Schedule-3 C.R.E.W. Printer",
+      "description": "The MT-34 SWABBER Drone is utilized aboard many IPS-N merchantmen. Able to carry out simple manual labor tasks reliably, the bipedal SWABBER shines when connected to a central command nexus and provided with dedicated combat smartware. Equipped with omni-jack grade-2 manipulators the SWABBER can carry a variety of dedicated weapons and is best used as a quick to deploy and efficient anti-boarding response measure. Cheap to produce and versatile to boot the SWABBER is the subaltern of choice for any captain worth their salt.",
+      "active_name": "All Hands On Deck!",
+      "active_effect": "You may immediately deploy up to two Swabber Drones. This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "passive_name": "SWABBER Drones",
+      "passive_effect": "Your mech comes with an integrated printer capable of deploying Swabber Drones. At the end of your turn, as a Free Action, you may deploy one Swabber Drone in a free adjacent space. You may have up to 4 Swabber Drones at a time. You may recall any Swabber Drone in sensors as a Quick Action, removing it from the battlefied. <br>Swabber Drones come equipped with all three Swabber Weapons.<br> Swabber Drones are Size 1/2 and have 5 HP, 1 Armor and integrated EVA Modules. They share your Speed, Evasion and E-Defense. Swabber Drones are capable of independently moving up to their speed during your turn.  <br>Swabber Drones may not perform Reactions. Swabber Drones disintegrate at the end of each combat.",
+      "integrated": [
+        "mw_bligh_integrated"
+      ],
+      "use": "Encounter"
+    },
+    "image_url": "https://i.imgur.com/mbvgRAE.png"
+  },
+  {
+    "id": "mf_salamander",
+    "license_id": "mf_kobold",
+    "variant": "KOBOLD",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Salamander",
+    "mechtype": [
+      "Controller"
+    ],
+    "y_pos": 23.5,
+    "description": "A close relative and mutation of the K-PG, the S-PG was born in the same environment that birthed the Kobold. Considerably larger than its cousin, this guerilla specialist excels in creating I.E.D.s from nearly any fissile materials commonly found in the mines, forges and printers, even capable of re-constituting a mech’s reactor waste material into powerful explosive charges. Easily hidden, these “Slag Bombs”, as Karrakin security forces were soon to call them, are capable of incinerating their close surroundings in an instant. When properly supported by a group of K-PG frames the Salamander becomes a terrifying force multiplier as it sets up Slag Bombs that are easily detonated by the smaller mechs. While the exact mechanisms behind the mutation of a K-PG into a S-PG are unknown, experts in the field of Pattern Group research suggest that the Salamander represents an evolved, mature form that all K-PGs reach given time. While verification of this theory remains outstanding, it may have staggering implications regarding the underlying nature of the liturgicode responsible for the K-PG.",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 7,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Reactor Waste Extraction",
+        "description": "1/round when the Salamander successfully hits a hostile character with a Tech Attack it may place a Slag Bomb in a free and valid space within range 3 of the target."
+      },
+      {
+        "name": "Emergency Slag Ejection",
+        "description": "Whenever the Salamander loses Structure or Stress, it may place a Slag Bomb in a free and valid space within range 3. "
+      },
+      {
+        "name": "Insulated",
+        "description": "The Salamander has Immunity to Burn."
+      }
+    ],
+    "core_system": {
+      "name": "Volatile Polymers",
+      "description": "By aerosolizing potent accelerants and dispersing them in close-range vicinity, the Salamander unleashes an all-consuming firestorm that eats through flesh and steel alike.",
+      "active_name": "Slag Breath",
+      "active_effect": "You expel a large amount of volatile slag causing a Blast 2 explosion within range 8. Characters in the area take 6 Burn or half as much on a successful Engineering save. Objects and Terrain in the area automatically take 10 AP Energy damage. After this action has been resolved you may place 3 Slag Bombs in free and valid spaces in the affected area. This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Full",
+      "passive_name": "Slag Bombs",
+      "passive_effect": "Slag Bombs are Size 1 Terrain Objects with Evasion 5 and 10 HP. Slag Bombs arm at the end of the turn in which they are created. When an armed Slag Bomb is destroyed, it detonates in a Burst 2 explosion dealing 4 Burn to characters caught in the area or half as much on a successful Engineering save.",
+      "use": "Encounter"
+    },
+    "image_url": "https://i.imgur.com/IRF9s3B.png"
+  },
+  {
+    "id": "mf_habsburg",
+    "variant": "Saladin",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Habsburg",
+    "mechtype": [
+      "Defender"
+    ],
+    "y_pos": 20,
+    "description": "The Habsburg is a somewhat obscure Harrison Armory frame, often forgotten by most Lancers. An older frame, only slightly younger than the Mk1 “Worldkiller”, the Habsburg was the line of mechanized chassis that eventually developed into the famous “Saladin”. Though it sports many similar defensive systems to the Saladin, the technology utilized in the Habsburg is much more crude and unrefined than one would expect from a contemporary Harrison Armory frame.",
+    "mounts": [
+      "Main"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Eisen Shield",
+        "description": "The Habsburg reduces all damage from hostile sources by 1. Allied characters adjacent to either it or its E-R-Pylons also benefit from this effect."
+      },
+      {
+        "name": "Heavy Frame",
+        "description": "The Habsburg can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters."
+      },
+      {
+        "name": "Guardian",
+        "description": "Adjacent allied characters can use this mech as Hard Cover."
+      }
+    ],
+    "core_system": {
+      "name": "Eisen-Relay-Emitters",
+      "description": "The Eisen Shield represents a semi-abandoned dead end in the application of localized forcefield technology, deemed too power-hungry and too short-ranged. The introduction of the proprietary HA-Relay Emitters has since given the deprecated Eisen Shield a new lease on life. Sturdy emitter-pylons directly launched from the chassis solve the limited coverage problem of the original Eisen Shield, while integrated solidcore batteries satisfy energy demands more than adequately.",
+      "active_name": "The Situation is Catastrophic but not Serious",
+      "active_effect": "Until the end of your next turn Eisen Shield reduces all damage from hostile sources by 2 instead. This action is <b>Efficient</b>, and refunds 1 Core Power at the end of any scene in which it’s used.",
+      "activation": "Protocol",
+      "passive_name": "E-R-Pylons",
+      "passive_effect": "Pylon (Size 1, 10 HP, Armor 2, Evasion 5, Tags: Deployable, Limited 3) <br>As a Quick Action you may expend a charge to deploy an E-R-Pylon to any free and valid space within sensors. The pylon anchors to the ground and becomes unable to be moved by any means. Whenever you activate a system with the Shield tag that does not cause you to become Slowed you may measure its range from any pylon within sensors instead. (Even if that shield has a range of “sensors”.) If a shield deployed via the pylon would cause you to become Immobilized you do not become Immobilized. Shields with a duration (such as until end of next turn or until deactivated), deployed via a pylon immediately deactivate when the pylon is destroyed.",
+      "use": "Encounter"
+    },
+    "image_url": "https://i.imgur.com/dLba2QT.png"
+  }
+]

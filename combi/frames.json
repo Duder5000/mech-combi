@@ -1,0 +1,2058 @@
+[
+    {
+        "id":  "mf_störtebeker",
+        "variant":  "Raleigh",
+        "license_id":  "mf_raleigh",
+        "license_level":  2,
+        "source":  "IPS-N",
+        "name":  "Störtebeker",
+        "mechtype":  [
+                         "Striker"
+                     ],
+        "y_pos":  42,
+        "description":  "Following the commercial failure of the Raleigh, several third parties found themselves with the opportunity of buying out development rights for the license as IPS-N sought to recoup initial costs. One of the companies that found itself in this position, Anton Industries, had fallen on hard times after its CEO vanished in mysterious circumstances, leading to plummeting stocks. \u003cbr\u003eChasing a lucky break and seizing the opportunity, Anton Industries began work on what would ultimately be the last frame ever to be developed under its name. Basing the modifications to the Raleigh on one of its own mechs – the Hades Mk3 – Anton Industries quickly developed the frame into a capable combined-arms platform emphasizing speed and rapid deployment. Instead of the Raleigh’s integrated Mjolnir, a weapon far too heavy for the new doctrinal approach, the modified chassis sports an internal reservoir of TRUESILVER nanites, a proprietary whitewash product capable of enhancing a weapon’s destructive power on a strike-to-strike basis. \u003cbr\u003eThe resulting mech was named “Störtebeker” after an old Cradle legend in a fit of gallows humor regarding the company’s less than ideal position. The frame, just like its namesake, ultimately spelled doom for the company, despite its relative success. \u003cbr\u003eQuickly gaining popularity among mercenaries, black-ops units, and bounty hunters alike, the Störtebeker became the frame of choice for those requiring speed and maneuverability out of an IPS-N base but who preferred a solid ranged component over the Nelson’s dedicated close-combat focus. \u003cbr\u003eIPS-N itself, interested in the Störtebeker, eventually decided to buy out the smaller company and, indifferent to Anton Industries’ other projects and subsidiaries, cannibalized the company in its entirety. Thus, the Störtebeker, now licensed fully as a Raleigh variant-frame under the IPS-N label, stands as a testament to a company’s destruction and how sometimes, one can do well and fail because of it.",
+        "mounts":  [
+                       "Flex",
+                       "Flex",
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  1,
+                      "hp":  8,
+                      "evasion":  10,
+                      "edef":  7,
+                      "heatcap":  5,
+                      "repcap":  5,
+                      "sensor_range":  8,
+                      "tech_attack":  0,
+                      "save":  10,
+                      "speed":  5,
+                      "sp":  5
+                  },
+        "traits":  [
+                       {
+                           "name":  "Dynamic Reload",
+                           "description":  "The Störtebeker’s non-Auxiliary weapons gain the following effects: \u003cbr\u003e\u003cul\u003e\u003cli\u003e\u003cb\u003eMelee weapons\u003c/b\u003e gain: “On critical hit: Reload all ranged weapons not used to attack this turn.”\u003c/li\u003e\u003cli\u003e\u003cb\u003eRanged weapons\u003c/b\u003e gain: “On critical hit: Reload all melee weapons not used to attack this turn.”\u003c/li\u003e\u003c/ul\u003e",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "weapon"
+                                                               ],
+                                                 "weapon_types":  [
+                                                                      "Rifle",
+                                                                      "Cannon",
+                                                                      "Launcher",
+                                                                      "CQB",
+                                                                      "Nexus"
+                                                                  ],
+                                                 "weapon_sizes":  [
+                                                                      "Main",
+                                                                      "Heavy",
+                                                                      "Superheavy"
+                                                                  ],
+                                                 "detail":  "On critical hit: Reload all melee weapons not used to attack this turn."
+                                             },
+                                             {
+                                                 "locations":  [
+                                                                   "weapon"
+                                                               ],
+                                                 "weapon_types":  [
+                                                                      "Melee"
+                                                                  ],
+                                                 "weapon_sizes":  [
+                                                                      "Main",
+                                                                      "Heavy",
+                                                                      "Superheavy"
+                                                                  ],
+                                                 "detail":  "On critical hit: Reload all ranged weapons not used to attack this turn."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Truesilver",
+                           "description":  "1/Scene, after hitting with a weapon, the Störtebeker may apply one of the following effects depending on the weapon’s type. \u003cbr\u003e\u003cul\u003e\u003cli\u003e\u003cb\u003eNon-Loading weapon:\u003c/b\u003e The hit is treated as a Critical Hit. Resulting damage is not rolled twice.\u003c/li\u003e\u003cli\u003e\u003cb\u003eLoading weapon:\u003c/b\u003e Resulting damage can’t be reduced.\u003c/li\u003e\u003c/ul\u003e",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "weapon"
+                                                               ],
+                                                 "weapon_types":  [
+                                                                      "any"
+                                                                  ],
+                                                 "weapon_sizes":  [
+                                                                      "any"
+                                                                  ],
+                                                 "detail":  "1/Scene, after hitting with a weapon, the Störtebeker may apply one of the following effects depending on the weapon’s type. \u003cbr\u003e\u003cul\u003e\u003cli\u003e\u003cb\u003eNon-Loading weapon:\u003c/b\u003e The hit is treated as a Critical Hit. Resulting damage is not rolled twice.\u003c/li\u003e\u003cli\u003e\u003cb\u003eLoading weapon:\u003c/b\u003e Resulting damage can’t be reduced.\u003c/li\u003e\u003c/ul\u003e"
+                                             }
+                                         ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Truesilver Weaponry",
+                            "description":  "Project TRUESILVER was an attempt to improve the destructive capabilities of whitewash nano-machines. The hyper-specialized nanites manifest themselves as a mirror-sheen silver coating that can spread over ammunition and melee weapons alike. This coating gives armaments a striking appearance and is the source of the system’s unique name. Thus enhanced, weapons can deliver a destructive nanite payload that compounds any damage done by the initial strike exponentially, eating away at a target from the inside. \u003cbr\u003eTRUESILVER nanites are internally printed and held in a specialized shielded reservoir before being fed to a mech’s weapons systems. Slow to be replenished by the frame’s internal printers, pilots must manage their use with care.",
+                            "active_name":  "Truesilver Arsenal",
+                            "active_effect":  "You may use your Truesilver trait three more times this Scene.",
+                            "activation":  "Protocol",
+                            "passive_name":  "Hopkins Doctrine",
+                            "passive_effect":  "You may only take this action if you took the skirmish action this turn. Pick one of the following effects:",
+                            "passive_actions":  [
+                                                    {
+                                                        "name":  "Reprise",
+                                                        "activation":  "Quick",
+                                                        "detail":  "Skirmish with a weapon that was reloaded via DYNAMIC RELOAD this turn."
+                                                    },
+                                                    {
+                                                        "name":  "Renewal",
+                                                        "activation":  "Quick",
+                                                        "detail":  "All weapons not used to attack this turn are reloaded at the end of the turn."
+                                                    }
+                                                ],
+                            "use":  "Encounter"
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/Stortebeker.png"
+    },
+    {
+        "id":  "mf_micro_monarch",
+        "variant":  "Monarch",
+        "license_id":  "mf_monarch",
+        "license_level":  2,
+        "source":  "SSC",
+        "name":  "Viceroy",
+        "mechtype":  [
+                         "Striker"
+                     ],
+        "y_pos":  11.5,
+        "description":  "An offshoot from SSC’s Bella Ciao line, the Viceroy is the result of rigorous field-testing in pursuit of a more accessible version of its larger sibling, the ever-ubiquitous Monarch. Originally developed under the moniker “MicroMonarch”, the scaled-down frame is nevertheless a force to be reckoned with and sports the high-quality engineering expected from all SSC mechs. Where the Monarch focuses on devastating long-range firepower, the Viceroy is more akin to a close-range brawler, using its sophisticated near-threat targeting arrays to wield the launchers of its sibling with deadly precision. \u003cbr\u003eEquipped with a scaled-down version of the Monarch’s own SSC-30 High-Penetration Missile System, the Viceroy is more than capable of saturating an area around itself with relatively small but high-yield warheads, aimed with pinpoint accuracy. \u003cbr\u003eThis, coupled with an integrated, one-use burst jump pack, turns the Viceroy into a potent shock trooper with devastating first-strike capabilities. This role is supported by its ability to shrug off any potential self-inflicted harm from any “shock and awe” maneuvers thanks to its advanced blast-resistant armor plating. \u003cbr\u003eSince its recent official release, the Viceroy has become – by SSC standards – an affordable frame that is now being widely rolled out to various SSC associates and subsidiaries. Slated to be approved for mass production, it is anticipated the Viceroy will become a frontline “soldier” mech to ultimately rival the likes of Harrison Armory’s Sherman.",
+        "mounts":  [
+                       "Aux/Aux",
+                       "Flex",
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  1,
+                      "hp":  8,
+                      "evasion":  8,
+                      "edef":  8,
+                      "heatcap":  6,
+                      "repcap":  4,
+                      "sensor_range":  10,
+                      "tech_attack":  0,
+                      "save":  11,
+                      "speed":  5,
+                      "sp":  5
+                  },
+        "traits":  [
+                       {
+                           "name":  "Near-Threat Targeting Processor",
+                           "description":  "The Viceroy treats its LAUNCHER weapons as though they are also CQB weapons with THREAT 3.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "weapon"
+                                                               ],
+                                                 "weapon_types":  [
+                                                                      "Launcher"
+                                                                  ],
+                                                 "weapon_sizes":  [
+                                                                      "any"
+                                                                  ],
+                                                 "detail":  "This weapon is treated as though it were also a CQB weapon with THREAT 3."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Vigilante Omnidirectional Launchers",
+                           "description":  "1/Round, on a critical hit against a character, the Viceroy may immediately deal 2 Explosive damage to all characters of its choice within Range 3 of itself and knock them back 1 space."
+                       },
+                       {
+                           "name":  "Pressure Plating",
+                           "description":  "The Viceroy has Resistance to Explosive Damage."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "SSC-41 Tengu-Assisted Missile Tubes",
+                            "description":  "By redlining its integrated Vigilante launchers, the Viceroy can deliver a devastating saturation bombardment of its close surroundings. Weathering the onslaught thanks to its blast-resistant exterior, the Viceroy can utilize this salvo, when coupled with the miniaturized Tengu one-burst jump system, for a variety of advanced battlefield tactics. This allows it to either deliver a near-unstoppable alpha strike or make a dramatic exit. “Heaven’s downpour” is a technique that strikes fear in any that face a Viceroy pilot in combat.",
+                            "active_name":  "Heaven’s Downpour",
+                            "active_effect":  "Center a Burst 3 missile swarm on yourself. Hostile characters in the area must succeed on a Hull save or take 1d6+3 Explosive damage and be knocked Prone. On a successful save they take half damage and remain standing. You may consume an affected character’s Lock On to make them automatically fail the save. \u003cbr\u003eBefore or after taking this action you may Fly up to your Speed, ignoring Engagement and Reactions. You must end this movement on solid ground or begin falling.",
+                            "use":  "Encounter",
+                            "activation":  "Quick"
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/Viceroy.png"
+    },
+    {
+        "id":  "mf_white_witch",
+        "source":  "SSC",
+        "name":  "White Witch",
+        "mechtype":  [
+                         "Defender"
+                     ],
+        "y_pos":  28,
+        "license_level":  2,
+        "description":  "\u003cp\u003eA proof of concept more than a line-production chassis, there have been select releases of White Witch licenses by Smith-Shimano\u0026rsquo;s LUX-Exotic group to elite military enclaves, most notably to the upper cadres of the House of Moments.\u003c/p\u003e \u003cp\u003eThe White Witch builds on the platform established by the Black Witch; utilizing SSC\u0026rsquo;s signature magtech weapons and equipment, it takes Black Witch and tunes it for hypersolipsistic focus, narrowing the effect cone to encompass only the White Witch and its pilot.\u003c/p\u003e \u003cp\u003eThe White Witch marks SSC\u0026rsquo;s first foray into null-ordnance/environmental-manipulation chassis. When active, its entire chassis becomes a conduit for onboard base-compound magtech agitators to exploit its immediate environment, drawing atomic components out of organic and inorganic objects and surfaces to enhance its built-in defensive systems. The White Witch reorganizes these molecular draws using its chassis as substrate, quickly forming substantive defenses and weapons from \u0026ldquo;thin air\u0026rdquo;.\u003c/p\u003e \u003cp\u003eThis process has understandably traumatic effects on organic and inorganic materials inside the immediate effect cone.\u0026nbsp;\u003c/p\u003e",
+        "mounts":  [
+                       "Flex",
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  2,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  0,
+                      "hp":  7,
+                      "evasion":  10,
+                      "edef":  6,
+                      "heatcap":  4,
+                      "repcap":  5,
+                      "sensor_range":  5,
+                      "tech_attack":  0,
+                      "save":  11,
+                      "speed":  6,
+                      "sp":  6
+                  },
+        "traits":  [
+                       {
+                           "name":  "Rooted",
+                           "description":  "While this mech is Immobilized, it has resistance to Kinetic damage and cannot be knocked back or knocked prone. It can choose to become immobilized until the end of its next turn as a protocol."
+                       },
+                       {
+                           "name":  "Harden",
+                           "description":  "When the White Witch braces, it gains overshield equal to 4 + GRIT before it takes damage.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "brace"
+                                                               ],
+                                                 "detail":  "When the White Witch braces, it gains overshield equal to 4 + GRIT before it takes damage."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Fluid Burst",
+                           "description":  "When an allied character in Range 2 of the White Witch takes damage from a hostile source, the White Witch can reduce the damage by 1 and deal 1 AP kinetic damage to itself."
+                       },
+                       {
+                           "name":  "Guardian",
+                           "description":  "Adjacent allied characters can use this mech as hard cover."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Ferroreactive Shell",
+                            "description":  "“The first test nearly ended the program. Exotic Materials is a … liberal department within the Constellation, but even our executives were hesitant to approve a second run. The data generated by WW_01 was invaluable, and we were sure we could get it right with a second test – all we needed was the sigma on its rewrite cone! Suits just get leery when systems fail. They forget that progress takes blood – sometimes literally – as payment for a breakthrough.”",
+                            "active_name":  "Hyperactive mode",
+                            "active_effect":  "For the rest of the scene, Ferroreactive Armor gives +2 Armor each time instead of +1, to a max of +12. Each time your armor increases in this way, your mech deals 1 AP kinetic damage to all characters in a Burst 1 area as it draws raw material from the environment. If your benefit from Ferroreactive Armor would increase past +12, it explodes instead, dealing 1 AP kinetic damage in a Burst 2 area around you. All characters within the affected area must succeed on a HULL save or be knocked PRONE, then IMMOBILIZED and SHREDDED until the end of their next turns. The benefit from Ferroreactive Armor resets to 0, although it continues to be active and this effect can occur multiple times in a scene.",
+                            "active_synergies":  [
+                                                     {
+                                                         "locations":  [
+                                                                           "armor"
+                                                                       ],
+                                                         "detail":  "For the rest of the scene, Ferroreactive Armor gives +2 Armor each time instead of +1, to a max of +12. Each time your armor increases in this way, your mech deals 1 AP kinetic damage to all characters in a Burst 1 area as it draws raw material from the environment. If your benefit from Ferroreactive Armor would increase past +12, it explodes instead, dealing 1 AP kinetic damage in a Burst 2 area around you. All characters within the affected area must succeed on a HULL save or be knocked PRONE, then IMMOBILIZED and SHREDDED until the end of their next turns. The benefit from Ferroreactive Armor resets to 0, although it continues to be active and this effect can occur multiple times in a scene."
+                                                     }
+                                                 ],
+                            "use":  "Encounter",
+                            "activation":  "Protocol",
+                            "passive_name":  "Ferroreactive Armor",
+                            "passive_effect":  "Each time you take damage from yourself or a hostile source (even if that damage is reduced or ignored), gain +1 ARMOR for the rest of this scene after taking damage, up to a maximum of +6.",
+                            "passive_synergies":  [
+                                                      {
+                                                          "locations":  [
+                                                                            "armor"
+                                                                        ],
+                                                          "detail":  "Each time you take damage from yourself or a hostile source (even if that damage is reduced or ignored), gain +1 ARMOR for the rest of this scene after taking damage, up to a maximum of +6."
+                                                      }
+                                                  ],
+                            "counters":  [
+                                             {
+                                                 "id":  "ctr_ferroreactive_armor",
+                                                 "name":  "Ferroreactive Armor",
+                                                 "default_value":  0,
+                                                 "min":  0,
+                                                 "max":  6
+                                             }
+                                         ]
+                        },
+        "data_type":  "frame",
+        "aptitude":  {
+
+                     },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/whitewitch.png",
+        "license_id":  "mf_white_witch"
+    },
+    {
+        "id":  "mf_emperor",
+        "source":  "SSC",
+        "name":  "Emperor",
+        "mechtype":  [
+                         "Support",
+                         "Artillery"
+                     ],
+        "y_pos":  21,
+        "license_level":  2,
+        "description":  "\u003cp\u003e\u0026ldquo;In Exotic Materials we don\u0026rsquo;t have problems: we have doors that are not yet open to us. A \u0026lsquo;problem\u0026rsquo; presents endless branching paths. Doors are binary. Open and shut. \u0026lsquo;The tyranny of the problem lies in the impossible breadth of possibility.\u0026rsquo; Smith said that. He went on to say that this is a useless framing for tinkerers and hobbyists whose ethics are defined by calcified, hand-wringing institutions. So! EXMAT is solutions-focused: there is no such thing as a problem, only a door, and the question: can we open it, or do we have to bash it down?\u003c/p\u003e \u003cp\u003eProgress. Smith Shimano has always been about progress. Humanity has always been about progress. In service of progress, one must accept the necessity of teleological suspension.\u003c/p\u003e \u003cp\u003eFor the Emperor, after Hercynia, we had to bash the door down. Ugly process, but the riches beyond the door were more than worth it. Syncretic subjectivities, induced gestalt manifestation, H-NHP ontologic bridging, superpositional defensive lensing \u0026ndash; look at what the battering ram gave us and tell me you\u0026rsquo;d rather puzzle out a problem then bash down the door and grab all the gold.\u003c/p\u003e \u003cp\u003eWhat else is there to say? Long live the Emperor, for in its creation did we find the method by which to fling open every locked door. Wondrous things are coming. I\u0026rsquo;m glad that they\u0026rsquo;ll be under our control.\u0026rdquo;\u003c/p\u003e \u003cp\u003e\u0026ndash; Memo to personal records, Bala Shimano, CEO-1, Exotic Materials Group\u003c/p\u003e",
+        "mounts":  [
+                       "Main"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  0,
+                      "hp":  2,
+                      "evasion":  10,
+                      "edef":  8,
+                      "heatcap":  5,
+                      "repcap":  2,
+                      "sensor_range":  15,
+                      "tech_attack":  1,
+                      "save":  11,
+                      "speed":  5,
+                      "sp":  7
+                  },
+        "traits":  [
+                       {
+                           "name":  "Storm Shield",
+                           "description":  "The Emperor’s HP is not increased by its pilots GRIT. Instead, at the start of any scene, the Emperor gains OVERSHIELD equal to 6+GRIT. This OVERSHIELD refreshes any time the Emperor takes structure damage",
+                           "bonuses":  [
+                                           {
+                                               "id":  "hp",
+                                               "val":  "-{grit}"
+                                           }
+                                       ],
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "overshield"
+                                                               ],
+                                                 "detail":  "The Emperor’s HP is not increased by its pilots GRIT. Instead, at the start of any scene, the Emperor gains OVERSHIELD equal to 6+GRIT. This OVERSHIELD refreshes any time the Emperor takes structure damage"
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Imperial Vestment",
+                           "description":  "Whenever the Emperor grants OVERSHIELD to another character, it gains the same amount of OVERSHIELD. If the Emperor gains OVERSHIELD from any source, including this trait, it increases its current OVERSHIELD by that amount instead of replacing it. Its OVERSHIELD cannot exceed the amount granted by Storm Shield.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "overshield"
+                                                               ],
+                                                 "detail":  "Whenever the Emperor grants OVERSHIELD to another character, it gains the same amount of OVERSHIELD. If the Emperor gains OVERSHIELD from any source, including this trait, it increases its current OVERSHIELD by that amount instead of replacing it. Its OVERSHIELD cannot exceed the amount granted by Storm Shield."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Sovereign Presence",
+                           "description":  "1/round, when the Emperor targets a character with an attack, it can condemn that character, forcing them to make an ENGINEERING save. On a failure, the target takes +1 damage any time they take damage until the start of the Emperor’s next turn.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "weapon",
+                                                                   "active_effects"
+                                                               ],
+                                                 "detail":  "1/round, when the Emperor targets a character with an attack, it can condemn that character, forcing them to make an ENGINEERING save. On a failure, the target takes +1 damage any time they take damage until the start of the Emperor’s next turn."
+                                             }
+                                         ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Darian Regalia",
+                            "description":  "",
+                            "active_name":  "Xerxes Apex",
+                            "active_effect":  "For the rest of this scene, any mech targeted by an attack using the Marathon Arc Bow releases a bolt of lightning after the attack resolves, striking a character of your choice within RANGE 3, which can be the character it originated from. This lightning bolt either deals 2 AP damage (no attack or save) or increases the target’s OVERSHIELD by +2. The same character can be struck by multiple bolts.",
+                            "activation":  "Protocol",
+                            "use":  "Encounter",
+                            "integrated":  [
+                                               "mw_emperor_integrated"
+                                           ]
+                        },
+        "data_type":  "frame",
+        "aptitude":  {
+
+                     },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/emperor.png",
+        "license_id":  "mf_emperor"
+    },
+    {
+        "id":  "mf_black_witch_alt_orchidea",
+        "source":  "SSC",
+        "variant":  "Black Witch",
+        "name":  "Orchis",
+        "mechtype":  [
+                         "Controller",
+                         "Defender"
+                     ],
+        "y_pos":  35.5,
+        "license_level":  2,
+        "description":  "The Orchis is the spear and shield of the house companies and makes up the bulk of the fighting forces in Baronic space. Its ubiquity does not bely its reliability and durability, nor its iconic status as the line mech of the baronies. Due to a trade negotiation with Smith-Shimano corpro, the Orchis is compatible with the Black Witch licensing scheme and can appropriate the majority of its gear and weaponry. Utilizing ancient and sturdy mag-lock technology, the Orchis wields a heavy Scuta shield, reinforced to deflect incoming fire. This shield can be locked in place and braced against another shield of its own kind, creating a tessellated wall of impenetrable strength. The half-mile long shield walls of the throne guard, blazoned with their house emblems, are an iconic and terrifying sight in Baronic history. The kuirassers of the Baronies decorate their Orchii with house heraldry, war banners, and trophies of past conflicts, each one the avatar resplendent with the regalia of a decorated warrior.",
+        "mounts":  [
+                       "Main/Aux"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  1,
+                      "hp":  8,
+                      "evasion":  10,
+                      "edef":  10,
+                      "heatcap":  6,
+                      "repcap":  4,
+                      "sensor_range":  10,
+                      "tech_attack":  -1,
+                      "save":  12,
+                      "speed":  5,
+                      "sp":  8
+                  },
+        "traits":  [
+                       {
+                           "name":  "Perfect Parry",
+                           "description":  "The Orchis and all adjacent allied characters have IMMUNITY to all damage and effects from missed attacks.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "active_effects"
+                                                               ],
+                                                 "detail":  "The Orchis and all adjacent allied characters have IMMUNITY to all damage and effects from missed attacks."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Guardian",
+                           "description":  "Adjacent allied characters can use the Orchis for hard cover."
+                       },
+                       {
+                           "name":  "Royal Guard",
+                           "description":  "When an allied mech adjacent to the Orchis moves, the Orchis can also move with that character as long as it doesn’t break adjacency, mirroring that character’s movement. The Orchis is still affected by obstructions and, between its turns, can only move a total number of spaces with this ability equal to its SPEED+1.This effect doesn’t take a reaction, and doesn’t provoke reactions or obey engagement."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Helion",
+                            "description":  "\u0026ldquo;The man who took the reins of steel and became greater than man. The lowly one, the first, the greatest, the one who threw the sun at the face of his foes. IA! IA! Helion!\u0026ldquo;",
+                            "active_name":  "Helion",
+                            "active_effect":  "You hurl your shield with a mighty throw at a mech (allied or hostile) within Range 6, making a special Ram attack that cannot miss and knocks the target 3 spaces back instead of 1. This can cause characters to collide with obstructions as normal. This action is \u003cb\u003eEfficient\u003c/b\u003e, and refunds 1 Core Power at the end of any scene in which it’s used.",
+                            "activation":  "Quick",
+                            "passive_name":  "Hunting Eagle",
+                            "passive_effect":  "1/round when the Orchis causes a character to collide with another obstacle or character, you can - in addition to any other effects - throw your mech\u0027s scuta shield at that character, dealing 3 kinetic damage and rendering them unable to take reactions until the end of their next turn. The shield then returns to you. This effect doesn’t take an action or reaction to activate.",
+                            "passive_actions":  [
+                                                    {
+                                                        "name":  "Hunting Eagle",
+                                                        "activation":  "Free",
+                                                        "frequency":  "1/round",
+                                                        "detail":  "1/round when the Orchis causes a character to collide with another obstacle or character, you can - in addition to any other effects - throw your mech\u0027s scuta shield at that character, dealing 3 kinetic damage and rendering them unable to take reactions until the end of their next turn. The shield then returns to you. This effect doesn’t take an action or reaction to activate."
+                                                    }
+                                                ]
+                        },
+        "data_type":  "frame",
+        "aptitude":  {
+
+                     },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/orchis.png",
+        "license_id":  "mf_black_witch"
+    },
+    {
+        "id":  "mf_minotaur_alt_wraith",
+        "source":  "HORUS",
+        "variant":  "Minotaur",
+        "name":  "Calendula",
+        "mechtype":  [
+                         "Controller"
+                     ],
+        "y_pos":  12.5,
+        "license_level":  2,
+        "description":  "A signature of the Order Xenoglossia’s Stygos Grammaton, the Royal Karrakin Foundries Calendula is derived from the Minotaur pattern group first released by HORUS. Oddly, it is unclear from temporal markers whether the codebase used to create the Calendula was created separately, before contact with Union, despite being nearly identical to the Minotaur codebase.\u003cbr\u003eThe Calendula uses the internal spatial manipulation abilities of the Minotaur and inverts them, allowing experienced pilots of the mech to cut into a ‘non-space’ widely regarded by Union theorists to be the Aunic Firmament. In this grey and bleak interstitial zone, matter appears as a flowing fog, and is just as easily parted.",
+        "mounts":  [
+                       "Main/Aux"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  2,
+                      "hp":  7,
+                      "evasion":  7,
+                      "edef":  10,
+                      "heatcap":  6,
+                      "repcap":  3,
+                      "sensor_range":  8,
+                      "tech_attack":  1,
+                      "save":  11,
+                      "speed":  4,
+                      "sp":  8
+                  },
+        "traits":  [
+                       {
+                           "name":  "Sculptor of Fate",
+                           "description":  "1/round, when the Calendula hits a character with a tech attack, it can create a void husk in a free space within RANGE 3 of its target. Void husks are INTANGIBLE objects that don’t cause obstruction. The husk is the same SIZE as its target, has IMMUNITY to all damage and effects, and emits a BURST 2 aura while active that affects both Intangible and tangible characters. Hostile characters are SLOWED while they are at least partly in the area. The Calendula can create any number of husks, all of which disintegrate at the end of the scene.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "tech_attack"
+                                                               ],
+                                                 "detail":  "1/round, when the Calendula hits a character with a tech attack, it can create a void husk in a free space within RANGE 3 of its target. Void husks are INTANGIBLE objects that don’t cause obstruction. The husk is the same SIZE as its target, has IMMUNITY to all damage and effects, and emits a BURST 2 aura while active that affects both Intangible and tangible characters. Hostile characters are SLOWED while they are at least partly in the area. The Calendula can create any number of husks, all of which disintegrate at the end of the scene."
+                                             }
+                                         ],
+                           "deployables":  [
+                                               {
+                                                   "name":  "Void Husk",
+                                                   "type":  "Void Husk",
+                                                   "activation":  "Free",
+                                                   "instances":  1,
+                                                   "evasion":  "",
+                                                   "edef":  "",
+                                                   "hp":  "",
+                                                   "detail":  "The \u003cb\u003evoid husk\u003c/b\u003e is an \u003cb\u003eintangible\u003c/b\u003e object that doesn’t cause obstruction. The husk is the same size as its target, immune to all damage and effects, and emits a Burst 2 aura while active that affects both Intangible and tangible characters. Hostile characters are SLOWED while they are at least partly in the area."
+                                               }
+                                           ]
+                       },
+                       {
+                           "name":  "Grammaton Law",
+                           "description":  "SLOWED hostile characters are also SHREDDED while within Range 3 of the Calendula."
+                       },
+                       {
+                           "name":  "Grammaton Mantle",
+                           "description":  "As a protocol, the Calendula can become INTANGIBLE until the start of its next turn.",
+                           "actions":  [
+                                           {
+                                               "name":  "Grammaton Mantle",
+                                               "activation":  "Protocol",
+                                               "detail":  "As a protocol, the Calendula can become INTANGIBLE until the start of its next turn."
+                                           }
+                                       ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Execration of the Names of the Unworthy Dead",
+                            "description":  "\u0026ldquo;I inscribe thy name, I threaten thee with the second death. I kill thy name, and this I kill thee again in the afterlife.\u0026ldquo;",
+                            "active_name":  "Weighing of Inequitable Hearts",
+                            "active_effect":  "One hostile character and one allied character both within Range 5 and line of sight to you or a void husk, become INTANGIBLE until the end of your next turn. Two characters must be chosen for this effect to occur. This ability is \u003cb\u003eEfficient\u003c/b\u003e and will refund 1 Core Point at the end of any scene in which this ability was used.",
+                            "activation":  "Quick",
+                            "passive_name":  "Execrate",
+                            "passive_effect":  "Gain the Execrate Quick Tech action.",
+                            "passive_actions":  [
+                                                    {
+                                                        "name":  "Execrate",
+                                                        "activation":  "Quick Tech",
+                                                        "frequency":  "1/round",
+                                                        "detail":  "1/round You may target another character in line of sight within Range 3 of a void husk, banishing them to an interstitial space. Allied characters can choose whether or not to be affected, and hostile characters can avoid being affected by succeeding on a SYSTEMS save. Banished characters exist in a shadowy gray realm, making them INTANGIBLE.\u003cbr\u003eThis effect lasts until the banished character moves adjacent or starts their turn adjacent to a void husk, either of which returns them to physical space and clears INTANGIBLE."
+                                                    }
+                                                ]
+                        },
+        "data_type":  "frame",
+        "aptitude":  {
+
+                     },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/calendula.png",
+        "license_id":  "mf_minotaur"
+    },
+    {
+        "id":  "mf_oleander",
+        "variant":  "Death’s Head",
+        "license_level":  2,
+        "source":  "SSC",
+        "name":  "Oleander",
+        "mechtype":  [
+                         "Artillery"
+                     ],
+        "y_pos":  23,
+        "description":  "The Oleander is not readily available for open licensing. It is an active-field test prototype frame / hybridized chassis, halfway between the Lux Iconic and Bella Ciao line. Cutting edge and difficult to control, the Oleander is meant to become SSC’s next-generation product. Lancers in the position to pilot these advanced frames are few and far between, hand-chosen by SSC administrators. While initial experience reports are promising, much work is yet to be done before the Noctis-Plus line will bear fruit for the company.",
+        "mounts":  [
+                       "Main",
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  0,
+                      "hp":  8,
+                      "evasion":  10,
+                      "edef":  8,
+                      "heatcap":  6,
+                      "repcap":  2,
+                      "sensor_range":  15,
+                      "tech_attack":  1,
+                      "save":  10,
+                      "speed":  5,
+                      "sp":  6
+                  },
+        "traits":  [
+                       {
+                           "name":  "Killshot",
+                           "description":  "1/round as a Quick Action the Oleander may gain +5 on its next ranged attack roll before the end of the turn."
+                       },
+                       {
+                           "name":  "Chassis Integration",
+                           "description":  "The Oleander ignores the Ordnance tag."
+                       },
+                       {
+                           "name":  "Precision Instrument",
+                           "description":  "The Oleander’s Heavy ranged weapon can’t be fired more than 1/turn."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Modular Armament Assembly",
+                            "description":  "The M.A.A is SSC’s latest foray into advanced theoretical weapons manufacturing and design. Much like the Oleander it is installed in, it is an active-field test system that is currently too power-hungry to be deployed perpetually by the chassis housing it. Licensed pilots are encouraged to experiment and cycle through the provided configurations to provide diverse in-the-field data compilations to the SSC proprietors.",
+                            "active_name":  "ALL SYSTEMS GO! FIRE!",
+                            "active_effect":  "Until the end of the turn your Heavy ranged weapon has all effects of Perfected Assembly applied to it. This action is \u003cb\u003eEfficient\u003c/b\u003e, and refunds 1 Core Power at the end of any scene in which it’s used.",
+                            "activation":  "Protocol",
+                            "passive_name":  "Perfected Assembly",
+                            "passive_effect":  "Your Heavy ranged weapon gains one of the following effects. You may choose a different effect when you Rest: \u003cbr\u003e\u003cb\u003eAuxiliary-Rails\u003c/b\u003e\u003cbr\u003eKnockback 2 and “On Crit: Target is knocked Prone.” \u003cbr\u003e\u003cb\u003eClairvoyant-Targeting\u003c/b\u003e\u003cbr\u003eSeeking. \u003cbr\u003e \u003cb\u003eAbsolute-0-Module\u003c/b\u003e \u003cbr\u003e1/turn, after the attack is resolved you clear 2 Heat.\u003cbr\u003e\u003cb\u003eRecoil-Stabilizers\u003c/b\u003e \u003cbr\u003eCritical Hits apply on attack rolls of 18 or higher instead of 20. \u003cbr\u003e\u003cb\u003ePenetrator-Subroutines\u003c/b\u003e \u003cbr\u003e“On Crit: This attack’s damage can’t be reduced in any way.”",
+                            "use":  "Encounter"
+                        },
+        "image_url":  "https://i.imgur.com/XlWjFSD.png"
+    },
+    {
+        "id":  "mf_bligh",
+        "license_id":  "mf_kidd",
+        "variant":  "KIDD",
+        "license_level":  2,
+        "source":  "IPS-N",
+        "name":  "Bligh",
+        "mechtype":  [
+                         "Support",
+                         "Striker"
+                     ],
+        "y_pos":  36,
+        "description":  "The Bligh didn’t originally start its life as a mechanized chassis but as an autonomous drone control and print platform installed on ships to control the swarms of SWABBER Drones working the decks. It is only in recent times, with the advent of the Kidd that these independent support systems were married on a mobile frame to give them mobility and be deployed in the field.",
+        "mounts":  [
+                       "Main"
+                   ],
+        "stats":  {
+                      "size":  2,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  1,
+                      "hp":  8,
+                      "evasion":  8,
+                      "edef":  8,
+                      "heatcap":  6,
+                      "repcap":  6,
+                      "sensor_range":  8,
+                      "tech_attack":  0,
+                      "save":  10,
+                      "speed":  4,
+                      "sp":  8
+                  },
+        "traits":  [
+                       {
+                           "name":  "Shepherd Field",
+                           "description":  "Drones, Deployables and Objects adjacent to the Bligh have Resistance to all damage."
+                       },
+                       {
+                           "name":  "No Quarter",
+                           "description":  "During its turn, when the Bligh performs a Tech Action that targets an allied character or deploys a non-Drone Deployable it may choose up to two Swabber Drones in sensors. They immediately attack with one of their equipped weapons. The Drones count as the attacker for all intents and purposes but add your Grit to the attack roll. Each Swabber Drone may only attack 1/round."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Schedule-3 C.R.E.W. Printer",
+                            "description":  "The MT-34 SWABBER Drone is utilized aboard many IPS-N merchantmen. Able to carry out simple manual labor tasks reliably, the bipedal SWABBER shines when connected to a central command nexus and provided with dedicated combat smartware. Equipped with omni-jack grade-2 manipulators the SWABBER can carry a variety of dedicated weapons and is best used as a quick to deploy and efficient anti-boarding response measure. Cheap to produce and versatile to boot the SWABBER is the subaltern of choice for any captain worth their salt.",
+                            "active_name":  "All Hands On Deck!",
+                            "active_effect":  "You may immediately deploy up to two Swabber Drones. This action is \u003cb\u003eEfficient\u003c/b\u003e, and refunds 1 Core Power at the end of any scene in which it’s used.",
+                            "activation":  "Protocol",
+                            "passive_name":  "SWABBER Drones",
+                            "passive_effect":  "Your mech comes with an integrated printer capable of deploying Swabber Drones. At the end of your turn, as a Free Action, you may deploy one Swabber Drone in a free adjacent space. You may have up to 4 Swabber Drones at a time. You may recall any Swabber Drone in sensors as a Quick Action, removing it from the battlefied. \u003cbr\u003eSwabber Drones come equipped with all three Swabber Weapons.\u003cbr\u003e Swabber Drones are Size 1/2 and have 5 HP, 1 Armor and integrated EVA Modules. They share your Speed, Evasion and E-Defense. Swabber Drones are capable of independently moving up to their speed during your turn.  \u003cbr\u003eSwabber Drones may not perform Reactions. Swabber Drones disintegrate at the end of each combat.",
+                            "integrated":  [
+                                               "mw_bligh_integrated"
+                                           ],
+                            "use":  "Encounter"
+                        },
+        "image_url":  "https://i.imgur.com/mbvgRAE.png"
+    },
+    {
+        "id":  "mf_salamander",
+        "license_id":  "mf_kobold",
+        "variant":  "KOBOLD",
+        "license_level":  2,
+        "source":  "HORUS",
+        "name":  "Salamander",
+        "mechtype":  [
+                         "Controller"
+                     ],
+        "y_pos":  23.5,
+        "description":  "A close relative and mutation of the K-PG, the S-PG was born in the same environment that birthed the Kobold. Considerably larger than its cousin, this guerilla specialist excels in creating I.E.D.s from nearly any fissile materials commonly found in the mines, forges and printers, even capable of re-constituting a mech’s reactor waste material into powerful explosive charges. Easily hidden, these “Slag Bombs”, as Karrakin security forces were soon to call them, are capable of incinerating their close surroundings in an instant. When properly supported by a group of K-PG frames the Salamander becomes a terrifying force multiplier as it sets up Slag Bombs that are easily detonated by the smaller mechs. While the exact mechanisms behind the mutation of a K-PG into a S-PG are unknown, experts in the field of Pattern Group research suggest that the Salamander represents an evolved, mature form that all K-PGs reach given time. While verification of this theory remains outstanding, it may have staggering implications regarding the underlying nature of the liturgicode responsible for the K-PG.",
+        "mounts":  [
+                       "Main",
+                       "Flex"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  1,
+                      "hp":  8,
+                      "evasion":  7,
+                      "edef":  10,
+                      "heatcap":  5,
+                      "repcap":  3,
+                      "sensor_range":  8,
+                      "tech_attack":  1,
+                      "save":  11,
+                      "speed":  4,
+                      "sp":  6
+                  },
+        "traits":  [
+                       {
+                           "name":  "Reactor Waste Extraction",
+                           "description":  "1/round when the Salamander successfully hits a hostile character with a Tech Attack it may place a Slag Bomb in a free and valid space within range 3 of the target."
+                       },
+                       {
+                           "name":  "Emergency Slag Ejection",
+                           "description":  "Whenever the Salamander loses Structure or Stress, it may place a Slag Bomb in a free and valid space within range 3. "
+                       },
+                       {
+                           "name":  "Insulated",
+                           "description":  "The Salamander has Immunity to Burn."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Volatile Polymers",
+                            "description":  "By aerosolizing potent accelerants and dispersing them in close-range vicinity, the Salamander unleashes an all-consuming firestorm that eats through flesh and steel alike.",
+                            "active_name":  "Slag Breath",
+                            "active_effect":  "You expel a large amount of volatile slag causing a Blast 2 explosion within range 8. Characters in the area take 6 Burn or half as much on a successful Engineering save. Objects and Terrain in the area automatically take 10 AP Energy damage. After this action has been resolved you may place 3 Slag Bombs in free and valid spaces in the affected area. This action is \u003cb\u003eEfficient\u003c/b\u003e, and refunds 1 Core Power at the end of any scene in which it’s used.",
+                            "activation":  "Full",
+                            "passive_name":  "Slag Bombs",
+                            "passive_effect":  "Slag Bombs are Size 1 Terrain Objects with Evasion 5 and 10 HP. Slag Bombs arm at the end of the turn in which they are created. When an armed Slag Bomb is destroyed, it detonates in a Burst 2 explosion dealing 4 Burn to characters caught in the area or half as much on a successful Engineering save.",
+                            "use":  "Encounter"
+                        },
+        "image_url":  "https://i.imgur.com/IRF9s3B.png"
+    },
+    {
+        "id":  "mf_habsburg",
+        "variant":  "Saladin",
+        "license_level":  2,
+        "source":  "HA",
+        "name":  "Habsburg",
+        "mechtype":  [
+                         "Defender"
+                     ],
+        "y_pos":  20,
+        "description":  "The Habsburg is a somewhat obscure Harrison Armory frame, often forgotten by most Lancers. An older frame, only slightly younger than the Mk1 “Worldkiller”, the Habsburg was the line of mechanized chassis that eventually developed into the famous “Saladin”. Though it sports many similar defensive systems to the Saladin, the technology utilized in the Habsburg is much more crude and unrefined than one would expect from a contemporary Harrison Armory frame.",
+        "mounts":  [
+                       "Main"
+                   ],
+        "stats":  {
+                      "size":  2,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  2,
+                      "hp":  8,
+                      "evasion":  6,
+                      "edef":  8,
+                      "heatcap":  8,
+                      "repcap":  4,
+                      "sensor_range":  8,
+                      "tech_attack":  -2,
+                      "save":  10,
+                      "speed":  3,
+                      "sp":  7
+                  },
+        "traits":  [
+                       {
+                           "name":  "Eisen Shield",
+                           "description":  "The Habsburg reduces all damage from hostile sources by 1. Allied characters adjacent to either it or its E-R-Pylons also benefit from this effect."
+                       },
+                       {
+                           "name":  "Heavy Frame",
+                           "description":  "The Habsburg can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters."
+                       },
+                       {
+                           "name":  "Guardian",
+                           "description":  "Adjacent allied characters can use this mech as Hard Cover."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Eisen-Relay-Emitters",
+                            "description":  "The Eisen Shield represents a semi-abandoned dead end in the application of localized forcefield technology, deemed too power-hungry and too short-ranged. The introduction of the proprietary HA-Relay Emitters has since given the deprecated Eisen Shield a new lease on life. Sturdy emitter-pylons directly launched from the chassis solve the limited coverage problem of the original Eisen Shield, while integrated solidcore batteries satisfy energy demands more than adequately.",
+                            "active_name":  "The Situation is Catastrophic but not Serious",
+                            "active_effect":  "Until the end of your next turn Eisen Shield reduces all damage from hostile sources by 2 instead. This action is \u003cb\u003eEfficient\u003c/b\u003e, and refunds 1 Core Power at the end of any scene in which it’s used.",
+                            "activation":  "Protocol",
+                            "passive_name":  "E-R-Pylons",
+                            "passive_effect":  "Pylon (Size 1, 10 HP, Armor 2, Evasion 5, Tags: Deployable, Limited 3) \u003cbr\u003eAs a Quick Action you may expend a charge to deploy an E-R-Pylon to any free and valid space within sensors. The pylon anchors to the ground and becomes unable to be moved by any means. Whenever you activate a system with the Shield tag that does not cause you to become Slowed you may measure its range from any pylon within sensors instead. (Even if that shield has a range of “sensors”.) If a shield deployed via the pylon would cause you to become Immobilized you do not become Immobilized. Shields with a duration (such as until end of next turn or until deactivated), deployed via a pylon immediately deactivate when the pylon is destroyed.",
+                            "use":  "Encounter"
+                        },
+        "image_url":  "https://i.imgur.com/dLba2QT.png"
+    },
+    {
+        "id":  "mf_atlas",
+        "source":  "SSC",
+        "name":  "Atlas",
+        "mechtype":  [
+                         "Striker"
+                     ],
+        "y_pos":  14,
+        "license_level":  2,
+        "description":  "\u003cp\u003eOriginally commissioned as a dueling mech by the Baronic Houses of Smoke and Order, the Atlas blurs the line between mechanized chassis and powered personal armor. Thanks to a long-running research project from SSC\u0027s Exotic Materials Group, the designers were able to employ the bleeding edge of reactor miniaturization tech: the result was a chassis that resembled a large, sleek hardsuit, almost skintight in places. While the Atlas sacrifices the durability of a larger frame, its essential systems are so closely melded with its user\u0027s movements that it offers unparalleled maneuverability.\u003c/p\u003e \u003cp\u003eAlthough the Atlas was initially licensed only to Baronic clients, its design was leaked when a group of ExoMat personnel lost a suit to a Sparri espada in an intense game of Kapkat. Despite their initial attempt to recover the suit, SSC relented, citing the eager demand from Sparri groups for access to the full license. \u003c/p\u003e \u003cp\u003eConsidered the perfect warrior frame for hunting the native megafauna of Sparr, the Atlas now enjoys a dual reputation among both the Sparri peoples and Karrakin nobility. To the Sparri, the Atlas \u0026ndash; its combat efficacy notwithstanding \u0026ndash; is highly valued for the direct access its systems allow to their ancestral memory; Atlas frames on Sparr are the heirlooms of great warriors, tied to family (blood and chosen) and maintained by hand. Each suit on Sparr bears the history of its previous pilots in both decorations and FCA-compliant machine learning, which enables Sparri hunters to almost literally call upon their ancestors in battle. The Atlas has become so popular among the Sparri that they even developed a new martial art based on the Atlas: Jäger Kunst. \u003c/p\u003e \u003cp\u003eThe Karrakin nobility, on the other hand, find the Atlas to be a perfect machine for noble heroism \u0026ndash; that the Sparri have an affinity for it only makes the chassis that much more desirable among Karrakin Sparrist scholars. Commonly decorated with purchased Sparri saga discs, Vast pelts, and saga lines, Karrakin suits blend imagined profiles of Annorum Passacaglia and Annorum Tyrannus-era heroes with profiles of Sparri warriors, daredevils, vast-hunters, and espadas.\u003c/p\u003e",
+        "mounts":  [
+                       "Flex",
+                       "Main"
+                   ],
+        "stats":  {
+                      "size":  0.5,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  0,
+                      "hp":  6,
+                      "evasion":  12,
+                      "edef":  6,
+                      "heatcap":  4,
+                      "repcap":  2,
+                      "sensor_range":  3,
+                      "tech_attack":  -2,
+                      "save":  10,
+                      "speed":  6,
+                      "sp":  5
+                  },
+        "traits":  [
+                       {
+                           "name":  "Giantkiller",
+                           "description":  "The Atlas counts as SIZE 1 for RAM and GRAPPLE. It ignores engagement from larger characters and can freely move through and share the spaces they occupy (even if they’re hostile). While occupying the same spaces as any character, it gains soft cover, even from that character.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "ram",
+                                                                   "grapple"
+                                                               ],
+                                                 "detail":  "The Atlas counts as size 1 for the purposes of ramming and grappling."
+                                             },
+                                             {
+                                                 "locations":  [
+                                                                   "active_effects"
+                                                               ],
+                                                 "detail":  "The Atlas ignores engagement from actors larger than itself, can share space with larger actors (even hostile ones) and move through their spaces unimpeded. While sharing space with any character, it gains soft cover, even from that character."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Jäger Dodge",
+                           "description":  "1/round, when you take damage from a larger character, gain RESISTANCE to that damage and move 3 spaces in any direction as a reaction. This ignores engagement and doesn’t provoke reactions.",
+                           "actions":  [
+                                           {
+                                               "name":  "Jäger Dodge",
+                                               "activation":  "Reaction",
+                                               "trigger":  "You take damage from a character larger than yourself",
+                                               "detail":  "Gain resistance to that damage and move 3 spaces in any direction, ignoring engagement and reactions."
+                                           }
+                                       ]
+                       },
+                       {
+                           "name":  "Finishing Blow",
+                           "description":  "1/round, deal +1d6 bonus damage on a successful melee attack against a PRONE target.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "weapon"
+                                                               ],
+                                                 "weapon_types":  [
+                                                                      "Melee"
+                                                                  ],
+                                                 "weapon_sizes":  [
+                                                                      "any"
+                                                                  ],
+                                                 "detail":  "1/round, the Atlas can deal +1d6 bonus damage with a successful melee attack against a prone target."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Exposed Reactor",
+                           "description":  "The Atlas receives +1 Difficulty on ENGINEERING checks and saves.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "engineering",
+                                                                   "skill_check"
+                                                               ],
+                                                 "detail":  "The Atlas takes +1 difficulty on Engineering checks and saves."
+                                             }
+                                         ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "BLOODLINE Active Assist",
+                            "description":  "The ATLAS extends microneedles into the musculature and ancillary nervous system of its pilot, melding flesh, machine, and the memory of all who wore it before.",
+                            "active_name":  "Final Hunt",
+                            "active_effect":  "\u003cp\u003eFor the rest of the scene, you:\u003c/p\u003e \u003cul\u003e \u003cli\u003eMove an additional 1 space when you voluntarily move for any reason (e.g. standard moves, BOOST, movement from systems or talents).\u003c/li\u003e \u003cli\u003eBenefits from soft cover at all times, no matter where you are.\u003c/li\u003e \u003cli\u003eCan HIDE even in the open, without requiring cover.\u003c/li\u003e \u003c/ul\u003e \u003cp\u003e The only way to reveal you is for another character to SEARCH for you or for you to lose Hidden as usual \u0026ndash; by using BOOST, attacking, forcing a save, and so on. When active, 1/round, when you make a melee or ranged attack while HIDDEN, your target must also succeed on a HULL save or be knocked PRONE. This takes place before the attack is rolled \u003c/p\u003e",
+                            "activation":  "Quick"
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/mf_atlas.png",
+        "license_id":  "mf_atlas"
+    },
+    {
+        "id":  "mf_caliban",
+        "source":  "IPS-N",
+        "name":  "Caliban",
+        "mechtype":  [
+                         "Striker",
+                         "Controller"
+                     ],
+        "license_level":  2,
+        "y_pos":  12.5,
+        "description":  "\u003cp\u003eThe Caliban chassis is a popular new order among anti piracy and stellar marine forces. Unlike many of IPS-N\u0027s modern frames, the Caliban was designed from the ground up to be a military machine. \u003c/p\u003e \u003cp\u003eThe Caliban is IPS-N\u0027s solution to the  \"Yemanova \" Problem, more properly known as the Impact-Override Problem. Capital ships, the problem posits, are incredibly expensive, demand a tremendous amount of time for corpros and Diasporan states to produce and maintain, and increasingly outmatched by anti-ship weaponry. In a conventional capital duel, a successful kill means the death of thousands of personnel and the loss of millions of units of manna; this makes many commanders gun-shy, encouraging them to rely on subline vessels and fighters to accomplish battle objectives rather than risk their big ships. This strategy tends to prove just as expensive: instead of one or a handful of large ships being destroyed, signifying the end of a battle, engagements can grind on for weeks as squadrons of smaller ships engage inside the unpredictability gap, inching towards victory. \u003c/p\u003e \u003cp\u003eIPS-N was the first to crack the Yemanova Problem. The corpro\u0027s designers identified the need for a rapidly deployable, sub-signature, directed weapon. It needed to be well-armed and well-armored, small enough to enter a ship and efficiently neutralize personnel in order to achieve victory. IPS-N created the Caliban to solve this need. \u003c/p\u003e \u003cp\u003eCultural critics argue that mechanized chassis venerate the form of a particular humanity; it is an unconscious nod towards the anthrochauvinist roots of the machine among leading designers and fabricators. The Caliban is not that. It was never intended to be an image of man writ large, striding across the battlefield heroically to affect a greater purpose. \u003c/p\u003e \u003cp\u003eUnlike many IPS-N frames, the Caliban has no roots in early attempts at self-defense by freighter crews and asteroid miners. It was not born from ingenuity - there is no legacy of resilience, heroism, or the frontier spirit to paper over the purpose of its birth. It has no civilian applications in aid, disaster relief, construction, or farming; it does not build, defend, or inspire \u0026ndash; it was designed to solve a numbers problem on a ledger. \u003c/p\u003e \u003cp\u003eIt is a tool designed to kill human beings very, very quickly. \u003c/p\u003e",
+        "mounts":  [
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  0.5,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  2,
+                      "hp":  6,
+                      "evasion":  8,
+                      "edef":  8,
+                      "heatcap":  5,
+                      "repcap":  5,
+                      "sensor_range":  3,
+                      "tech_attack":  -2,
+                      "save":  11,
+                      "speed":  3,
+                      "sp":  5
+                  },
+        "traits":  [
+                       {
+                           "name":  "Wrecking Ball",
+                           "description":  "The Caliban counts as Size 3 when inflicting knockback with any Ram, Ranged, or Melee Attack.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "weapon"
+                                                               ],
+                                                 "weapon_types":  [
+                                                                      "any"
+                                                                  ],
+                                                 "weapon_sizes":  [
+                                                                      "any"
+                                                                  ],
+                                                 "detail":  "The Caliban counts as size 3 when inflicting knockback from any ranged or melee attack."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Pursue Prey",
+                           "description":  "When the Caliban inflicts KNOCKBACK as part of any action, it can move an equal number of spaces towards the same target by the most direct route possible. This movement is part of the same action, ignores engagement and doesn’t provoke reactions."
+                       },
+                       {
+                           "name":  "Slam",
+                           "description":  "1/round, when the Caliban knocks a character into a wall, mech, or other obstruction that would cause it to stop moving, it may force its target to pass a HULL save or take 1d6 Kinetic Damage and become IMPAIRED until the end of its next turn."
+                       },
+                       {
+                           "name":  "Weak Computer",
+                           "description":  "The Caliban takes +1 Difficulty on all SYSTEMS saves and checks.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "systems",
+                                                                   "skill_check"
+                                                               ],
+                                                 "detail":  "The Caliban takes +1 Difficulty on all systems saves and checks"
+                                             }
+                                         ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Flayer Shotgun",
+                            "description":  "The “Flayer” – officially the Heavy Howitzer-Shotgun 075 – is a compact, formalized version of the popular “Daisy Cutter” howitzer-shotgun used by Trunk Security and other stellar marine forces. Chambered to accept shot, shell, or sabot, the Flayer sacrifices some of the DaisyCutter’s raw power in favor of control and a much-improved fire rate.",
+                            "active_name":  "Equip Autochoke",
+                            "active_effect":  "The Flayer shotgun comes pre-equipped with a muzzle-mounted auto-choke that allows its user to better define the spread of shot issuing from the weapon. The extreme heat from equipping the choke renders it unusable in short order and it must be discarded.\u003cbr\u003eFor the rest of this scene, the HHS-075 “Flayer” Shotgun gains the following profile:\u003cbr\u003eMain CQB, Accurate, Knockback 5\u003cbr\u003e[Cone 3] [Threat 3] [1d6+2 kinetic damage]",
+                            "activation":  "Protocol",
+                            "integrated":  [
+                                               "mw_caliban_integrated"
+                                           ]
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/caliban.png",
+        "license_id":  "mf_caliban"
+    },
+    {
+        "id":  "mf_kobold",
+        "source":  "HORUS",
+        "name":  "Kobold",
+        "mechtype":  [
+                         "Controller"
+                     ],
+        "y_pos":  25,
+        "license_level":  2,
+        "description":  "\u003cp\u003eThe Kobold pattern group first appeared among revolutionary Ungratefuls toiling on Bo, the capital world of the House of Dust, where it manifested as a clever suite of hardware and software compatible with a broad range of mining and heavy industry mechs. The steaming, shuddering final result of K-PG exposure is an ugly affair: a device transformed from plow to blade by powerful, viral-morph liturgicode that is almost impossible for conventional codec sniffers to capture pre-print. \u003c/p\u003e \u003cp\u003eThe clandestine mechanisms by which the Kobold is transmitted and applied make it the perfect machine for fighting Baronic suppression forces. The desperate workers who printed the first Kobolds found them to be eminently fungible. When loaded into their mining exos and chassis, the K-PG code repurposed reactors and industrial tools to deadly effect, weaponizing the very materials and superstructures that powered it. The rapid flash-melting, processing, and extruding of raw material into molten plural-state particles is dangerous \u0026ndash; often just as dangerous to its pilot as the final product is to its targets. \u003c/p\u003e \u003cp\u003eOperational dangers notwithstanding, the Ungratefuls who first adopted the K-PG stunned their Baronic overseers with a series of rapid and total victories, liberating a great swath of lunar helium-3 mines. While the insurgency was eventually contained to Bo, it continues, necessitating the deployment of the House of Dust\u0027s Graveborn Banner Company for counter-insurgency operations beyond the capability of local security forces. \u003c/p\u003e \u003cp\u003eHORUS\u0027s assets in the Long Rim continue to produce K-PG liturgicode seeds. The House of Dust has contracted Mastodon to track down and eliminate HORUS elements in the area; meanwhile, Harrison Armory has reached out to the Brigade-Legion to counter the House of Dust\u0027s efforts. \u003c/p\u003e",
+        "mounts":  [
+                       "Main/Aux"
+                   ],
+        "stats":  {
+                      "size":  0.5,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  1,
+                      "hp":  6,
+                      "evasion":  10,
+                      "edef":  10,
+                      "heatcap":  6,
+                      "repcap":  2,
+                      "sensor_range":  8,
+                      "tech_attack":  1,
+                      "save":  11,
+                      "speed":  4,
+                      "sp":  8
+                  },
+        "traits":  [
+                       {
+                           "name":  "Mimic Carapace",
+                           "description":  "When the Kobold starts its turn adjacent to a piece of terrain or hard cover of SIZE 1 or larger it becomes INVISIBLE as long as it remains adjacent. It ceases to be INVISIBLE if it attacks or takes damage."
+                       },
+                       {
+                           "name":  "Slag Spray",
+                           "description":  "1/round, as a quick action, the Kobold may create a SIZE 1 mound of semi-molten polymer in a free space within Range 3 and line of sight. This terrain has 10 HP, EVASION 5, and grants hard cover.",
+                           "deployables":  [
+                                               {
+                                                   "name":  "Slag Spray",
+                                                   "type":  "Deployable",
+                                                   "size":  1,
+                                                   "hp":  10,
+                                                   "evasion":  5,
+                                                   "activation":  "Quick",
+                                                   "detail":  "This semi-molten polymer grants hard cover."
+                                               }
+                                           ]
+                       },
+                       {
+                           "name":  "Exposed Reactor",
+                           "description":  "The Kobold gets +1 Difficulty on ENGINEERING checks and saves.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "engineering",
+                                                                   "skill_check"
+                                                               ],
+                                                 "detail":  "The Kobold takes +1 difficulty on Engineering checks and saves."
+                                             }
+                                         ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Terraform",
+                            "description":  "Screeching and venting steam, the Kobold digs into the earth. Moments later, the very ground bends to the pilot’s will and the air shrieks with agony — the cry of every dead Ungrateful, martyred or taken by the Dustmen",
+                            "active_name":  "Terraform",
+                            "active_effect":  "Your mech extrudes a massive amount of polymer, creating up to 10 SIZE 1 cubes in free spaces within Range 5. These cubes can be separate or connected and can be stacked up to 5 spaces high. If connected, they form a contiguous surface that can block line of sight. During the turn in which they are extruded, the cubes grant soft cover and each has EVASION 5 and 10 HP. At the start of your next turn, they harden, each cube granting hard cover and gaining +10 HP (but retaining any damage they had taken).",
+                            "activation":  "Full"
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/mf_kobold.png",
+        "license_id":  "mf_kobold"
+    },
+    {
+        "id":  "mf_lich",
+        "source":  "HORUS",
+        "name":  "Lich",
+        "mechtype":  [
+                         "Support"
+                     ],
+        "license_level":  2,
+        "y_pos":  8,
+        "description":  "\u003e//TRANSCRIPT: M.A2_Recovered[UIB:::TERMAGANT]\u003cbr\u003e\u003e//TANGENT ROYAL CLEARANCE\u003cbr\u003e\u003e//checking…\u003cbr\u003e\u003e//TRC_ACCEPTED. OPEN DOC:::Y\u003cbr\u003e\u003e//BEGIN:::\u003cbr\u003eCALIGULA: So what is it?\u003cbr\u003eDOGFRIEND_68: i wish i could tell you, man, it just showed up on the terminal. whole thing in one ping — it’s like a fucking K or two EXB. tried to autofab but i shut it down jic\u003cbr\u003eCALIGULA: Gotta be a joke from Ash — she’s trying to wavedown our rig again, don’t let it print.\u003cbr\u003eDOGFRIEND_68: fuck no\u003cbr\u003eDOGFRIEND_68: do u think i have a death wish\u003cbr\u003eCALIGULA: Yes.\u003cbr\u003eCALIGULA: Well, who’s it from? Who’s the author?\u003cbr\u003eCALIGULA: Hello?\u003cbr\u003eCALIGULA: [waiting.omif]\u003cbr\u003eDOGFRIEND_68: uh\u003cbr\u003eCALIGULA: Who?\u003cbr\u003eDOGFRIEND_68: us\u003cbr\u003eCALIGULA: Us what?\u003cbr\u003eDOGFRIEND_68: it’s from our terminal — we made it\u003cbr\u003eCALIGULA: Pretty sure I’d remember if I wrote 1-2k exabyte fabrication by myself.\u003cbr\u003eDOGFRIEND_68: yeah except thats our code man, the hash lines up beaucop-sigma\u003cbr\u003eDOGFRIEND_68: ok also BigMama is telling me we didn’t actaully get anything inbound which means its just been local but thats impossible, we don’t have that much storage\u003cbr\u003eCALIGULA: Let me see the file\u003cbr\u003eCALIGULA: It’s dated 15005U\u003cbr\u003eDOGFRIEND_68: [lolfuk.omif]\u003cbr\u003eCALIGULA: There’s an audio track buried in here. Should I play it?\u003cbr\u003eDOGFRIEND_68: i wanna say no but fuck it i’m curious\u003cbr\u003e\u003e//TRANSCRIPT ENDS",
+        "mounts":  [
+                       "Main/Aux"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  0,
+                      "hp":  4,
+                      "evasion":  8,
+                      "edef":  12,
+                      "heatcap":  3,
+                      "repcap":  5,
+                      "sensor_range":  15,
+                      "tech_attack":  1,
+                      "save":  11,
+                      "speed":  5,
+                      "sp":  8
+                  },
+        "traits":  [
+                       {
+                           "name":  "Soul Vessel",
+                           "description":  "At the start of the Lich\u0027s turn, set down a SOUL VESSEL at its current location (replacing any previous markers). 1/round, as a reaction when the Lich is hit by an attack, fails a save or check, or takes damage or Heat from any source (even itself), it may immediately gain IMMUNITY to all damage, heat, or conditions from that effect. It then teleports to the marker or as close as possible. The Lich can also take this reaction at the end of any turn, including its own, but if it does so it only teleports and does not gain IMMUNITY. It can\u0027t take this reaction if it is JAMMED, STUNNED, GRAPPLED, or unable to take reactions for any reason."
+                       },
+                       {
+                           "name":  "Immortal",
+                           "description":  "1/scene, in the round after the Lich has been destroyed, it may return to the location of its SOUL VESSEL as a reaction at the end of any turn. This counts as teleporting; additionally, the Lich appears with full HP, no Heat, 1 STRUCTURE and 1 STRESS (even if it had more when it was destroyed). If its pilot died in the same scene, they also return to life. If the Lich does not take this reaction in that round, it remains destroyed and the pilot remains dead."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Chronostutter",
+                            "description":  "“Drink Deep, and Descend.”",
+                            "active_name":  "Glitch time",
+                            "active_effect":  "\u003cp\u003eYou gain the ability to disrupt time for the rest of this scene. 1/round, when any character successfully attacks, effects, or takes an action against another character within SENSORS, you may interrupt it before it resolves, with the following effects:\u003c/p\u003e \u003cul\u003e \u003cli\u003eThe character taking the action is pushed up to 3 spaces in a direction of your choice, even if they have IMMUNITY to involuntary movement\u003c/li\u003e \u003cli\u003eYou teleport to one of the spaces originally occupied by that character, or as close as possible, no matter how far away it was.\u003c/li\u003e \u003cli\u003eThe initial attack, effect, or action resolves with you as its target. \u003c/li\u003e \u003c/ul\u003e \u003cp\u003eYou receive all damage, conditions, statuses, and effects, and the action must be carried out without changes. For example, if the effect was to teleport an allied character to a certain space, you are teleported to that space instead; if the effect was to repair an allied character, you are repaired instead; if the effect was to deal damage and KNOCKBACK, you take the damage (using your ARMOR, RESISTANCE, etc.) and are knocked back in the same direction as the original target would be; if the effect was to inflict a condition or status, you receive that condition or status instead. Initiating this interruption does not count as a reaction. Effects that target the self cannot be interrupted this way \u003c/p\u003e",
+                            "activation":  "Quick"
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/mf_lich.png",
+        "license_id":  "mf_lich"
+    },
+    {
+        "id":  "mf_sunzi",
+        "source":  "HA",
+        "name":  "Sunzi",
+        "mechtype":  [
+                         "Support",
+                         "Controller"
+                     ],
+        "license_level":  2,
+        "y_pos":  23,
+        "description":  "\u003cp\u003eThe Sunzi represents the peak of Harrison Armory\u0027s research into weaponized blink technology. Pilots approved to fabricate and field-test Sunzi components are monitored remotely by the Armory\u0027s Special Projects Group, which enjoys wide latitude in gathering telemetry and biometric data. The Sunzi platform is considered by Harrison Armory to still be in development, and not yet available for fleet contracts. \u003c/p\u003e \u003cp\u003eLike the Armory\u0027s Napoleon chassis before it, the Sunzi utilizes the Armory\u0027s H-GOBLIN-derived recursive-mesh interdermal substrate, allowing it to mount outsized weapons and systems on a chassis measuring just over three meters tall. Where it differs is in its technological heritage. The Napoleon was largely the product of the Armory\u0027s internal paracausal/ parallel space research and development groups; the Sunzi is rumored to be derived from stolen and extracted Volador technology. This may explain why the Long Rim and the Dawnline Shore are the primary test grounds for the platform \u0026ndash; far from Union\u0027s most direct oversight, the Armory may have more time to make what progress it can before Union\u0027s regulatory impulse catches up to them. \u003c/p\u003e \u003cp\u003eAccording to Union NavInt reports on the Sunzi, the platform\u0027s unshielded emissions are consistent with known blinkspace signatures; corroborating intelligence from undercover elements inside the program\u0027s main campus on Ras Shamra show that the Sunzi\u0027s development has been fast-tracked to respond to the evolving situation in the Dawnline Shore. Both as a forcemultiplication tool to assist the Armory\u0027s legionary presence across the Shore, and more specifically to counter the Ungratefuls\u0027 newest weapon there, Object L (see UNI Report CORPSE GATE for more). \u003c/p\u003e",
+        "mounts":  [
+                       "Main/Aux"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "armor":  1,
+                      "stress":  4,
+                      "structure":  4,
+                      "hp":  7,
+                      "evasion":  7,
+                      "edef":  8,
+                      "heatcap":  7,
+                      "repcap":  3,
+                      "sensor_range":  15,
+                      "tech_attack":  1,
+                      "save":  11,
+                      "speed":  4,
+                      "sp":  7
+                  },
+        "traits":  [
+                       {
+                           "name":  "Safe Harbor",
+                           "description":  "When allied characters within Range 50 of the Sunzi teleport or are teleported, free spaces adjacent to the Sunzi are always valid end destinations."
+                       },
+                       {
+                           "name":  "Anchor",
+                           "description":  "The Sunzi has Immunity to involuntary movement caused by other characters."
+                       },
+                       {
+                           "name":  "Slip",
+                           "description":  "1/round, the Sunzi can teleport 2 spaces as a free action.",
+                           "actions":  [
+                                           {
+                                               "name":  "Slip",
+                                               "frequency":  "1/Round",
+                                               "activation":  "Free",
+                                               "detail":  "1/round the Sunzi can teleport 2 spaces as a free action"
+                                           }
+                                       ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Reality Carver",
+                            "description":  "(TT_CLEARANCE_01): JUST A HEADS UP, YOU’RE GOING TO READ SOME OBTUSE SHIT HERE. I’VE TRANSCRIBED ONLY THE USEFUL PARTS OF WHAT THE VOLS SAID. REFER TO THE VISUAL FOR CORRESPONDING HAND SIGNS. REFER TO REPORTS: VESSEL-PILOT-DOORWAY",
+                            "active_name":  "Art of War",
+                            "activation":  "Free",
+                            "active_effect":  "For the rest of the scene, this system gains 6 charges (you can use a die to track this). As a reaction at the start or end of any hostile or allied character’s turn within SENSORS and line of sight, expend a charge to teleport them up to 3 spaces in any direction, as long as they end in a free space in which they can stand.",
+                            "passive_name":  "Blink Anchor",
+                            "passive_effect":  "Blink Anchor (SIZE 1/2, Tags: DEPLOYABLE, IMMUNITY to all damage and effects, LIMITED 3)\u003cbr\u003eYou carry a single blink anchor that you can deploy as a quick action. When any character teleports within your line of sight, you may force them to appear in a free space adjacent to the blink anchor instead of their original destination, as long as they can safely stand there. If your target is hostile, this expends a charge.\u003cbr\u003eInitiating this interruption does not count as a reaction. Once it’s deployed, you or any allied character can pick it up or put it down while adjacent to it as a quick action.",
+                            "counters":  [
+                                             {
+                                                 "id":  "ctr_art_of_war",
+                                                 "name":  "Art of War",
+                                                 "default_value":  6,
+                                                 "min":  0,
+                                                 "max":  6
+                                             }
+                                         ]
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/mf_sunzi.png",
+        "license_id":  "mf_sunzi"
+    },
+    {
+        "id":  "mf_zheng",
+        "source":  "IPS-N",
+        "name":  "Zheng",
+        "mechtype":  [
+                         "Striker"
+                     ],
+        "license_level":  2,
+        "y_pos":  30,
+        "description":  "\u003cp\u003eThe Zheng is a new frame in IPS-N\u0027s line and is unusual in that its development can be attributed almost completely to a single mech pilot \u0026ndash; Xiong Xiaoli, a Mirrorsmoke mercenary operating in the Long Rim, protecting heavy freight/low crew shipments to the early Dawnline Shore colonies. A relative unknown before the incident, MSMC documentation from the time indicates that her convoy was attacked by the White Tiger pirate conglomerate, and her entire company killed in action. Xiong\u0027s personal logbook, recovered posthumously, expounds on MSMC\u0027s report. \u003c/p\u003e \u003cp\u003eIn her logbook, Xiong noted that her chassis, a factory-standard IPS-N Raleigh, was almost totally ripped apart in the chaos of the White Tiger\u0027s attack. Thrown free of her billeted freighter after it collided with a White Tiger crashboat, Xiong managed to survive the next 45 days by scavenging across the drifting, derelict wreck of the MSMC-S Say No More, the escort cruiser attached to the supply colony. Outnumbered and hunted by the White Tiger pirates prowling the ruined convoy, Xiong took dramatic steps to modify her Raleigh for close-quarters combat. In the dark, claustrophobic environments of the Say No More and ruined freighters leashed to it by the White Tigers, Xiong turned her chassis into a machine of tumbling death. \u003c/p\u003e \u003cp\u003eXiong likely did not survive the long engagement. She is presumed to have perished mere days before an IPS-N Trunk Security patrol arrived, responding to the convoy\u0027s initial distress signal. Trunk Security found that Xiong had eliminated every White Tiger pirate assigned to the convoy; her chassis, logbook, and trace elements of her body were discovered in the White Tiger\u0027s cored-out gunboat and recovered by IPS-N. Thanks to her efforts, Trunk Security and MSMC were able to hunt down the remaining White Tiger gang and eliminate them. IPS-N and MSMC then engaged in a lengthy negotiation over the modified Raleigh\u0027s plans, eventually settling on a mixed licensing fee that benefits both IPS-N and MSMC. The resulting pattern, the Zheng, is now a popular choice among MSMC and Trunk Security pilots operating across the Rim. \u003c/p\u003e \u003cp\u003eXiong Xiaoli is widely regarded as a bodhisattva across the Long Rim; MSMC mercenaries have created several drinking games named after her, and MSMC pilots on combat contracts often compete to hit the \"Xiong Limit\" of 45+ confirmed kills. \u003c/p\u003e",
+        "mounts":  [
+                       "Main",
+                       "Main",
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  2,
+                      "hp":  10,
+                      "evasion":  9,
+                      "edef":  6,
+                      "heatcap":  6,
+                      "repcap":  6,
+                      "sensor_range":  3,
+                      "tech_attack":  -2,
+                      "save":  10,
+                      "speed":  3,
+                      "sp":  5
+                  },
+        "traits":  [
+                       {
+                           "name":  "Destructive Swings",
+                           "description":  "At the end of the Zheng’s turn, if it made at least one melee attack against a hostile character, the force of its swings creates a SIZE 1 piece of terrain that grants hard cover in a free, adjacent space. It has 10 HP and EVASION 5.",
+                           "deployables":  [
+                                               {
+                                                   "name":  "Destructive Swing Cover",
+                                                   "type":  "Deployable",
+                                                   "activation":  "Free",
+                                                   "hp":  10,
+                                                   "evasion":  5,
+                                                   "size":  1,
+                                                   "detail":  "This terrain grants hard cover"
+                                               }
+                                           ]
+                       },
+                       {
+                           "name":  "Weak Computer",
+                           "description":  "The Zheng takes +1 Difficulty on all systems saves and checks",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "systems",
+                                                                   "skill_check"
+                                                               ],
+                                                 "detail":  "The Zheng gets +1 Difficulty on all Systems saves and checks"
+                                             }
+                                         ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "XIONG-Type CQB Suite",
+                            "description":  "Surviving mostly on colonial rations and an increasingly radioactive air supply, Xiaoli scavenged materials from a dying ship to create modifications that gave her mech unprecedented unarmed striking power.",
+                            "active_name":  "Xiaoli’s Ingenuity",
+                            "active_effect":  "For the rest of the scene, this system gains 6 charges (you can use a die to track this). Expend a charge to use XIAOLI’S TENACITY again, ignoring the 1/Turn limit. You may spend any number of charges a turn. At the end of each turn, you regain a charge for each unique target (character, object, or piece of terrain) you damaged with this action, to a maximum of 6.",
+                            "activation":  "Protocol",
+                            "passive_name":  "Xiaoli\u0027s Tenacity",
+                            "passive_actions":  [
+                                                    {
+                                                        "name":  "Xiaoli\u0027s Tenacity",
+                                                        "activation":  "Free",
+                                                        "detail":  "1/turn as a free action, you may move up to 3 spaces then deal 2 Kinetic to any adjacent character or 10 Kinetic AP to an object or piece of terrain. This movement prompts engagement and does not ignore reactions.\u003cbr\u003eIf this damage destroys an object or piece of terrain, it explodes, dealing 1d6 Kinetic to all adjacent characters other than you and knocking them back 1 space."
+                                                    }
+                                                ],
+                            "counters":  [
+                                             {
+                                                 "id":  "ctr_xiaoli_type_cqb_suite",
+                                                 "name":  "Xiaoli Die",
+                                                 "default_value":  6,
+                                                 "min":  0,
+                                                 "max":  6
+                                             }
+                                         ]
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/mf_zheng.png",
+        "license_id":  "mf_zheng"
+    },
+    {
+        "id":  "mf_chomolungma",
+        "source":  "GMS",
+        "license_level":  0,
+        "name":  "Chomolungma",
+        "mechtype":  [
+                         "Controller",
+                         "Support"
+                     ],
+        "description":  "\u003cp\u003eWhile the public perception of GMS may be that of a stolid, conservative manufacturer, Union devotes substantial resources to the research and development of new armaments and technological breakthroughs in order to maintain or exceed parity with galactic-tier actors such as Harrison Armory or the Karrakin Trade Baronies. Under development by Union\u0026apos;s Advanced Projects Special Research Agency in conjunction with General Massive Systems, the Chomolungma is a newer and more technologically advanced frame using the standard GMS Pattern I design as a base.\u003c/p\u003e\u003cp\u003eThe Chomolungma is a specialist chassis, trading out weapon hardpoint mounting capability for additional sensors, comms/transmission arrays, and advanced GMS e-war systems including cutting-edge systemic intrusion software packages and recursive-weave hyperprocessors. In light of recent conflicts, Union has begun increasing distribution of Chomolungma licenses among both regular and auxiliary units to keep pace with evolutionary developments in battlefield tactics and technologies.\u003c/p\u003e",
+        "mounts":  [
+                       "Main/Aux",
+                       "Flex"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  0,
+                      "hp":  10,
+                      "evasion":  8,
+                      "edef":  10,
+                      "heatcap":  6,
+                      "repcap":  4,
+                      "sensor_range":  15,
+                      "tech_attack":  1,
+                      "save":  11,
+                      "speed":  4,
+                      "sp":  7
+                  },
+        "traits":  [
+                       {
+                           "name":  "Brilliance",
+                           "description":  "1/scene, the Chomolungma may take any Quick Tech action as a free action, and then may either Bolster or Lock On as a free action."
+                       },
+                       {
+                           "name":  "Data Siphon",
+                           "description":  "Whenever the Chomolungma makes a tech attack against a hostile character, it may also automatically Scan them."
+                       },
+                       {
+                           "name":  "Replaceable Parts",
+                           "description":  "While resting, the Chomolungma can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Advanced Intrusion Package",
+                            "active_name":  "Wide-Area Code Pulse",
+                            "active_effect":  "Choose any number of hostile characters within Sensors and make a special Invade tech attack against them, ignoring Invisible and line of sight. On hit, apply the effects of Invade as normal, choosing options for each target. On miss, targets become Impaired until the end of their next turn.",
+                            "activation":  "Full",
+                            "passive_name":  "Advanced Intrusion Package",
+                            "passive_effect":  "Gain the following options for Invade:",
+                            "passive_actions":  [
+                                                    {
+                                                        "name":  "Balance Control Lockout",
+                                                        "activation":  "Invade",
+                                                        "detail":  "Push your target 2 spaces in any direction and knock them Prone. If they are already Prone, they become Immobilized until the end of their next turn. You may only Immobilize each character this way 1/scene.",
+                                                        "cost":  0,
+                                                        "tech_attack":  true
+                                                    },
+                                                    {
+                                                        "name":  "System Crusher",
+                                                        "activation":  "Invade",
+                                                        "detail":  "Your target takes an additional 2 heat, for a total of 4 heat. If this Invade causes them to exceed their Heat Cap, they take 4 burn as well. This can only be used 1/scene on each character.",
+                                                        "cost":  0,
+                                                        "tech_attack":  true
+                                                    }
+                                                ]
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/nodata.png",
+        "y_pos":  0
+    },
+    {
+        "id":  "mf_gilgamesh",
+        "license_level":  2,
+        "source":  "HA",
+        "name":  "Gilgamesh",
+        "mechtype":  [
+                         "Striker"
+                     ],
+        "description":  "The Gilgamesh is Harrison Armory\u0027s multirole Legionnaire model chassis, designed to be distributed to Armory legions and Acquisition \u0026 Management Teams across the Purview and beyond. Built to be fully compatible with numerous hardpoint-mounted tactical system enhancements and munitions, the Gilgamesh excels at no one task in particular, but its comprehensive modular construction and rugged engineering allow it to perform a variety of combat duties without difficulty within numerous theaters. Beyond the logistical efficiency of a standardized, easy to handle chassis meant to streamline both materiel concerns and aptitude training across multiple worlds and cultures, the Gilgamesh has another purpose as well; further reducing the Armory\u0027s remaining dependence on foreign-manufactured chassis designs, in particular the GMS Everest.\u003cbr\u003e\u003cbr\u003eSome commissioned officers have a tendency to look down upon Gilgamesh pilots for using what they view as an unglamorous \"trainer\" chassis, but other commanders are fierce proponents of the design, even choosing to pilot it themselves in order to lead by example, and in certain regions of the Purview the Gilgamesh is regarded with as much admiration as more sophisticated models such as the Sherman.",
+        "mounts":  [
+                       "Main",
+                       "Flex",
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  1,
+                      "hp":  8,
+                      "evasion":  8,
+                      "edef":  8,
+                      "heatcap":  7,
+                      "repcap":  4,
+                      "sensor_range":  10,
+                      "tech_attack":  0,
+                      "save":  11,
+                      "speed":  4,
+                      "sp":  6
+                  },
+        "traits":  [
+                       {
+                           "name":  "Load-Bearing Hardpoints",
+                           "description":  "All Limited systems and weapons equipped to the Gilgamesh gain +1 charge.",
+                           "bonuses":  [
+                                           {
+                                               "id":  "limited_bonus",
+                                               "val":  1
+                                           }
+                                       ]
+                       },
+                       {
+                           "name":  "Locked and Loaded",
+                           "description":  "The Gilgamesh has a Loadout Die, 1d6 starting at 6. Each time it expends a Limited charge, reduce the value of the Loadout Die by 1. When the Loadout Die reaches 1, you may reset it to 6 to reroll one attack, check, or save, though the second result must be kept. The value of the Loadout Die persists between scenes but resets to 6 when you perform a Full Repair.",
+                           "counters":  [
+                                            {
+                                                "id":  "gilgamesh_arsenal",
+                                                "name":  "Arsenal Die",
+                                                "default_value":  6,
+                                                "min":  1,
+                                                "max":  6
+                                            }
+                                        ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Exoframe Engineering",
+                            "description":  "The Gilgamesh was designed from the ground up to be easy and inexpensive to both construct and maintain, but to Harrison Armory \"inexpensive\" does not equal shoddy or inefficient. Instead, the Gilgamesh utilizes a unique two-stage chassis design in which an inner \"core chassis\" is first created before a secondary outer \"exoframe\" is built upon that core, including additional armor, brachial/limb extensions, and hardpoints. The end result is a deceptively elegant design capable of not only extensive customization but also exceptionally simple field repairs. A series of interlocking clamps and explosive bolts anchor various exoframe components and appendages in place, and when sufficient structural integrity is compromised these sections can be swiftly jettisoned and just as quickly replaced, allowing Legionnaires to continue fighting through catastrophic damage that would render other chassis inoperable.\u003cbr\u003e\u003cbr\u003eThis construction also allows power to be selectively rerouted between the core chassis and exoframe components, bypassing system failures and even enhancing overall performance for brief periods, though the strain this puts on the exoframe necessarily limits its use to critical situations only.",
+                            "passive_name":  "Exoframe Engineering",
+                            "passive_effect":  "The Gilgamesh has a modular construction framework which allows it to easily make in-field repairs by blowing off and replacing damaged limbs and components with spares. 1/scene as a free action, you may choose one of the following:\u003cul\u003e\u003cli\u003eRegain 1/2 of your total HP.\u003c/li\u003e\u003cli\u003eRepair a destroyed weapon or system.\u003c/li\u003e\u003c/ul\u003eIf you don\u0027t use this ability during combat, then when you next rest you may either regain all HP or automatically repair a destroyed weapon or system.\u003cbr\u003e\u003cbr\u003eUsing this ability during combat counts as expending a Limited charge.",
+                            "active_name":  "Exo Amplification",
+                            "activation":  "Protocol",
+                            "active_effect":  "You gain Immunity to all conditions not caused by your own systems, talents, etc, until the end of your next turn, and clear all such conditions you already have (including that that can\u0027t be cleared normally). You also clear Exposed, stand from Prone, and gain Grit+4 Overshield. At the end of your next turn, clear this Overshield. This ability can be used even if you would not normally be able to take this action (e.g., if you are Stunned).\u003cbr\u003e\u003cbr\u003eUsing this ability during combat counts as expending a Limited charge."
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/gilgamesh.png",
+        "y_pos":  0
+    },
+    {
+        "id":  "mf_amber_phantom",
+        "license_level":  2,
+        "source":  "SSC",
+        "name":  "Amber Phantom",
+        "variant":  "Metalmark",
+        "mechtype":  [
+                         "Striker"
+                     ],
+        "description":  "Created as an advanced strike chassis for SSC\u0027s INSIGHT ORDINAL next-generation weapons evaluation program, the Amber Phantom represents the culmination of numerous technologies developed under the BELLA CIAO line into a single hyperspec, high-performance frame. Based primarily upon the Metalmark platform, the Amber Phantom incorporates an advanced neural bridge derived from the Death\u0027s Head\u0027s precognitive targeting system in conjunction with TACSIM choral processors in order to amplify the pilot\u0027s situational awareness to beyond-human levels.\u003cbr\u003e\u003cbr\u003eThe result of this synergy is an uncanny level of mind/machine-integrated performance akin to seeing into the future. Amber Phantom pilots appear to casually sidestep incoming fire, and their attacks are perfectly timed to intersect enemy positions without any wasted movement. This system is not without its drawbacks; extended use of the neural bridge is said to result in feelings of intense déjà vu, temporal dissociation, and dyschronometria, and pilots are strongly advised to maintain regular downtime rotation cycles and centering exercises in order to minimize these risks.\u003cbr\u003e\u003cbr\u003eNot currently in widespread distribution, the Amber Phantom has seen extensive use among Constellar special forces, and is also available to select SSC clients under a full-disclosure data sharing and promotional rights agreement.",
+        "mounts":  [
+                       "Flex",
+                       "Main",
+                       "Main/Aux"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  0,
+                      "hp":  8,
+                      "evasion":  12,
+                      "edef":  6,
+                      "heatcap":  5,
+                      "repcap":  4,
+                      "sensor_range":  10,
+                      "tech_attack":  0,
+                      "save":  10,
+                      "speed":  5,
+                      "sp":  5
+                  },
+        "traits":  [
+                       {
+                           "name":  "Hyperawareness",
+                           "description":  "At the start of each round, until the Amber Phantom takes its turn, all attacks against it are made with +1 Difficulty and it makes all saves with +1 Accuracy."
+                       },
+                       {
+                           "name":  "Battle Oracle",
+                           "description":  "1/round, when a hostile character misses the Amber Phantom with an attack, it may pull a character within Sensors up to 2 spaces in any direction."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Possibility Mapping",
+                            "description":  "SSC\u0027s precognitive neural bridging systems are not paracausal as the name might suggest. Using carefully modulated neural stimulation and acceleration, the operator\u0027s ability to consciously process and assimilate even subconsciously-derived sensory input is greatly amplified, reducing feedback delay and enhancing reaction time to near-instinctive levels. This then allows users to more accurately predict immediate future occurrences based on comprehensive sensory awareness and intuitive analysis, hence precognition.\u003cbr\u003e\u003cbr\u003eTo further enhance this system\u0027s capability, the Amber Phantom marries precognitive bridging with a chorus of predictive modeling and tactical simulation systems to provide the pilot with even more information. The result is the creation of a holistic battlefield timeline continuously extending forward several seconds in advance of realtime, granting users an unparalleled ability to choose the precise, optimal moment to act in all situations, reacting to ongoing events even before they occur.",
+                            "passive_name":  "Possibility Mapping",
+                            "passive_effect":  "At the start of each round, choose a point during the PC turn order to act (i.e. if there are three PCs, you can choose to act first, second, or third among them). 1/round, if you take your turn during that point, you may deal +1d6 bonus damage on hit with a ranged or melee attack against a target within Sensors. If you take your turn at another point in the round, you may still gain this bonus damage, but you take 1d6 heat when doing so.",
+                            "active_name":  "Convergence Point",
+                            "activation":  "Protocol",
+                            "active_effect":  "Choose one allied character that has not taken their turn this round. That character may take their turn either immediately after your turn ends, or they may take their turn now before you do anything else, pausing your own turn until their turn ends. If they choose to act now, they count as acting before you in the PC turn order. This ability is \u003cb\u003eEfficient\u003c/b\u003e and will refund 1 Core Point at the end of any scene in which this ability was used."
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/amber_phantom.png",
+        "y_pos":  0
+    },
+    {
+        "id":  "mf_lycan",
+        "license_level":  2,
+        "source":  "HORUS",
+        "name":  "Lycan",
+        "variant":  "Manticore",
+        "mechtype":  [
+                         "Defender",
+                         "Striker"
+                     ],
+        "description":  "Despite its recent appearance, the Manticore has quickly become one of the most readily identifiable HORUS pattern-groups due to its distinctive electromagnetic signature and indiscriminately destructive energy bleed-off. While this recognition lends itself well to the Manticore\u0027s fearsome reputation, it also limits the design\u0027s strategic applications to direct assaults where early detection and collateral damage are of minimal consequence.\u003cbr\u003e\u003cbr\u003eIt remains unclear if the Lycan was designed in parallel to the Manticore or if it represents a subsequent development, but while it\u0027s clear that the Lycan is derived from the Manticore PG, it decouples the base chassis\u0027 heavy armor and hardpoint capability from the Manticore\u0027s more volatile systems. The resulting design is far less dangerous for the pilot, and far more capable of concealing its signature as well as the full extent of its capabilities, allowing it to operate with greater discretion until absolutely necessary.\u003cbr\u003e\u003cbr\u003eAs a result, the Lycan excels at ambush and counter-ambush tactics, capable of masquerading as a more conventional chassis until the opportunity presents itself, then shedding its baffle-lined outer carapace and shifting into a hyper-aggressive close-combat mode in order to dispatch its targets.",
+        "mounts":  [
+                       "Flex",
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  2,
+                      "hp":  8,
+                      "evasion":  6,
+                      "edef":  10,
+                      "heatcap":  6,
+                      "repcap":  3,
+                      "sensor_range":  8,
+                      "tech_attack":  1,
+                      "save":  10,
+                      "speed":  3,
+                      "sp":  6
+                  },
+        "traits":  [
+                       {
+                           "name":  "Slag Carapace",
+                           "description":  "The Lycan has resistance to Energy Damage and Burn."
+                       },
+                       {
+                           "name":  "Interference Field",
+                           "description":  "All hostile characters within Range 3 of the Lycan take +1 Difficulty on all attacks that do not target the Lycan."
+                       },
+                       {
+                           "name":  "Power Flux",
+                           "description":  "1/round, when the Lycan takes heat, a hostile character within Range 3 must pass a Systems save or become Impaired and Slowed until the end of their next turn."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Subversive Signature",
+                            "description":  "As a chassis designed for covert operations, the Lycan leverages the Manticore\u0027s affinity for electromagnetics in order to further obscure its precise nature, wrapping itself in a layered mesh of sensor baffles and wideband interference signals that disrupt and distort recognition scans and targeting systems. The effects of this distortion field are so intense that they even cause sporadic, uncontrolled power fluctuations in nearby systems, and pilots who have survived combat with Lycan PG chassis report experiencing intermittent electronics blackouts and even reduced reactor output upon approach.\u003cbr\u003e\u003cbr\u003eHowever, the most distinctive feature of the Lycan by far is its ability to shift from its default, heavily-armored configuration to a more aggressive assault mode. This transformation is dramatic and known to cause panic among enemy forces as the Lycan\u0027s true nature is suddenly revealed in an explosive jettisoning of armor plating and a violent surge of power diverted towards the chassis\u0027 concealed shock claws, a series of retractable, high-temperature arc blades based on Manticore armament designs and embedded with a series of retaliatory \"self-sharpening\" heuristics.",
+                            "active_name":  "Go Loud",
+                            "activation":  "Full",
+                            "active_effect":  "You violently jettison the Lycan\u0027s external carapace, extending brutal talons and supercharging its reactor. For the rest of the scene, your base Armor becomes 0, your base Speed becomes 6, Slag Carapace and Interference Field are disabled, and you gain the Shock Claws integrated weapon.\u003cbr\u003cbr\u003eYou may then charge forward to strike, moving your Speed and making an attack against a target within Range using the Shock Claws. This attack counts as a Barrage for the purpose of duplicate action restrictions.\u003cbr\u003e\u003cbr\u003eBefore activation, this weapon\u0027s output can be enhanced by proximity to extreme structural damage. The first time in a scene that an allied Mech character within Sensors takes structure damage from a hostile source before you activate Go Loud, this weapon becomes Threat 2. If this happens a second time before activating it, this weapon now also deals 4d6+6 energy damage instead of 3d6+6.\u003cbr\u003e\u003cbr\u003eIf an allied Mech character is destroyed before you activate Go Loud, or if you activate it while at 2 Structure or less, you automatically gain both of these additional benefits.\u003cbr\u003e\u003cbr\u003eThis ability is \u003cb\u003eEfficient\u003c/b\u003e and will refund 1 Core Point at the end of any scene in which this ability was used.",
+                            "integrated":  [
+                                               "mw_integrated_shock_claws"
+                                           ]
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/lycan.png",
+        "y_pos":  0
+    },
+    {
+        "id":  "mf_kutuzov",
+        "license_level":  2,
+        "source":  "HA",
+        "name":  "Kutuzov",
+        "variant":  "Napoleon",
+        "mechtype":  [
+                         "Defender",
+                         "Support"
+                     ],
+        "description":  "Following the initial testbed development of the Napoleon and its successful proof-of-concept demonstration of numerous advanced blinkspace and stasis technologies, Harrison Armory immediately approved a series of ongoing developmental programs to expand the application of these systems across a number of successor chassis and block upgrade packages. One of the earliest of these successor programs, the Kutuzov was designed for Armory Naval Command as a boarding action force multiplier, taking the Napoleon\u0027s incredible self-sustainability and turning it outwards to create a compact and maneuverable projected defense platform ideal for accompanying marine or chassis squads into close-quarters engagements.\u003cbr\u003e\u003cbr\u003eUnlike the more iconic Saladin, the Kutuzov remains unsuited to frontline engagement, and its own personal survivability metrics are notably reduced from the Napoleon itself. However, its robust array of waveform projectors are designed for sustained operation under even critical system stresses, and its ability to rapidly disseminate flash-projected barriers in response to incoming fire have shown extremely promising results both during training exercises as well as limited live-combat engagements during anti-piracy operations. Alongside the Iskander-CC, the Kutuzov has also begun to see increasing use as a perimeter security and riot-control unit during low-intensity defensive actions on New Madrassa.",
+        "mounts":  [
+                       "Main/Aux"
+                   ],
+        "stats":  {
+                      "size":  0.5,
+                      "structure":  4,
+                      "stress":  4,
+                      "armor":  2,
+                      "hp":  6,
+                      "evasion":  8,
+                      "edef":  10,
+                      "heatcap":  8,
+                      "repcap":  3,
+                      "sensor_range":  5,
+                      "tech_attack":  0,
+                      "save":  11,
+                      "speed":  4,
+                      "sp":  7
+                  },
+        "traits":  [
+                       {
+                           "name":  "Expulsion Zone",
+                           "description":  "1/round, when the Kutuzov Activates or otherwise uses a Shield system during its turn, it may knock all hostile characters of its choice within Sensors back 3 spaces."
+                       },
+                       {
+                           "name":  "Emergency Blinkfields",
+                           "description":  "Whenever the Kutuzov or any allied character within Sensors takes the Brace reaction, they clear Shredded (or ignore its effects if it can\u0027t be cleared normally) from hostile sources, and attacks they Brace against can\u0027t inflict Shredded."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Parallel Projectors",
+                            "description":  "One of the Kutuzov\u0027s most distinct features is its series of integrated parallel-tracked field emitters, allowing for the simultaneous modulation and projection of multiple overlapping waveform patterns. This includes standard superpositional barriers and stasis fields as well as more aggressively-tuned fields designed for the take-and-hold operations the Kutuzov is tasked with, forcefully displacing threats during close-quarters engagements and clearing zones for subsequent barrier deployment to establish reinforced strongpoints.\u003cbr\u003e\u003cbr\u003eAmong these other uses, these emitters are capable of \"flashing\" a single-plane form of the Napoleon\u0027s Trueblack Aegis as a short-lived interpositional countermeasure. Without the excessive demands of sustaining a total-coverage envelope, the operational range of the Aegis can be increased through a series of point-defense tracking protocols and set to neutralize all hostile engagement from selected targets. However, the drawback to this implementation is immediately obvious, with a reduced shield profile, unresolved interference with outgoing fire, and the field emitters requiring an extensive power-cycling period before they can be reactivated once more.",
+                            "passive_name":  "Parallel Projectors",
+                            "passive_effect":  "1/round, when you take the Stabilize action, Bolster Quick Tech action, or Activate or otherwise use a Shield system during your turn, you may grant an allied character within Sensors a benefit based on the overall cost of that action:\u003cul\u003e\u003cli\u003eFree Action: They gain soft cover until the end of their next turn.\u003c/li\u003e\u003cli\u003eQuick Action: They ignore engagement, their movement doesn\u0027t provoke reactions, and they may pass through (but not stop in) spaces occupied by obstructions and other characters until the end of their next turn.\u003c/li\u003e\u003cli\u003eFull Action: They may clear a condition that wasn\u0027t caused by one of their own systems, talents, etc.\u003c/li\u003e\u003c/ul\u003e\u003cbr\u003e\u003cbr\u003eYou can choose a benefit from a lower action cost if you like, instead (e.g., if you performed a full action, you could choose the quick action or free action options).",
+                            "active_name":  "Projected Aegis",
+                            "activation":  "Quick",
+                            "active_effect":  "Choose an allied character within line of sight, and then choose a hostile character within line of sight. Until the end of your next turn, those characters can\u0027t attack each other or force saves against each other via actions. This ability counts as a system with the \u003cb\u003eShield\u003c/b\u003e tag.\u003cbr\u003e\u003cbr\u003eThis ability is \u003cb\u003eEfficient\u003c/b\u003e and will refund 1 Core Point at the end of any scene in which this ability was used."
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/kutuzov.png",
+        "y_pos":  0
+    },
+    {
+        "id":  "mf_Empakaai_alt_blackbeard",
+        "source":  "IPS-N",
+        "variant":  "Blackbeard",
+        "name":  "Empakaai",
+        "mechtype":  [
+                         "Striker"
+                     ],
+        "y_pos":  45,
+        "license_level":  2,
+        "description":  "\u003ci\u003e\u003cp\u003e“I am thinking now!\u003c/p\u003e\u003cp\u003eTo a mountain I climbed, to a pond I ventured;\u003c/p\u003e\u003cp\u003eI am thinking now!\u003c/p\u003e\u003cp\u003eMy reflection I saw, hideous and jagged;\u003c/p\u003e\u003cp\u003eI am thinking now!\u003c/p\u003e\u003cp\u003eTo a hell I created, to a man I slain;\u003c/p\u003e\u003cp\u003eI am thinking now!\u003c/p\u003e\u003cp\u003eA victory it gave, glorious and valiant\u003c/p\u003e\u003cp\u003eI am thinking now!\u003c/p\u003e\u003c/i\u003e\u003cp\u003eThe Empakaai, a machination of the infamous poet and mech artisan Ololade Omatanwa, was found drenched in hell.\u003c/p\u003e\u003cp\u003ePopular rumor whispers that upon the tallest of mountain and through the reflection of lake Empakaai Ololade saw in his reflection, Kalunga. Hell - fire - dark ash and staring back at him was not his eyes, but the eyes of the damned and desolate clasped in the hand of Iku.\u003c/p\u003e\u003cp\u003eAs the waters danced in rhythm, Ololade remained fixated. His thoughts wondering why Lake Empakaai- a place renowned for its untenable beauty, would show him a tragedy so visceral. In his reflection he saw thousands plummet from the gaps in Iku’s hand- falling to the pit of Klunga where they’d only be welcomed by death and soot. A portrayal in contradiction within the soothing and pristine waters stretching out to the extents of Ololade’s vision. Rumor would tell that, when he did come down from the tallest of mountains he would scream the words “I am thinking now!” - “ A victory it gave, glorious and valiant”.\u003c/p\u003e\u003cp\u003eYears later, a painting would circulate throughout the local omninet, affectionately titled- The Descent to Klunga, it was a masterpiece and also a foreshadowing of something that should have only existed in the delirious mind of a lonely SSC citizen and renowned virtuoso.\u003c/p\u003e\u003cp\u003eSometime later- another rumor would surface, one that whispered SSC braved Kalunga, stole Iku’s Hand and painted it in fire’s colors and ashe’s hues. They sought to give it a body and called to any who would listen, the first to answer their call was IPS-N. They would offer up a frame, the Blackbeard, in effigy to The Descent to Klunga and from that gift a partnership between SSC and IPS-N would birth the Empakaai.\u003c/p\u003e\u003cp\u003eThe Empakaai is primarily distinguished by its cold core reactor powered and oversized independent comp/con controlled sleeve, Iku’s Hand, that features a 50/50 weight distribution with the rest of the frame. The juxtaposition of SSC elegance and IPS-N artistic sterility have led many to deem the frame a hideous sight. Though to Ololade- it is a living reflection of what he saw atop the tallest of mountains and through his reflection in Lake Empakaai.\u003c/p\u003e",
+        "mounts":  [
+                       "Heavy",
+                       "Flex"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  2,
+                      "hp":  10,
+                      "evasion":  7,
+                      "edef":  6,
+                      "heatcap":  6,
+                      "repcap":  4,
+                      "sensor_range":  5,
+                      "tech_attack":  -2,
+                      "save":  10,
+                      "speed":  4,
+                      "sp":  5
+                  },
+        "traits":  [
+                       {
+                           "name":  "Untenable Power",
+                           "description":  "1/round. the Empakaai may give a Hull check or save it forced +1 difficulty."
+                       },
+                       {
+                           "name":  "Indomitable Force",
+                           "description":  "The Empakaai gains RESISTANCE to damage and HEAT dealt from characters it is GRAPPLING."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "The Descent to Kalunga",
+                            "description":  "\u003ci\u003e\u003cp\u003eUpon Ololade Omotanwa’s sculpted mountain a message is inscribed under the cold-span limiters of Iku’s Hand.\u003c/p\u003e\u003cp\u003e“I gift to you a mountain.\u003c/p\u003e\u003cp\u003e Rolling hills, curvilinear egresses, a shattered spine, and a crown glazed in voluminous spires. Let this be a treaty to your foes. Your promise is that their eyes will witness the beauty that is Iku’s hands before they descend to Kalunga. Hell, fire and dark ash, together they will burn cavities in souls.\u003c/p\u003e\u003cp\u003eI gift you my mountain.”\u003c/p\u003e\u003c/i\u003e",
+                            "active_name":  "Marrow Anchors",
+                            "use":  "Mission",
+                            "active_effect":  "For the rest of the scene, while Grappling you count as 1 Size larger than the combined size of all targets you’re currently Grappling. Additionally, you gain these benefits for the rest of the scene:",
+                            "active_actions":  [
+                                                   {
+                                                       "name":  "Iku’s Hand",
+                                                       "activation":  "Free",
+                                                       "detail":  " After successfully hitting a character with a melee weapon attack, the Empakaai may Grapple the target as a free action. On a success, the target is pulled adjacent to you and Grappled."
+                                                   },
+                                                   {
+                                                       "name":  "Catalytic Infusor",
+                                                       "activation":  "Free",
+                                                       "detail":  "At the end of the Empakaai\u0027s turn, it deals [its current Heat] in energy AP damage to a character of its choice it is Grappled with. It may also instead choose to divide this total amongst any characters it\u0027s currently Grappling."
+                                                   }
+                                               ],
+                            "activation":  "Protocol",
+                            "integrated":  [
+                                               "mw_empakaai_alt_blackbeard_integrated"
+                                           ]
+                        },
+        "image_url":  "https://d2c79xe1p61csc.cloudfront.net/frames/empakaai.png"
+    },
+    {
+        "id":  "mf_kidd",
+        "source":  "IPS-N",
+        "name":  "Kidd",
+        "mechtype":  [
+                         "Support"
+                     ],
+        "y_pos":  25,
+        "license_level":  2,
+        "description":  "\u003cp\u003eA sidegraded cousin of IPS-N\u0026rsquo;s Lancaster support frame, the Kidd was produced under a joint development contract by IPS-N\u0026rsquo;s Titan\u0026ndash;Enceladus Field Project and Northstar Branch Robotics. The original pattern for the frame was bought off a mining commune that had rigged their support drones in a slapdash but ingenious neural mesh that both hardened them against tech intrusion and increased their operational efficiency many times over. Urban legend was that the original builder of the rig had used his drone team to bury caches of black-market Volador tech in several wandering asteroids, and out of extreme paranoia made his systems almost impossible to crack. To this day Northstar Branch Robotics tries valiantly to squash down persistent rumors that clues to the location of the caches are hidden in the Kidd\u0026rsquo;s code base.\u003c/p\u003e \u003cp\u003eDesigned to provide an aggressive, all-theater support solution to rugged field teams in hostile environments, the Kidd mounts a trio of powerful systems to ensure a broad operational envelope. The Jolly Roger semiautonomous personal orbital platform, bundled with every genuine-license Kidd platform establishes theater control in any open or near-surface environment. A squadron of bundled subalterns (along with an onboard maintenance suite) guarantees friendly support in any environment and provides a broad suite of tactical possibility. Finally, Titan\u0026ndash;Enceladus\u0026rsquo;s SMOKESTACK heat sink pylon represents the cutting edge of IPS-N\u0026rsquo;s thermodynamic axiomatics, allowing users to offset surplus heat via the creation of a pinhole-window into an omega state of absolute zero.\u003c/p\u003e \u003cp\u003eThe Kidd is a popular chassis in Evergreen where it is employed as a subaltern command platform for civilian and engineering purposes. Its familiar bulk can also regularly be seen accompanying traders on their way to do business with the Gray Towns.\u003c/p\u003e",
+        "mounts":  [
+                       "Main"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  2,
+                      "hp":  6,
+                      "evasion":  6,
+                      "edef":  12,
+                      "heatcap":  4,
+                      "repcap":  5,
+                      "sensor_range":  8,
+                      "tech_attack":  1,
+                      "save":  11,
+                      "speed":  6,
+                      "sp":  10
+                  },
+        "traits":  [
+                       {
+                           "name":  "Rapid Deployment",
+                           "description":  "On its first turn in any combat scene, the Kidd can deploy or activate any one system with the drone or deployable tag as a free action.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "deployable",
+                                                                   "drone"
+                                                               ],
+                                                 "detail":  "On its first turn in any combat, the Kidd can deploy or activate any one system with the DRONE or DEPLOYABLE tag as a free action."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Reroute Power",
+                           "description":  "As a quick action 1/round, the Kidd can destroy one of its DEPLOYABLES or DRONES that was not deployed or created in the same round to either grant 1d6+1 OVERSHIELD to an allied character or deal 1d6+1 AP Energy Damage to a hostile character. The target, allied or hostile, must be adjacent to whatever is destroyed. Systems without LIMITED that are destroyed this way must be repaired before they can be used again.",
+                           "actions":  [
+                                           {
+                                               "name":  "Reroute Power",
+                                               "activation":  "Quick",
+                                               "frequency":  "1/round",
+                                               "detail":  "Destroy one of your deployables or drones to either grant 1d6+1 OVERSHIELD to an allied character or deal 1d6+1 AP Energy Damage to a hostile character. The target, allied or hostile, must be adjacent to whatever is destroyed. Systems without LIMITED that are destroyed this way must be repaired before they can be used again."
+                                           }
+                                       ]
+                       },
+                       {
+                           "name":  "Recycle",
+                           "description":  "At the end of any scene in which the Kidd used REROUTE POWER, it restores 1 charge to a LIMITED system of its choice with the DRONE or DEPLOYABLE tag.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "deployable",
+                                                                   "drone"
+                                                               ],
+                                                 "detail":  "At the end of any scene in which the Kidd used REROUTE POWER, it restores 1 charge to a LIMITED system of its choice with the DRONE or DEPLOYABLE tag."
+                                             }
+                                         ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "The Jolly Roger",
+                            "description":  "",
+                            "active_name":  "Skull and Bones",
+                            "active_effect":  "For the rest of the scene, Plunder and Swindle become Blast 2 and Shiver Timbers affects all characters in a Line 10 path.",
+                            "activation":  "Protocol",
+                            "use":  "Encounter",
+                            "passive_name":  "Jolly Roger",
+                            "passive_effect":  "\u003cp\u003eAt the start of every combat scene, your Kidd automatically connects to its paired Jolly Roger orbital satellite weapon. The efficacy of the Jolly Roger depends on maintaining a high level of calibration with the Kidd, which is tracked with a JOLLY ROGER DIE - 1d6, starting at 1.\u003c/p\u003e \u003cp\u003eThe die ticks up by 1 whenever you:\u003c/p\u003e \u003cul\u003e \u003cli\u003edeploy a DRONE or DEPLOYABLE\u003c/li\u003e \u003cli\u003etake a tech action that targets at least one allied character.\u003c/li\u003e \u003c/ul\u003e \u003cp\u003eEach option can only increase the value of the of the JOLLY ROGER DIE once per round independently; however, the die also ticks up by 1 any time a hostile character takes a tech action against an allied character within your SENSORS, with no limit.\u003c/p\u003e \u003cp\u003e1/round, you can activate the Jolly Roger as a quick action, resetting the JOLLY ROGER DIE to 1. Choose one of the following effects, based on the value of the die:\u003c/p\u003e \u003cp\u003e\u003cb class=\u0027accent--text\u0027\u003e3+\u003c/b\u003e \u003cb\u003ePlunder\u003c/b\u003e: SCAN every hostile character in a Blast 1 area and give them LOCK ON.\u003c/p\u003e \u003cp\u003e\u003cb class=\u0027accent--text\u0027\u003e5+\u003c/b\u003e \u003cb\u003eSwindle\u003c/b\u003e: Every hostile character in a Blast 1 area must succeed on a SYSTEMS save or become IMPAIRED, JAMMED, and SLOWED until the end of their next turn.\u003c/p\u003e \u003cp\u003e\u003cb class=\u0027accent--text\u0027\u003e6\u003c/b\u003e \u003cb\u003eShiver Timbers\u003c/b\u003e: Fire a beam weapon, punching a narrow hole through walls and obstructions. One hostile character must succeed on an AGILITY save or take 3d6 AP Energy Damage. On a success, they take half damage\u003c/p\u003e \u003cp\u003eYou do not require line of sight for any of these effects, they have the effective range of the battlefield, and they easily penetrate objects and terrain, although more potent barriers (e.g., energy shields that prevent effects from crossing them due to line of sight) block them normally\u003c/p\u003e",
+                            "passive_actions":  [
+                                                    {
+                                                        "name":  "Plunder 3+",
+                                                        "activation":  "Quick",
+                                                        "detail":  "SCAN every hostile character in a Blast 1 area and give them LOCK ON.",
+                                                        "frequency":  "1/round"
+                                                    },
+                                                    {
+                                                        "name":  "Swindle 5+",
+                                                        "activation":  "Quick",
+                                                        "detail":  "Every hostile character in a Blast 1 area must succeed on a SYSTEMS save or become IMPAIRED, JAMMED, and SLOWED until the end of their next turn.",
+                                                        "frequency":  "1/round"
+                                                    },
+                                                    {
+                                                        "name":  "Shiver Timbers 6",
+                                                        "activation":  "Quick",
+                                                        "detail":  "Fire a beam weapon, punching a narrow hole through walls and obstructions. One hostile character must succeed on an AGILITY save or take 3d6 AP Energy Damage. On a success, they take half damage.",
+                                                        "frequency":  "1/round"
+                                                    }
+                                                ],
+                            "counters":  [
+                                             {
+                                                 "id":  "ctr_jolly_roger",
+                                                 "name":  "Jolly Roger",
+                                                 "default_value":  1,
+                                                 "min":  1,
+                                                 "max":  6
+                                             }
+                                         ]
+                        },
+        "data_type":  "frame",
+        "image_url":  "https://compcon-image-assets.s3.amazonaws.com/frames/mf_kidd.png",
+        "license_id":  "mf_kidd"
+    },
+    {
+        "id":  "mf_sagarmatha",
+        "variant":  "Everest",
+        "source":  "GMS",
+        "name":  "Sagarmatha",
+        "mechtype":  [
+                         "Defender"
+                     ],
+        "y_pos":  25,
+        "license_level":  0,
+        "description":  "\u003cp\u003eThe SAGARMATHA is a SIZE 2 legacy GMS chassis that all characters have access to from LL0 onwards. This variant FRAME is not mutually exclusive with the EVEREST.\u003c/p\u003e\u003cp\u003eThe Sagarmatha is of an older pattern than the Everest, sturdier and bulkier by necessity more than design. It is seen as somewhat antiquated through the lens of modern manufacturing standards. Nevertheless, it enjoys some use in border colonies, in the Baronies, and with the Albatross.\u003c/p\u003e",
+        "mounts":  [
+                       "Main",
+                       "Flex",
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  2,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  1,
+                      "hp":  8,
+                      "evasion":  8,
+                      "edef":  8,
+                      "heatcap":  6,
+                      "repcap":  4,
+                      "sensor_range":  10,
+                      "tech_attack":  0,
+                      "save":  10,
+                      "speed":  4,
+                      "sp":  6
+                  },
+        "traits":  [
+                       {
+                           "name":  "Guardian",
+                           "description":  "Adjacent allied characters can use the Sagarmatha as hard cover."
+                       },
+                       {
+                           "name":  "Heroism",
+                           "description":  "1/scene the Sagarmatha can brace without sacrificing any actions or movement on its following turn.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "active_effects"
+                                                               ],
+                                                 "detail":  "1/scene the Sagarmatha can brace without sacrificing any actions or movement on its following turn."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Replaceable Parts",
+                           "description":  "While resting, the Sagarmatha can be repaired at a rate of 1 repair per structure damage instead of 2.",
+                           "bonuses":  [
+                                           {
+                                               "id":  "cheap_struct",
+                                               "val":  1
+                                           }
+                                       ],
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "rest"
+                                                               ],
+                                                 "detail":  "The Sagarmatha can be repaired at a rate of 1 Repair per 1 structure damage."
+                                             }
+                                         ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Rallying Cry",
+                            "description":  "",
+                            "active_name":  "Raise the Banner",
+                            "active_effect":  "You raise a rallying banner. All allied characters in line of sight of your mech when you do this gain RESISTANCE to all damage and heat and gain +1 Accuracy on all checks and saves. These effects last until the end of your next turn.",
+                            "activation":  "Quick",
+                            "use":  "Next Turn"
+                        },
+        "data_type":  "frame",
+        "image_url":  "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+        "license_id":  "mf_standard_pattern_i_everest"
+    },
+    {
+        "id":  "mf_tokugawa_alt_enkidu",
+        "variant":  "Tokugawa",
+        "source":  "HA",
+        "name":  "Enkidu",
+        "mechtype":  [
+                         "Striker",
+                         "Defender"
+                     ],
+        "y_pos":  25,
+        "license_level":  2,
+        "description":  "\u003cp\u003eThe ENKIDU can be taken at rank II of the TOKUGAWA license instead of the base FRAME, or retrofitted during Act 1 of the No Room for a Wallflower Campaign.\u003c/p\u003e\u003cp\u003eThis experimental frame was secretly designed as a TBK chassis for lateaction combat in the Hercynian Crisis. Deployed in limited numbers against the remaining Egregorian hives in the brutal last stages of the war, the Enkidu\u0026rsquo;s neurological interfacing was dangerous: raw and unshielded. The power and aggression flowing through the subroutines that govern the mech bled into its pilot\u0026rsquo;s subjectivity, making them lose themselves in a storm of violence, constantly pushing themselves to greater and greater acts of destruction. This effect was incredibly hard for pilots to handle \u0026ndash; the fallout rate from the program was extremely high, and the survivors required extensive conditioning, implants, and a cocktail of neurological suppressants to continue.\u003c/p\u003e \u003cp\u003eThe true aim of the Enkidu program was not to fight Egregorians, which were in the final stages of practical extinction, but to use the battlefield as a testing ground for the eventual deployment of the chassis against ThirdComm revolutionaries and dissidents. Though the codebase for the Enkidu was eventually discontinued and molded into what is now the Tokugawa, the difficulties with the initial project prevented it from getting off the ground before the revolution took hold. The remaining prototypes were buried along with the rest of Hercynia\u0026rsquo;s history.\u003c/p\u003e",
+        "mounts":  [
+                       "Flex",
+                       "Flex"
+                   ],
+        "stats":  {
+                      "size":  2,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  1,
+                      "hp":  10,
+                      "evasion":  8,
+                      "edef":  8,
+                      "heatcap":  8,
+                      "repcap":  5,
+                      "sensor_range":  5,
+                      "tech_attack":  -2,
+                      "save":  10,
+                      "speed":  3,
+                      "sp":  5
+                  },
+        "traits":  [
+                       {
+                           "name":  "Primal Fury",
+                           "description":  "\u003cp\u003eWhen the Enkidu ends its turn in the DANGER ZONE, it rears up, extends its PLASMA TALONS (see below), and enters a state of primal fury with the following effects:\u003c/p\u003e \u003cul\u003e \u003cli\u003eOn hit, characters struck by the Enkidu\u0026rsquo;s PLASMA TALONS immediately become IMMOBILIZED until the end of their next turn.\u003c/li\u003e \u003cli\u003eAs a special reaction, the Enkidu must use its PLASMA TALONS to attack any character (hostile or allied) that enters, exits or moves more than 1 space within its THREAT. This special reaction can be used once a turn, any number of times a round, and doesn’t count against the maximum number of reactions a turn, so the Enkidu can take other reactions normally.\u003c/li\u003e \u003c/ul\u003e \u003cp\u003eThis state ends at the start of the Enkidu\u0026rsquo;s turn, or if the Enkidu exits the DANGER ZONE.\u003c/p\u003e",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "heat"
+                                                               ],
+                                                 "detail":  "When the Enkidu ends its turn in the Danger Zone, it enters the Primal Fury state."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "All Fours",
+                           "description":  "While it’s in the DANGER ZONE, the Enkidu can’t make ranged or tech attacks but has 6 base SPEED.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "heat"
+                                                               ],
+                                                 "detail":  "While it’s in the DANGER ZONE, the Enkidu can’t make ranged or tech attacks but has 6 base SPEED."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Brute Strength",
+                           "description":  "The Enkidu gets +1 accuracy on hull checks and saves.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "hull"
+                                                               ],
+                                                 "detail":  "The Enkidu gets +1 accuracy on hull checks and saves."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Bloodsense",
+                           "description":  "The Enkidu always knows if characters are at or under half of their maximum HP, but not the exact number."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Limit Restriction Zero",
+                            "description":  "\u003cp\u003e“I argue that it is Man who is shapeless; far from immutable, he is given form by the environment around him. In civilization, man is as divine as old God, who judges and creates; he is clothed in finery, and enjoys literature, art, company, and purpose. When left alone in the savage wilderness of nature, Man comports himself accordingly.”\u003c/p\u003e\u003cp\u003e— Harrison II, “Mandate, Vol II: On Nature, On Savagery, On Reason”\u003c/p\u003e",
+                            "active_name":  "Crush Limiter",
+                            "active_effect":  "For the rest of the scene, the Enkidu gains the Bifurcate action, which can only be used in the DANGER ZONE",
+                            "activation":  "Protocol",
+                            "use":  "Encounter",
+                            "active_actions":  [
+                                                   {
+                                                       "name":  "Bifurcate",
+                                                       "activation":  "Full",
+                                                       "detail":  "\u003cp\u003eThe Enkidu engages its monstrous strength, targets an adjacent character (allied or hostile) and attempts to tear them in half with its talons. If the target has 7 HP or less, only 1 STRUCTURE remaining, and doesn\u0026rsquo;t have IMMUNITY to damage, they are immediately destroyed, the action cost of this ability is refunded, and the Enkidu can BOOST as a free action. If this action fails to destroy the target, the target instead takes 1 Kinetic Damage.\u003c/p\u003e \u003cp\u003eAt the end of the scene, the CP cost of BIFURCATE is refunded if the Enkidu did not use it to destroy any characters.\u003c/p\u003e"
+                                                   }
+                                               ],
+                            "integrated":  [
+                                               "mw_tokugawa_alt_enkidu_integrated"
+                                           ]
+                        },
+        "data_type":  "frame",
+        "aptitude":  {
+
+                     },
+        "image_url":  "https://compcon-image-assets.s3.amazonaws.com/frames/alt_tokugawa.png",
+        "license_id":  "mf_tokugawa"
+    },
+    {
+        "id":  "mf_genghis_alt_worldkiller_genghis_mk_i",
+        "variant":  "Genghis",
+        "source":  "HA",
+        "name":  "“Worldkiller” Genghis Mk I",
+        "mechtype":  [
+                         "Striker",
+                         "Defender"
+                     ],
+        "y_pos":  25,
+        "license_level":  2,
+        "description":  "\u003cp\u003eThis variant can be taken at rank II of the GENGHIS license instead of the base FRAME. It can also be dug up and repaired as part of No Room For A Wallflower.\u003c/p\u003e\u003cp\u003eThough the Genghis Mk I is classified as a Harrison Armory FRAME for gameplay purposes, the original Genghis models were based on upscaled SecComm power armor and are technically GMS frames. Today, they are only compatible with the HA Genghis license due to a last-ditch tech partition by SecComm partisans in the latter stages of the revolution.\u003c/p\u003e\u003cp\u003eThese old-pattern Genghis mechs are buried all over Hercynia in various states of disrepair. They are a grim reminder of the carnage that once took place here. Unlike the Mk II, with its sleeker, slimmer frame, the Mk I is much more brutal in its simplicity – mass produced, a crude weapon.\u003c/p\u003e",
+        "mounts":  [
+                       "Main",
+                       "Main",
+                       "Heavy"
+                   ],
+        "stats":  {
+                      "size":  2,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  3,
+                      "hp":  6,
+                      "evasion":  6,
+                      "edef":  8,
+                      "heatcap":  8,
+                      "repcap":  4,
+                      "sensor_range":  5,
+                      "tech_attack":  -2,
+                      "save":  10,
+                      "speed":  3,
+                      "sp":  5
+                  },
+        "traits":  [
+                       {
+                           "name":  "Insulated",
+                           "description":  "The Genghis has immunity to Burn."
+                       },
+                       {
+                           "name":  "TBK Munitions",
+                           "description":  "The Genghis’s attacks ignore resistance to Burn and Heat."
+                       },
+                       {
+                           "name":  "Weak Computer",
+                           "description":  "The Genghis receives +1 Difficulty on all SYSTEM saves and checks.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "systems"
+                                                               ],
+                                                 "detail":  "The Genghis receives +1 Difficulty on all SYSTEM saves and checks."
+                                             }
+                                         ]
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Juggernaut Reactor",
+                            "description":  "Inside his great suit the fireman smiles. He is a salamander upon the world, belching flame, cleaning away history, and leaving a new land for the living.",
+                            "passive_name":  "Furiosa",
+                            "passive_effect":  "While in the DANGER ZONE, you are surrounded by shimmering heat that interferes with targeting. You gain soft cover. Additionally, other than you, characters within Burst 1 can’t take reactions.",
+                            "passive_synergies":  [
+                                                      {
+                                                          "locations":  [
+                                                                            "heat"
+                                                                        ],
+                                                          "detail":  "While in the DANGER ZONE, you are surrounded by shimmering heat that interferes with targeting. You gain soft cover. Additionally, other than you, characters within Burst 1 can’t take reactions."
+                                                      }
+                                                  ],
+                            "active_name":  "A Pleasure to Burn",
+                            "active_effect":  "\u003cp\u003eFor the rest of the scene, the Genghis is wreathed in coruscating heat. Your FURIOSA aura grows to Burst 2, and your mech ignores all difficult terrain, simply melting through it.\u003c/p\u003e \u003cp\u003eIf you overheat during this time, your mech releases a blast of heat that melts the ground beneath it. Characters other than you within the affected area of FURIOSA take 1d6 AP Energy damage and must succeed on a HULL save or become IMMOBILIZED until the end of their next turn. The area then becomes difficult terrain for the rest of the scene.\u003c/p\u003e",
+                            "activation":  "Protocol",
+                            "use":  "Encounter"
+                        },
+        "data_type":  "frame",
+        "aptitude":  {
+
+                     },
+        "image_url":  "https://compcon-image-assets.s3.amazonaws.com/frames/alt_genghis.png",
+        "license_id":  "mf_genghis"
+    },
+    {
+        "id":  "mf_swallowtail_alt_swallowtail_ranger_variant",
+        "variant":  "Swallowtail",
+        "source":  "SSC",
+        "name":  "Swallowtail (Ranger Variant)",
+        "mechtype":  [
+                         "Support"
+                     ],
+        "y_pos":  25,
+        "license_level":  2,
+        "description":  "\u003cp\u003eThis variant can be taken at rank II of the SWALLOWTAIL license instead of the base FRAME, or gained as EXOTIC GEAR by aiding Dthall Ordo during the campaign.\u003c/p\u003e\u003cp\u003eThis Swallowtail variant is common among HUC ranger forces. It was adopted and reverse-engineered from the material remains of early, abandoned SSC survey expeditions. With no ability to print-replicate the mech, the rangers painstakingly manufactured and assembled each unit to high specifications. Unlike the sleek luxury of other SSC frames, this Swallowtail is a rugged affair. Each one has a suite of marks left by its previous owners – livery, battle paint, custom gear, camouflage, and weathering. They have been repaired and maintained for two generations and each one is precious to the United Cities.\u003c/p\u003e",
+        "mounts":  [
+                       "Flex",
+                       "Main"
+                   ],
+        "stats":  {
+                      "size":  1,
+                      "stress":  4,
+                      "structure":  4,
+                      "armor":  0,
+                      "hp":  6,
+                      "evasion":  10,
+                      "edef":  8,
+                      "heatcap":  4,
+                      "repcap":  5,
+                      "sensor_range":  20,
+                      "tech_attack":  1,
+                      "save":  10,
+                      "speed":  6,
+                      "sp":  6
+                  },
+        "traits":  [
+                       {
+                           "name":  "Scout Battlefield",
+                           "description":  "\u003cp\u003eBefore the first round of any combat and before any deployment takes place, place up to two of the following in free spaces anywhere on the battlefield:\u003c/p\u003e \u003cul\u003e \u003cli\u003eA 2 x 2 zone that does not impede movement and grants soft cover to characters at least partly within it.\u003c/li\u003e \u003cli\u003eA 2 x 2 zone that is difficult terrain.\u003c/li\u003e \u003cli\u003eA SIZE 1 piece of hard cover.\u003c/li\u003e \u003c/ul\u003e \u003cp\u003eThey can\u0026rsquo;t be placed within 4 spaces of each other. The same option can be chosen more than once. These objects and zones represent naturally occurring terrain on the battlefield, and you can work with the GM to decide what they are.\u003c/p\u003e"
+                       },
+                       {
+                           "name":  "Invigorating Scanners",
+                           "description":  "1/round when the Swallowtail inflicts Lock On, an allied character in its sensor range and line of sight can move up to its speed as a reaction.",
+                           "synergies":  [
+                                             {
+                                                 "locations":  [
+                                                                   "lock_on"
+                                                               ],
+                                                 "detail":  "1/round when the Swallowtail inflicts Lock On, an allied character in its sensor range and line of sight can move up to its speed as a reaction."
+                                             }
+                                         ]
+                       },
+                       {
+                           "name":  "Weathering",
+                           "description":  "The Swallowtail ignores difficult terrain."
+                       }
+                   ],
+        "core_system":  {
+                            "name":  "Gaia Inheritance",
+                            "description":  "Outnumbered, outgunned, and lacking the ability to mass-produce mechs, the rangers have had to rely on the legacy of Hercynia itself to protect them. Each of their Swallowtails is an ingenious, fast-moving suite of meshed software and gear, uniquely tweaked by generations of hardened warriors – imperfect in a way that would make any SSC smith shiver. Each wears its own unique name, has its own unique ballad, and is recorded in the osteomemetics of its home city.",
+                            "passive_name":  "Grounded",
+                            "passive_effect":  "When you end your turn in a zone that grants soft cover, you become INVISIBLE until you leave that cover, take damage, attack, force a save, or take any other hostile action that affects another character.",
+                            "active_name":  "Guerrilla Warfare",
+                            "active_effect":  "\u003cp\u003eYou create three Burst 1 patches of smoke in spaces within line of sight and Range 5. These patches grant soft cover to characters at least partly within them. They last for the rest of the scene.\u003c/p\u003e \u003cp\u003eAdditionally, for the rest of the scene, allied characters within SENSORS gain the benefits of GROUNDED.\u003c/p\u003e",
+                            "activation":  "Protocol",
+                            "use":  "Encounter"
+                        },
+        "data_type":  "frame",
+        "aptitude":  {
+
+                     },
+        "image_url":  "https://compcon-image-assets.s3.amazonaws.com/frames/alt_ranger.png",
+        "license_id":  "mf_swallowtail"
+    }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "Lancer Enhanced Combat Alt Frames",
+  "author": "Ralf Ziegler",
+  "description": "COMP/CON data for Lancer: Enhanced Combat, a combat supplement for Lancer, written and designed by Ralf Ziegler. Includes the IPS-N Bligh (requires the Wallflower LCP), SSC Oleander, HORUS Salamander (requires the Long Rim LCP) and the HA Habsburg.",
+  "item_prefix": "",
+  "version": "1.1",
+  "image_url": "https://i.imgur.com/YpEEDYn.png",
+  "website": "https://interpoint-station.itch.io/lancer-enhanced-combat",
+  "dependencies": [
+    {
+      "name": "Lancer Long Rim Data",
+      "version": "1.2.1",
+      "link": "https://massif-press.itch.io/the-long-rim"
+    },
+    {
+      "name": "Lancer Wallflower Data",
+      "version": "2.0.5",
+      "link": "https://massif-press.itch.io/no-room-for-a-wallflower-act-1"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "id":  "cb_superheavy_mounting",
+        "name":  "Superheavy Mounting",
+        "source":  "GMS",
+        "effect":  "If your mech has fewer than 3 mounts (excluding integrated mounts) it gains an additional superheavy mount. It can only take SUPERHEAVY WEAPONS. They still require an additional mount to be installed. If your mech also has a heavy mount the SUPERHEAVY WEAPON must use that mount as the additional mount.",
+        "description":  "You’d be surprised how large a gun you could fit on a chassis if you ripped out peripheral systems and failsafe redundancies."
+    },
+    {
+        "id":  "cb_order_of_leander",
+        "name":  "Order of Leander",
+        "source":  "GMS",
+        "effect":  "1/scene, you may add +1 Accuracy to any attack, check, or save made by you or an allied character within Range 10, adding an additional +1 Accuracy for each structure damage you have; allied characters who receive this bonus also gain Grit+4 Overshield. If you take structure damage during the scene after this ability is expended, you may use it a second time.\u003cbr\u003e\u003cbr\u003eThis core bonus counts as a piece of Exotic Gear.",
+        "description":  "The Order of Leander is a Leandric States Alliance commendation given to those who have shown \"exemplary character, courage, and determination under great adversity.\" While primarily a military citation, precedent exists for it to be awarded to civilians as well, with a number of noteworthy historical figures having earned it for efforts during natural disasters, search-and-rescue missions, and medical crises. In Cressidium\u0027s settled history, no one from any other world has ever earned this award, but whether you come from beyond the stars or not, for your service in defense of both the LSA as well as Cressidium you have earned the right to wear it with pride."
+    }
+]
