@@ -1,52 +1,35 @@
-Set-Location -Path "F:\lancer_lcp"
+Set-Location -Path "F:\git\mech-combi"
 
-Remove-Item -Path "F:\lancer_lcp\combi\*" -Recurse -Force
+Remove-Item -Path "F:\git\mech-combi\combi\*" -Recurse -Force
 
-$lcp = "F:\lancer_lcp\combi.lcp"
+$lcp = "F:\git\mech-combi\combi.lcp"
 if (Test-Path -Path $lcp) {
     Remove-Item -Path $lcp -Force
     Write-Output "Deleted old lcp"
 } else {
     Write-Output "Old lcp ALREADY deleted"
 }
-Start-Sleep -Seconds 1
 
-Copy-Item -Path "F:\lancer_lcp\lcp_manifest.json" -Destination "F:\lancer_lcp\combi" -Force
-Copy-Item -Path "F:\lancer_lcp\lcp_list.txt" -Destination "F:\lancer_lcp\combi" -Force
+$uniqueJsonFileNames = New-Object System.Collections.Generic.HashSet[string]
+$jsonPath = "F:\git\mech-combi\json"
 
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "frames"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "core_bonuses"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "environments"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "npc_features"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "npc_templates"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "pilot_gear"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "reserves"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "systems"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "talents"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "weapons"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "statuses"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "mods"
-Start-Sleep -Seconds 1
-.\combi.ps1 -toCombi "actions"
-Start-Sleep -Seconds 1
+Get-ChildItem -Path $jsonPath -Recurse -Filter "*.json" | ForEach-Object {
+    $fileName = [System.IO.Path]::GetFileNameWithoutExtension($_.Name)
+    $uniqueJsonFileNames.Add($fileName) | Out-Null
+}
+$uniqueJsonFileNames | Sort-Object
 
-Copy-Item -Path "F:\lancer_lcp\json\ktb-data-1.2.3\tags.json" -Destination "F:\lancer_lcp\combi" -Force
-Start-Sleep -Seconds 1
+foreach ($fileName in $uniqueJsonFileNames) {
+    Write-Verbose "Processing file name: $fileName" -Verbose
+    & .\combi.ps1 -toCombi $fileName -Verbose
+}
 
-Compress-Archive -Path "F:\lancer_lcp\combi\*" -DestinationPath "F:\lancer_lcp\combi.zip"
-Start-Sleep -Seconds 1
+# Change these to be generated
+Copy-Item -Path "F:\git\mech-combi\lcp_manifest.json" -Destination "F:\git\mech-combi\combi" -Force -Verbose
+Copy-Item -Path "F:\git\mech-combi\lcp_list.txt" -Destination "F:\git\mech-combi\combi" -Force -Verbose 
 
-Rename-Item -Path "F:\lancer_lcp\combi.zip" -NewName "combi.lcp"
-Start-Sleep -Seconds 1
+Compress-Archive -Path "F:\git\mech-combi\combi\*" -DestinationPath "F:\git\mech-combi\combi.zip" -Verbose
+
+Rename-Item -Path "F:\git\mech-combi\combi.zip" -NewName "combi.lcp"
+
+Write-Output "Done!"
